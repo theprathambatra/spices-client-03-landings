@@ -6,6 +6,7 @@ import { magicProducts } from '../magicProducts.js'
 
 const INK = '#1A1208'
 const CREAM = '#FFF3DC'
+const EYE_HEIGHT = 2.25
 const seedRacks = [0, 1, 2, 3].map((n) => magicProducts.filter((p) => p.section === 'seeds').slice(n * 6, n * 6 + 6))
 const spiceRacks = [
   products.filter((p) => p.cat === 'ground'),
@@ -150,9 +151,9 @@ function Cashier({ onOpen, paused }) {
     <mesh position={[.14, 2.55, .37]}><sphereGeometry args={[.036, 6, 6]} /><meshBasicMaterial color={INK} /></mesh>
     <mesh ref={arm} position={[.47, 2.03, .03]} rotation={[0, 0, -.15]}><capsuleGeometry args={[.12, .52, 4, 8]} /><meshStandardMaterial color="#C98B62" /></mesh>
     <mesh position={[-.49, 1.98, .03]} rotation={[0, 0, -.42]}><capsuleGeometry args={[.12, .52, 4, 8]} /><meshStandardMaterial color="#C98B62" /></mesh>
-    <mesh position={[0, 1.33, .92]}><boxGeometry args={[3.4, 1.55, 1.25]} /><meshStandardMaterial color="#E03A2F" /></mesh>
-    <mesh position={[0, 1.34, 1.56]}><boxGeometry args={[3.05, 1.12, .08]} /><meshStandardMaterial color="#FFC21A" /></mesh>
-    <mesh position={[0, 2.14, .9]}><boxGeometry args={[3.6, .18, 1.45]} /><meshStandardMaterial color={INK} /></mesh>
+    <mesh position={[0, .82, .92]}><boxGeometry args={[3.4, 1.35, 1.25]} /><meshStandardMaterial color="#E03A2F" /></mesh>
+    <mesh position={[0, .82, 1.56]}><boxGeometry args={[3.05, 1.1, .08]} /><meshStandardMaterial color="#FFC21A" /></mesh>
+    <mesh position={[0, 1.57, .9]}><boxGeometry args={[3.6, .18, 1.45]} /><meshStandardMaterial color={INK} /></mesh>
     <Sign title="THE CASHIER" subtitle="TAP TO ADD TO YOUR DABBA" width={3.6} position={[0, 3.5, -.18]} />
   </group>
 }
@@ -184,7 +185,7 @@ function Room({ onPick, onCashier, selectedId, paused }) {
     <TableSet x={-2.45} z={1.7} /><TableSet x={2.45} z={-1.5} />
     <Plant x={-7.4} z={11} /><Plant x={7.4} z={11} /><Plant x={-7.1} z={-11} size={.8} />
     <WallFrame x={-8} color="#E03A2F" /><WallFrame x={8} color="#FFC21A" />
-    <Sign title="KESARI" subtitle="TURN UP THE MASALA" width={5.8} color="#FFC21A" position={[0, 4.6, -14.07]} />
+    <Sign title="KESARI" subtitle="TURN UP THE MASALA" width={5} color="#FFC21A" position={[.9, 5.08, -14.07]} />
     <Sign title="TAKE A WALK" subtitle="PICK A POUCH · ASK THE CASHIER" width={5.1} color="#F7BFD0" position={[0, 4.65, 14.08]} />
     {[[-6.5, '#E03A2F'], [0, '#2FA36B'], [6.5, '#2BA8E0']].map(([x, color]) => <group key={x} position={[x, 5.52, 0]}><mesh><cylinderGeometry args={[.5, .66, .7, 10]} /><meshStandardMaterial color={color} /></mesh><pointLight color="#FFF3DC" intensity={8} distance={8} /></group>)}
   </>
@@ -193,7 +194,7 @@ function Room({ onPick, onCashier, selectedId, paused }) {
 const PRESETS = {
   entrance: [0, 11.4, 0], seeds: [-4.3, 6.5, Math.PI / 2],
   powdered: [4.4, 6.5, -Math.PI / 2], whole: [4.4, -.2, -Math.PI / 2],
-  seasoning: [4.4, -6.7, -Math.PI / 2], makhana: [-4.4, -7.8, 0], cashier: [3.6, -7.2, 0],
+  seasoning: [4.4, -6.7, -Math.PI / 2], makhana: [-4.4, -7.8, 0], cashier: [3.6, -6, 0],
 }
 
 function CameraWalk({ controls, look, jump }) {
@@ -202,7 +203,7 @@ function CameraWalk({ controls, look, jump }) {
     const camera = state.camera
     if (controls.current.teleport) {
       const [x, z, yaw] = controls.current.teleport
-      camera.position.set(x, 1.7, z); look.current.yaw = yaw; look.current.pitch = 0
+      camera.position.set(x, EYE_HEIGHT, z); look.current.yaw = yaw; look.current.pitch = 0
       controls.current.teleport = null
     }
     camera.rotation.order = 'YXZ'
@@ -227,7 +228,7 @@ function CameraWalk({ controls, look, jump }) {
 }
 
 export default function StoreScene({ controls, look, jump, onPick, onCashier, selectedId, paused, onReady }) {
-  return <Canvas dpr={[1, 1.5]} camera={{ position: [0, 1.7, 11.4], fov: 66, near: .05, far: 70 }} gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }} onCreated={onReady}>
+  return <Canvas dpr={[1, 1.5]} camera={{ position: [0, EYE_HEIGHT, 11.4], fov: 66, near: .05, far: 70 }} gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }} onCreated={onReady}>
     <CameraWalk controls={controls} look={look} jump={jump} />
     <Room onPick={onPick} onCashier={onCashier} selectedId={selectedId} paused={paused} />
   </Canvas>
