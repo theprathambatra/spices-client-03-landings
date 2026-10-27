@@ -22,3 +22,9 @@ npm run build      # all five pages → site/dist
 `PAGE=v3 npm run build` builds a single variation. Brand name and catalogue placeholders live in each `vN/src` data file.
 
 Research, playbooks and the build brief are in `docs/`.
+
+## GitHub Pages
+
+The root URL opens Masala Pop (v1). All five storefronts remain available at `v1/` through `v5/`; `variations/` lists the directions.
+
+The GitHub Actions workflow installs dependencies in `site/`, builds with `BASE_PATH=/spices-client-03-landings/`, and publishes `site/dist` on every push to `main`. In repository Settings > Pages, the publishing source must be **GitHub Actions**.

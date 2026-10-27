@@ -9,13 +9,14 @@ const pages = process.env.PAGE ? [process.env.PAGE] : ['v1', 'v2', 'v3', 'v4', '
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: process.env.BASE_PATH || "/",
   // 517x and 5180 are taken by the user's other client projects
   server: { port: 5300, strictPort: true },
   resolve: { alias: { '@shared': resolve(__dirname, 'shared'), '@kit': resolve(__dirname, 'kit') } },
   build: {
     rollupOptions: {
       input: {
-        ...(process.env.PAGE ? {} : { main: resolve(__dirname, 'index.html') }),
+        ...(process.env.PAGE ? {} : { main: resolve(__dirname, 'index.html'), variations: resolve(__dirname, 'variations/index.html') }),
         ...Object.fromEntries(pages.map((p) => [p, resolve(__dirname, p, 'index.html')])),
       },
     },
