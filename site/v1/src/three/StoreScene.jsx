@@ -125,6 +125,18 @@ function labelTexture(title, subtitle, background = '#FFC21A') {
   return t
 }
 
+function plaqueTexture(title, background) {
+  const c = document.createElement('canvas'); c.width = 1024; c.height = 192
+  const g = c.getContext('2d')
+  g.fillStyle = background; g.fillRect(0, 0, 1024, 192)
+  g.strokeStyle = 'rgba(26,18,8,.35)'; g.lineWidth = 7; g.strokeRect(9, 9, 1006, 174)
+  g.fillStyle = INK; g.textAlign = 'center'
+  g.font = '900 95px Impact, Arial Black, sans-serif'
+  g.fillText(title.toUpperCase(), 512, 128, 925)
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4
+  return t
+}
+
 function packTexture(product, size) {
   const key = `${product.id}-${size}`
   if (packArtCache.has(key)) return packArtCache.get(key)
@@ -185,11 +197,23 @@ function Sign({ title, subtitle, width = 5.2, color = '#FFC21A', position = [0, 
   </group>
 }
 
-function ProductPack({ product, size, position, onPick, selected }) {
+function Plaque({ title, width = 2.4, color = '#E8C479', position = [0, 0, 0] }) {
+  const map = useMemo(() => plaqueTexture(title, color), [title, color])
+  useEffect(() => () => map.dispose(), [map])
+  const h = width * 192 / 1024
+  return <group position={position}>
+    <RoundedBox args={[width + .08, h + .08, .065]} radius={.025} smoothness={3} castShadow>
+      <meshStandardMaterial color={WALNUT} roughness={.68} />
+    </RoundedBox>
+    <mesh position={[0, 0, .035]}><planeGeometry args={[width, h]} /><meshBasicMaterial map={map} /></mesh>
+  </group>
+}
+
+function ProductPack({ product, size, position, onPick, selected, scale = .54 }) {
   const packSize = size || parseInt(product.weight, 10)
   const map = useMemo(() => packTexture(product, packSize), [product.id, packSize])
   return (
-    <group position={position} onClick={(e) => { e.stopPropagation(); onPick(product.id, packSize) }}
+    <group position={position} scale={scale} onClick={(e) => { e.stopPropagation(); onPick(product.id, packSize) }}
       onPointerOver={(e) => { e.stopPropagation(); document.body.style.cursor = 'pointer' }}
       onPointerOut={() => { document.body.style.cursor = '' }}>
       {selected && <RoundedBox args={[1.02, 1.29, .22]} radius={.065} smoothness={3} position={[0, 0, -.04]}>
@@ -206,33 +230,33 @@ function ProductPack({ product, size, position, onPick, selected }) {
   )
 }
 
-function Rack({ items, side, z, title, subtitle, color, onPick, selectedId, maps, columns = 3 }) {
+function Rack({ items, side, z, title, color, onPick, selectedId, maps, columns = 4 }) {
   const left = side === 'left'
-  const width = columns === 4 ? 5.7 : 4.7
+  const width = columns === 5 ? 5.7 : 4.7
   const faceItems = Array.from({ length: columns * 3 }, (_, i) => items[i % items.length])
   return (
     <group position={[left ? -9.42 : 9.42, 0, z]} rotation={[0, left ? Math.PI / 2 : -Math.PI / 2, 0]}>
-      <mesh position={[0, 2.36, -.34]} receiveShadow><boxGeometry args={[width, 4.72, .19]} /><meshStandardMaterial map={maps.wood} roughness={.76} /></mesh>
-      {[-1, 1].map((s) => <RoundedBox key={s} args={[.17, 4.67, .75]} radius={.035} smoothness={3} position={[s * (width / 2 - .07), 2.36, .02]} castShadow receiveShadow>
+      <mesh position={[0, 1.8, -.34]} receiveShadow><boxGeometry args={[width, 3.6, .19]} /><meshStandardMaterial map={maps.wood} roughness={.76} /></mesh>
+      {[-1, 1].map((s) => <RoundedBox key={s} args={[.17, 3.56, .75]} radius={.035} smoothness={3} position={[s * (width / 2 - .07), 1.8, .02]} castShadow receiveShadow>
         <meshStandardMaterial map={maps.wood} roughness={.55} />
       </RoundedBox>)}
-      <RoundedBox args={[width - .25, .55, .65]} radius={.035} smoothness={3} position={[0, .35, .04]} castShadow receiveShadow>
+      <RoundedBox args={[width - .25, .42, .65]} radius={.035} smoothness={3} position={[0, .28, .04]} castShadow receiveShadow>
         <meshStandardMaterial map={maps.wood} roughness={.7} />
       </RoundedBox>
-      {[.62, 1.82, 3.02, 4.22].map((y) => <group key={y}>
+      {[.56, 1.43, 2.3, 3.17].map((y) => <group key={y}>
         <RoundedBox args={[width + .03, .17, .78]} radius={.025} smoothness={3} position={[0, y, .12]} castShadow receiveShadow>
           <meshStandardMaterial map={maps.wood} roughness={.55} />
         </RoundedBox>
         <mesh position={[0, y - .032, .52]}><boxGeometry args={[width - .08, .025, .018]} /><meshStandardMaterial color={BRASS} metalness={.35} roughness={.35} /></mesh>
-        {y > .62 && <mesh position={[0, y - .12, .26]}><boxGeometry args={[width - .3, .018, .14]} /><meshBasicMaterial color="#FFE0A0" /></mesh>}
+        {y > .56 && <mesh position={[0, y - .12, .26]}><boxGeometry args={[width - .3, .018, .14]} /><meshBasicMaterial color="#FFE0A0" /></mesh>}
       </group>)}
-      <Sign title={title} subtitle={subtitle} color={color} width={width - .18} position={[0, 4.73, .18]} />
+      <Plaque title={title} color={color} width={2.62} position={[0, 3.53, .18]} />
       {faceItems.map((p, i) => {
         const col = i % columns
         const row = Math.floor(i / columns)
-        const step = columns === 4 ? 1.29 : 1.37
+        const step = columns === 5 ? .95 : .9
         const size = p.sizes?.[Math.floor(i / items.length) % p.sizes.length]
-        return <ProductPack key={`${p.id}-${i}`} product={p} size={size} position={[(col - (columns - 1) / 2) * step, 1.28 + row * 1.2, .31]} onPick={onPick} selected={selectedId === p.id} />
+        return <ProductPack key={`${p.id}-${i}`} product={p} size={size} position={[(col - (columns - 1) / 2) * step, .95 + row * .87, .31]} onPick={onPick} selected={selectedId === p.id} />
       })}
     </group>
   )
@@ -295,21 +319,21 @@ function WallFrame({ x, color, title, subtitle }) {
 function BackDisplay({ onPick, selectedId, maps }) {
   const makhana = magicProducts.find((p) => p.section === 'makhana')
   return <group position={[-4.5, 0, -13.35]}>
-    <RoundedBox args={[4.9, 4.6, .35]} radius={.08} smoothness={4} position={[0, 2.3, -.12]} castShadow receiveShadow>
+    <RoundedBox args={[4.35, 3.6, .35]} radius={.08} smoothness={4} position={[0, 1.8, -.12]} castShadow receiveShadow>
       <meshStandardMaterial map={maps.wood} roughness={.64} />
     </RoundedBox>
-    <mesh position={[0, 2.25, .072]}><boxGeometry args={[4.38, 4.05, .02]} /><meshStandardMaterial color="#E2C59B" roughness={.88} /></mesh>
-    {[-2.28, 2.28].map((x) => <RoundedBox key={x} args={[.18, 4.55, .61]} radius={.035} smoothness={3} position={[x, 2.28, .24]} castShadow>
+    <mesh position={[0, 1.79, .072]}><boxGeometry args={[3.95, 3.3, .02]} /><meshStandardMaterial color="#E2C59B" roughness={.88} /></mesh>
+    {[-2.03, 2.03].map((x) => <RoundedBox key={x} args={[.18, 3.56, .61]} radius={.035} smoothness={3} position={[x, 1.8, .24]} castShadow>
       <meshStandardMaterial map={maps.wood} roughness={.58} />
     </RoundedBox>)}
-    {[.62, 1.82, 3.02, 4.22].map((y) => <group key={y}>
-      <RoundedBox args={[4.7, .15, .66]} radius={.025} smoothness={3} position={[0, y, .3]} castShadow receiveShadow>
+    {[.56, 1.43, 2.3, 3.17].map((y) => <group key={y}>
+      <RoundedBox args={[4.15, .15, .66]} radius={.025} smoothness={3} position={[0, y, .3]} castShadow receiveShadow>
         <meshStandardMaterial map={maps.wood} roughness={.58} />
       </RoundedBox>
-      <mesh position={[0, y - .02, .64]}><boxGeometry args={[4.5, .022, .015]} /><meshStandardMaterial color={BRASS} metalness={.35} roughness={.35} /></mesh>
+      <mesh position={[0, y - .02, .64]}><boxGeometry args={[3.96, .022, .015]} /><meshStandardMaterial color={BRASS} metalness={.35} roughness={.35} /></mesh>
     </group>)}
-    <Sign title="Makhana" subtitle="100g & 200g" width={4.35} color="#E8C479" position={[0, 4.74, .25]} />
-    {[100, 200, 100, 200, 100, 200, 100, 200, 100].map((size, i) => <ProductPack key={i} product={makhana} size={size} position={[(i % 3 - 1) * 1.25, 1.28 + Math.floor(i / 3) * 1.2, .52]} onPick={onPick} selected={selectedId === makhana.id} />)}
+    <Plaque title="Makhana" width={2.35} position={[0, 3.53, .27]} />
+    {Array.from({ length: 12 }, (_, i) => <ProductPack key={i} product={makhana} size={i % 2 ? 200 : 100} position={[(i % 4 - 1.5) * .86, .94 + Math.floor(i / 4) * .87, .52]} onPick={onPick} selected={selectedId === makhana.id} />)}
   </group>
 }
 
@@ -351,7 +375,7 @@ function Cashier({ onOpen, paused, maps }) {
     {Array.from({ length: 17 }, (_, i) => <mesh key={i} position={[-1.56 + i * .195, .81, 1.601]} castShadow>
       <boxGeometry args={[.055, 1.13, .045]} /><meshStandardMaterial color={i % 2 ? '#A26A43' : '#9B5C37'} roughness={.7} />
     </mesh>)}
-    <Sign title="KESARI" subtitle="PICK UP · TURN UP" width={2.12} color="#E8C479" position={[0, .84, 1.64]} />
+    <Plaque title="KESARI" width={1.5} position={[0, .84, 1.64]} />
     <RoundedBox args={[3.72, .16, 1.54]} radius={.045} smoothness={3} position={[0, 1.57, .94]} castShadow receiveShadow>
       <meshStandardMaterial map={maps.stone} roughness={.37} />
     </RoundedBox>
@@ -365,7 +389,6 @@ function Cashier({ onOpen, paused, maps }) {
       <RoundedBox args={[.28, .1, .45]} radius={.03} smoothness={3} castShadow><meshStandardMaterial color="#282A27" roughness={.46} /></RoundedBox>
       <mesh position={[0, .056, -.08]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[.22, .2]} /><meshBasicMaterial color="#84A4A0" /></mesh>
     </group>
-    <Sign title="THE CASHIER" subtitle="TAP TO ADD TO YOUR DABBA" width={3.6} position={[0, 3.72, -.18]} />
   </group>
 }
 
@@ -444,25 +467,25 @@ function EntranceDoor({ onExit }) {
   </group>
 }
 
-function DisplayIsland({ z, title, subtitle, accent, items, maps, onPick, selectedId }) {
+function DisplayIsland({ z, title, accent, items, maps, onPick, selectedId }) {
   return <group position={[0, 0, z]}>
-    <RoundedBox args={[3.75, .49, 1.95]} radius={.065} smoothness={3} position={[0, .6, 0]} castShadow receiveShadow>
+    <RoundedBox args={[3.2, .35, 1.62]} radius={.065} smoothness={3} position={[0, .54, 0]} castShadow receiveShadow>
       <meshStandardMaterial map={maps.wood} roughness={.63} />
     </RoundedBox>
-    {[-1.55, 1.55].map((x) => <mesh key={x} position={[x, .2, 0]} castShadow>
-      <boxGeometry args={[.15, .55, 1.62]} /><meshStandardMaterial color={WALNUT} roughness={.6} />
+    {[-1.3, 1.3].map((x) => <mesh key={x} position={[x, .19, 0]} castShadow>
+      <boxGeometry args={[.15, .38, 1.4]} /><meshStandardMaterial color={WALNUT} roughness={.6} />
     </mesh>)}
-    <RoundedBox args={[3.9, .12, 2.04]} radius={.04} smoothness={3} position={[0, .9, 0]} castShadow receiveShadow>
+    <RoundedBox args={[3.35, .1, 1.75]} radius={.04} smoothness={3} position={[0, .76, 0]} castShadow receiveShadow>
       <meshStandardMaterial map={maps.stone} roughness={.48} />
     </RoundedBox>
-    <mesh position={[0, .824, 1.005]}><boxGeometry args={[3.72, .025, .025]} /><meshStandardMaterial color={BRASS} metalness={.39} roughness={.34} /></mesh>
-    <RoundedBox args={[3.38, .24, .63]} radius={.025} smoothness={3} position={[0, 1.08, -.39]} castShadow receiveShadow>
+    <mesh position={[0, .7, .87]}><boxGeometry args={[3.16, .025, .025]} /><meshStandardMaterial color={BRASS} metalness={.39} roughness={.34} /></mesh>
+    <RoundedBox args={[2.65, .16, .48]} radius={.025} smoothness={3} position={[0, .91, -.42]} castShadow receiveShadow>
       <meshStandardMaterial color={accent} roughness={.74} />
     </RoundedBox>
-    <mesh position={[0, 1.05, -.06]}><boxGeometry args={[3.3, .025, .025]} /><meshStandardMaterial color={BRASS} metalness={.4} roughness={.32} /></mesh>
-    {items.slice(0, 3).map((p, i) => <ProductPack key={`back${p.id}`} product={p} size={p.sizes?.[0]} position={[(i - 1) * 1.13, 1.79, -.38]} onPick={onPick} selected={selectedId === p.id} />)}
-    {items.slice(3, 5).map((p, i) => <ProductPack key={`front${p.id}`} product={p} size={p.sizes?.[0]} position={[(i ? .63 : -.63), 1.51, .49]} onPick={onPick} selected={selectedId === p.id} />)}
-    <Sign title={title} subtitle={subtitle} width={2.72} color={accent} position={[0, .57, 1.02]} />
+    <mesh position={[0, .89, -.14]}><boxGeometry args={[2.52, .02, .02]} /><meshStandardMaterial color={BRASS} metalness={.4} roughness={.32} /></mesh>
+    {items.slice(0, 3).map((p, i) => <ProductPack key={`back${p.id}`} product={p} size={p.sizes?.[0]} position={[(i - 1) * .94, 1.3, -.42]} onPick={onPick} selected={selectedId === p.id} />)}
+    {items.slice(3, 5).map((p, i) => <ProductPack key={`front${p.id}`} product={p} size={p.sizes?.[0]} position={[(i ? .55 : -.55), 1.12, .4]} onPick={onPick} selected={selectedId === p.id} />)}
+    <Plaque title={title} width={1.92} color={accent} position={[0, .54, .86]} />
   </group>
 }
 
@@ -532,17 +555,17 @@ function Room({ onPick, onCashier, onExit, selectedId, paused }) {
         <mesh position={[0, -.17, 0]} rotation={[Math.PI / 2, 0, 0]}><circleGeometry args={[.23, 16]} /><meshBasicMaterial color="#FFE9B6" /></mesh>
       </group>)}
     </group>)}
-    {[8, 2, -4, -10].map((z, i) => <Rack key={`seed${z}`} items={seedRacks[i]} side="left" z={z} title={i === 0 ? 'Seeds & nuts' : i === 1 ? 'Dried fruit' : i === 2 ? 'Berries & mixes' : 'Seeds & dates'} subtitle={`Shelf ${i + 1} · tap a pouch`} color={i % 2 ? '#F7BFD0' : '#FFC21A'} onPick={onPick} selectedId={selectedId} maps={maps} />)}
-    {[7, 0, -7].map((z, i) => <Rack key={`spice${z}`} items={spiceRacks[i]} side="right" z={z} title={['Powdered', 'Whole', 'Seasoning & herbs'][i]} subtitle={`${spiceRacks[i].length} spices · tap a pouch`} color={['#FFC21A', '#9BE8E0', '#F7BFD0'][i]} onPick={onPick} selectedId={selectedId} maps={maps} columns={4} />)}
+    {[8, 2, -4, -10].map((z, i) => <Rack key={`seed${z}`} items={seedRacks[i]} side="left" z={z} title={i === 0 ? 'Seeds & nuts' : i === 1 ? 'Dried fruit' : i === 2 ? 'Berries & mixes' : 'Seeds & dates'} color={i % 2 ? '#F7BFD0' : '#FFC21A'} onPick={onPick} selectedId={selectedId} maps={maps} columns={4} />)}
+    {[7, 0, -7].map((z, i) => <Rack key={`spice${z}`} items={spiceRacks[i]} side="right" z={z} title={['Powdered', 'Whole', 'Seasoning & herbs'][i]} color={['#FFC21A', '#9BE8E0', '#F7BFD0'][i]} onPick={onPick} selectedId={selectedId} maps={maps} columns={5} />)}
     <BackDisplay onPick={onPick} selectedId={selectedId} maps={maps} />
     <Cashier onOpen={onCashier} paused={paused} maps={maps} />
-    <DisplayIsland z={5.3} title="PANTRY FAVOURITES" subtitle="A LITTLE OF EVERYTHING" accent="#E8C479" items={frontEdit} maps={maps} onPick={onPick} selectedId={selectedId} />
-    <DisplayIsland z={-3.45} title="THE TADKA EDIT" subtitle="THE GOOD STUFF, UP FRONT" accent="#F2A68E" items={backEdit} maps={maps} onPick={onPick} selectedId={selectedId} />
+    <DisplayIsland z={5.3} title="PANTRY FAVOURITES" accent="#E8C479" items={frontEdit} maps={maps} onPick={onPick} selectedId={selectedId} />
+    <DisplayIsland z={-3.45} title="THE TADKA EDIT" accent="#F2A68E" items={backEdit} maps={maps} onPick={onPick} selectedId={selectedId} />
     <TableSet x={-5.1} z={1.15} maps={maps} /><TableSet x={5.1} z={-1.35} maps={maps} />
     <Plant x={-7.4} z={11} /><Plant x={7.4} z={11} /><Plant x={-7.1} z={-11} size={.9} /><Plant x={7.15} z={-11.3} size={.8} />
     <WallFrame x={-8} color="#B95F3F" title="GOOD FOOD" subtitle="GOOD COMPANY" />
     <WallFrame x={8} color="#CC9C3D" title="MORE MASALA" subtitle="MORE MEMORIES" />
-    <Sign title="KESARI" subtitle="TURN UP THE MASALA" width={4.6} color="#FFC21A" position={[0, 5.08, -14.07]} />
+    <Sign title="KESARI" subtitle="TURN UP THE MASALA" width={3.2} color="#FFC21A" position={[0, 5.19, -14.07]} />
   </>
 }
 
@@ -575,8 +598,8 @@ function CameraWalk({ controls, look, jump }) {
     const nz = camera.position.z + (-Math.cos(a) * forward - Math.sin(a) * sideways) * step
     const valid = (x, z) => Math.abs(x) < 7.75 && z > -9.2 && z < 13.45 &&
       Math.hypot(x + 5.1, z - 1.15) > 1.65 && Math.hypot(x - 5.1, z + 1.35) > 1.65 &&
-      !(Math.abs(x) < 2.14 && Math.abs(z - 5.3) < 1.42) &&
-      !(Math.abs(x) < 2.14 && Math.abs(z + 3.45) < 1.42) &&
+      !(Math.abs(x) < 2.05 && Math.abs(z - 5.3) < 1.23) &&
+      !(Math.abs(x) < 2.05 && Math.abs(z + 3.45) < 1.23) &&
       !(Math.abs(x) < 2.15 && z < -7.7)
     if (valid(nx, camera.position.z)) camera.position.x = nx
     if (valid(camera.position.x, nz)) camera.position.z = nz

@@ -146,7 +146,7 @@ export default function MagicStore({ open, onClose, onExitToSite, motionPaused }
         <button className="magic-browse" onClick={() => browse()}>Browse every shelf <span>{allItems.length}</span></button>
       </div>
       {canWalk && <><MovementPad controls={controls} /><div className="magic-instructions">WASD / arrows to walk · drag to look · tap a pouch or the cashier</div></>}
-      {!selected && !catalog && !cashier && <div className="magic-welcome"><Sparkle size={18} /><span>{canWalk ? 'Take a walk. Every pouch on the shelves opens.' : 'Choose a zone to browse every pouch.'}</span></div>}
+      {!canWalk && !selected && !catalog && !cashier && <div className="magic-welcome"><Sparkle size={18} /><span>Choose a zone to browse every pouch.</span></div>}
     </div>
 
     {catalog && <aside className="magic-panel magic-catalog" aria-label="Browse store shelves">
