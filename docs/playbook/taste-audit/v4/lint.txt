@@ -1,0 +1,50 @@
+TASTESKILL · LINT   30 file(s)
+
+FAIL
+  [emoji] Emoji used as UI.  (11×)
+      site/v4/src/components/CartDrawer.jsx:7  ❖
+      site/v4/src/components/CartDrawer.jsx:26  🎉
+      site/v4/src/components/CartDrawer.jsx:27  ❀
+      site/v4/src/components/Footer.jsx:55  ♥
+      site/v4/src/components/Header.jsx:34  ❖
+      site/v4/src/components/Header.jsx:35  ❖
+      … 5 more
+  [eyebrow] Eyebrow / kicker label above a heading.  (7×)
+      site/v4/src/components/Occasions.jsx:62  className="eyebrow
+      site/v4/src/components/Ornaments.jsx:96  className="eyebrow
+      site/v4/src/components/RegionMap.jsx:43  className="eyebrow
+      site/v4/src/styles.css:185  .eyebrow {
+      site/v4/src/styles.css:189  .eyebrow {
+      site/v4/src/styles.css:298  .eyebrow {
+      … 1 more
+  [shadow] Shadow. Elements at rest carry none; only real overlays (menu, dialog, sticky bar) may.  (31×)
+      site/v4/src/styles.css:31  box-shadow:
+      site/v4/src/styles.css:32  box-shadow:
+      site/v4/src/styles.css:33  box-shadow:
+      site/v4/src/styles.css:34  box-shadow:
+      site/v4/src/styles.css:39  box-shadow:
+      site/v4/src/styles.css:59  drop-shadow(
+      … 25 more
+  [gradient] Gradient fill. Use a flat colour or a real image (a neutral scrim over a photo is the one exception).  (17×)
+      site/v4/src/styles.css:53  linear-gradient(
+      site/v4/src/styles.css:59  radial-gradient(
+      site/v4/src/styles.css:92  linear-gradient(
+      site/v4/src/styles.css:173  linear-gradient(
+      site/v4/src/styles.css:197  linear-gradient(
+      site/v4/src/styles.css:212  linear-gradient(
+      … 11 more
+  [hairline] Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields.  (5×)
+      site/v4/src/styles.css:85  border-bottom: 1px
+      site/v4/src/styles.css:97  border-bottom: 1px
+      site/v4/src/styles.css:117  border-top: 1px
+      site/v4/src/styles.css:141  border-bottom: 1px
+      site/v4/src/styles.css:401  border-top: 1px
+
+WARN
+  [default-font] A default typeface. Use the faces named by the drawn direction.  (1×)
+      site/v4/index.html:11  family=Poppins
+  [numbering] Zero-padding in script. Fine for a clock, a date or a price; if it builds 01 / 02 / 03 labels, remove it.  (1×)
+      site/v4/src/components/Pack.jsx:7  padStart(2, '0')
+
+RESULT: 71 FAIL, 2 WARN — fix the FAILs before rendering.
+Interface fragments marked data-ui keep their own borders and shadows. Any other line that must keep a flagged pattern for a real reason can carry the comment taste-skill-ignore.

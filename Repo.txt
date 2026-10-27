@@ -1,0 +1,67 @@
+SNAPPY CREW — LINKS & TOOLKIT
+Last updated: 2026-10-16
+
+=====================================================================
+1. COMPONENT LIBRARIES (copy-paste React UI blocks)
+=====================================================================
+React Bits            https://reactbits.dev/                     (repo: repos/react-bits)  * TOP PICK
+Skiper UI             https://skiper-ui.com/
+Aceternity UI         https://ui.aceternity.com/components/apple-cards-carousel
+Magic UI              https://magicui.design/
+Motion Primitives     https://motion-primitives.com/
+Cult UI               https://www.cult-ui.com/
+Componentry           https://componentry.dev/
+SmoothUI              https://smoothui.dev/docs/components
+Unlumen UI            https://ui.unlumen.com/components
+Watermelon UI         https://ui.watermelon.sh/
+RetroUI               https://retroui.io/components
+Three UI              https://threeui.com/browse
+Cursify (cursors)     https://cursify.vercel.app/
+https://github.com/Jakubantalik/thinking-orbs
+
+=====================================================================
+2. ANIMATION & SCROLL
+=====================================================================
+Motion (Framer Motion) https://motion.dev/
+Anime.js               https://animejs.com/
+Lenis (smooth scroll)  https://lenis.dev/templates
+Anim Master Lib        https://animmasterlib.dev/
+Animos                 https://animos.app/
+AutoAE                 https://autoae.online/
+
+=====================================================================
+3. 3D, SHADERS & BACKGROUNDS
+=====================================================================
+React Three Fiber     https://github.com/pmndrs/react-three-fiber
+ShaderGradient        https://shadergradient.co/   |  https://github.com/ruucm/shadergradient
+Liquid Logo           https://github.com/paper-design/liquid-logo
+Liquid Glass JS       https://github.com/dashersw/liquid-glass-js
+Vanta.js              https://github.com/tengbao/vanta
+PlayCanvas            https://playcanvas.com/
+Spline AI             https://spline.design/ai-generate
+Haikei (SVG shapes)   https://haikei.app/
+
+=====================================================================
+4. DESIGN INSPIRATION
+=====================================================================
+Refero Styles         https://styles.refero.design/
+SkeuDesign            https://www.skeudesign.com/collections
+MotionSites           https://motionsites.ai/
+VividSites            https://www.vividsites.app/
+NextLeap              https://nextleap.app/
+
+=====================================================================
+5. CLAUDE CODE SKILLS & TOOLS  (downloaded into repos/)
+=====================================================================
+Name                   GitHub                                         Status
+TasteCode (app)        https://github.com/Leonxlnx/tastecode          App installed in /Applications
+Taste Skill            https://github.com/Leonxlnx/taste-skill        10 skills installed
+Everything Claude Code https://github.com/affaan-m/ECC                28 skills + 17 agents installed
+Agent Skills (Vercel)  https://github.com/vercel-labs/agent-skills    7 skills installed
+Superpowers            https://github.com/obra/superpowers            Plugin installed (this folder)
+Claude-Mem             https://github.com/thedotmack/claude-mem       Plugin installed (this folder)
+Scroll Craft           https://github.com/nateherkai/scroll-craft     Plugin installed (this folder)
+Unlazy                 https://github.com/Leonxlnx/unlazy             Skill installed
+Awesome Claude Code    https://github.com/hesreallyhim/awesome-claude-code   Reference list only
+Caveman                https://github.com/JuliusBrussee/caveman       Downloaded, not active
+Autoresearch           https://github.com/karpathy/autoresearch       Downloaded, not active (AI-training tool)

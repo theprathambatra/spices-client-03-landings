@@ -1,0 +1,290 @@
+{
+ "target": "https://spices-client-03-landings.vercel.app/v4/",
+ "at": "2026-10-24T12:13:43.666Z",
+ "pass": false,
+ "fails": 17,
+ "warns": 10,
+ "declared": [],
+ "open": [
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "5 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "12 eyebrow/kicker label(s) above headings: \"The spice shelf\" above \"Shop the Darbar\"; \"The brass thali\" above \"Seven katoris. One lazy susan.\"; \"Origins\" above \"Six regions, six spice kingdoms\"; \"Malabar\" above \"The Pepper Coast\"; \"Rasoi Darbar\" above \"A hamper for every festival\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "53 tiny uppercase letter-spaced labels (e.g. \"Free shipping above ₹499\", \"❖\", \"Cash on delivery available\", \"❖\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ❖ ★ ❀",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "14 gradient fill(s): div.hero-sky → linear-gradient(rgb(27, 20, 80), rgb(107, 31, 120) 55%, rgb(242, 106, 74) 90%, rgb(255, 179, 71)) | section#thali.thali-sec → radial-gradient(at 50% 30%, rgb(44, 26, 115), rgb(30, 27, 94) 60%, rgb(18, 15, 62)) | section#occasions.section.occasions → radial-gradient(circle at 20% 0%, rgba(216, 27, 118, 0.35), rgba(0, 0, 0, 0) 50%), radial-gradient(circle at 9",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "42 box-shadow(s) on elements at rest: button.pill.on → rgb(216, 27, 118) 0px 3px 0px 0px | article.pcard → rgb(107, 58, 30) 6px 6px 0px 0px | button.btn.btn-add → rgb(142, 14, 75) 0px 3px 0px 0px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "text-shadow",
+   "width": 1440,
+   "message": "6 text-shadow(s).",
+   "fix": "Remove; fix legibility with a scrim or a different crop.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "6 thin rule(s)/divider line(s): a 296px | a 296px | a 296px | a 296px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "dashed",
+   "width": 1440,
+   "message": "7 dashed/dotted border(s).",
+   "fix": "Remove unless it is a real drop zone.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (8 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fff6e5, section #fff6e5, section #ffefd0).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"केसरी\" 3.2:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "font-count",
+   "width": 1440,
+   "message": "6 typefaces in use (Poppins, Mukta, Rozha One, Cormorant Garamond, Yeseva One, Tiro Devanagari Hindi).",
+   "fix": "Two at most: one display, one text. Often one is enough.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "25 different font sizes (11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 24, 26, 28, 30, 32, 34, 42, 44, 56, 58, 60, 64, 76, 92).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "62 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (it is hidden).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 1440,
+   "message": "1 section(s) have content at both edges and 3822px of nothing between: \"Recipes from 28 states\"",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "no-title",
+   "width": 1440,
+   "message": "The page has no visible h1.",
+   "fix": "Give the first screen a clear title in an h1 that says what this is (a name with what it does, the product with what it is for, the event with its date and place).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 1440,
+   "message": "2 text block(s) sit within 16px of the screen edge: \"Haryana\" (14px from the left); \"Bajra khichdi\" (14px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 1440,
+   "message": "Large text lies under another element at some scroll position: \"Kesari केसरी\" (screen 12, 100% hidden); \"Step into the Kesari bazaar\" (screen 3, 100% hidden); \"Spices fit for a darbar.\" (screen 3, 100% hidden); \"Shop the Darbar\" (screen 3, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Step into the Kesari bazaar\" (screen 2, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 12 screens in a row: \"Step into the Kesari bazaar\"; \"थाली खाली है\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "FAIL",
+   "id": "reduced-hidden",
+   "width": 1440,
+   "message": "With reduced motion requested, 6 text block(s) on the first screen stay invisible: \"Single-origin Indian spices · ground fre\", \"Step into the\", \"Kesari\", \"bazaar\"",
+   "fix": "Put every hidden starting state inside @media (prefers-reduced-motion: no-preference); the reduced page is the finished page (references/motion.md §8)."
+  }
+ ]
+}

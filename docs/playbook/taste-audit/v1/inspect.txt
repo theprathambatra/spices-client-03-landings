@@ -1,0 +1,82 @@
+TASTESKILL · INSPECT   https://spices-client-03-landings.vercel.app/v1/
+
+MEASURED (first viewport listed)
+  hero headline   "TURN UP THE MASALA"  4 words · 3 line(s) · 121px (8.4vw) · Bowlby One 400 · tracking -0.01em · leading 0.88
+  @768px          3 line(s) · 64.5px
+  @390px          3 line(s) · 49.1px
+  typefaces       Baloo 2 74%, Bowlby One 16%, Rubik Dirt 7%, Caveat Brush 3%
+  sizes in use    11 / 12 / 13 / 14 / 15 / 16 / 17 / 18 / 19 / 20 / 22 / 24 / 26 / 28 / 29 / 30 / 32 / 37 / 38 / 40 / 44 / 52 / 64 / 92 / 121 / 187 px   body 16px / 1.4
+  colour          page #fff3dc · sections #e03a2f #1a1208 #2fa36b #ffc21a #2ba8e0 #ff8fb1 · button #1a1208
+  page            13.6 screens · 740 words · 0 images · hero media 88% canvas
+  headings        49 · longest 5 line(s) · median 3 words
+
+FAIL — fix every one of these
+  [headline-lines] @1440px  2 headline(s) wrap past two lines at 1440px: "TURN UP THE MASALA" → 3 lines (4 words, 121px); "HOW MUCH FIRE CAN YOU TAKE?" → 3 lines (6 words, 92.2px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less.
+  [numbering] @1440px (+768, 390)  Decorative index numbers: "01", "02", "03", "04", "05", "01"
+      → Remove them. If order truly matters, write it into the words ("First, …") or use a real <ol>.
+  [micro-label] @1440px (+768, 390)  4 tiny uppercase letter-spaced labels (e.g. "Mild", "Medium", "Hot", "Inferno").
+      → Use sentence-case text at a readable size, or delete the label.
+  [gradient] @1440px (+768, 390)  4 gradient fill(s): div.sunburst → repeating-conic-gradient(rgb(224, 58, 47) 0deg, rgb(224, 58, 47) 6deg, rgb(188, 49, 39) 6deg, rgb(188, 49, 39) | div.heat-stage → radial-gradient(circle at 50% 60%, color(srgb 0.231961 0.329804 0.132745), rgb(18, 11, 5) 72%) | div.zig → linear-gradient(135deg, rgb(255, 243, 220) 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(225deg, rgb(255, 243, 2
+      → Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.
+  [shadow] @1440px (+768, 390)  110 box-shadow(s) on elements at rest: p.hero-note → rgb(26, 18, 8) 5px 5px 0px 0px | a.btn.btn-yellow → rgb(26, 18, 8) 5px 5px 0px 0px | a.btn → rgb(26, 18, 8) 5px 5px 0px 0px
+      → Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).
+  [text-shadow] @1440px (+768, 390)  10 text-shadow(s).
+      → Remove; fix legibility with a scrim or a different crop.
+  [button-fx] @1440px (+768, 390)  Buttons with shadow/glow.
+      → Flat fill, one colour.
+  [contrast] @1440px (+768, 390)  Unreadable text: "100g" 2.1:1 (#1a1208 on #6b2d8b); "Hand-ground. Zero fillers." 2.5:1 (#fff3dc on #2ba8e0); "Fresh batch every week" 2.5:1 (#fff3dc on #2ba8e0); "Single-origin, farm named" 2.5:1 (#fff3dc on #2ba8e0)
+      → Raise contrast to at least 4.5:1 for text, 3:1 for large display.
+  [font-count] @1440px (+768, 390)  4 typefaces in use (Baloo 2, Bowlby One, Rubik Dirt, Caveat Brush).
+      → Two at most: one display, one text. Often one is enough.
+  [few-pictures] @1440px  Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.
+      → Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve.
+  [small-text] @1440px (+768, 390)  34 text blocks under 13px.
+      → Nothing meant to be read goes below 13px.
+  [late-title] @1440px (+768, 390)  The title is not readable 1.2s after the page loaded (something lies over it).
+      → Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, "Load sequence in 1.2 seconds"). No preloader, no gate, no waiting for the load event.
+  [covered-text] @1440px (+768, 390)  Large text lies under another element at some scroll position: "TURN UP" (screen 1, 100% hidden); "THE" (screen 1, 100% hidden); "MASALA" (screen 1, 100% hidden); "100% real spices" (screen 1, 100% hidden)
+      → Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.
+  [headline-lines] @768px  1 headline(s) wrap past two lines at 768px: "TURN UP THE MASALA" → 3 lines (4 words, 64.5px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less.
+  [eyebrow] @768px  1 eyebrow/kicker label(s) above headings: "FSSAILABTESTED" above "TURN UP THE MASALA"
+      → Delete them. If the label carried real information, fold it into the headline or the supporting sentence.
+  [headline-lines] @390px  4 headline(s) wrap past two lines at 390px: "TURN UP THE MASALA" → 3 lines (4 words, 49.1px); "Your cart is emptier than a Sunday-night dabba. " → 3 lines (10 words, 30px, a paragraph set above 24px); "Salts & Chaat" → 3 lines (3 words, 24px); "From farm to tadka in 21 days" → 3 lines (7 words, 40px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less.
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px (+768, 390)  1 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+  [dashed] @1440px (+768, 390)  1 dashed/dotted border(s).
+      → Remove unless it is a real drop zone.
+  [palette-cream] @1440px (+768, 390)  Yellow-cream background (page background #fff3dc, section #fff3dc, text #fff3dc).
+      → Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.
+  [size-count] @1440px (+768, 390)  26 different font sizes (11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 24, 26, 28, 29, 30, 32, 37, 38, 40, 44, 52, 64, 92, 121, 187).
+      → A page needs about five: display, heading, lead, body, small.
+  [no-footage] @1440px  No video anywhere on the page.
+      → Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject.
+  [ragged-edges] @1440px (+768)  Left-aligned text starts at 12 different lines (66px, 94px, 1065px, 78px, 407px, 736px, 218px); the three most used hold only 24% of it.
+      → Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.
+  [long-pin] @1440px  The same large text stays on screen for 12 screens in a row: "YOUR DABBA (0)"
+      → A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content.
+  [side-scroll] @390px  1 row(s) scroll sideways with content past their edge.
+      → Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.
+  [edge-text] @390px  1 text block(s) sit 12–15px from the phone's edge: "spice-o-meter 3000" (15px)
+      → The page margin is 16–20px on a phone; the header and the corner labels sit on it too.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  ../docs/playbook/taste-audit/v1/desktop-fold.jpg
+                  ../docs/playbook/taste-audit/v1/desktop-page-01.jpg
+                  ../docs/playbook/taste-audit/v1/desktop-page-02.jpg
+                  ../docs/playbook/taste-audit/v1/desktop-page-03.jpg
+  tablet 768px    ../docs/playbook/taste-audit/v1/tablet-fold.jpg
+                  ../docs/playbook/taste-audit/v1/tablet-page-01.jpg
+                  ../docs/playbook/taste-audit/v1/tablet-page-02.jpg
+  mobile 390px    ../docs/playbook/taste-audit/v1/mobile-fold.jpg
+                  ../docs/playbook/taste-audit/v1/mobile-page-01.jpg
+                  ../docs/playbook/taste-audit/v1/mobile-page-02.jpg
+
+report: ../docs/playbook/taste-audit/v1/report.json
+RESULT: 16 FAIL, 9 WARN — not done.
+
+VERDICT v1: 16 FAIL, 9 WARN after 0 declared deviation(s) — NOT DONE

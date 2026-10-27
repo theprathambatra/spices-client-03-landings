@@ -1,0 +1,4643 @@
+{
+ "url": "https://spices-client-03-landings.vercel.app/v5/",
+ "at": "2026-10-24T12:13:44.131Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    1,
+    0.66,
+    0.43,
+    0.62,
+    0.44,
+    0.89,
+    0.59,
+    0.78,
+    1,
+    0.95
+   ],
+   "motion": {
+    "elements": 10,
+    "css": 4,
+    "transitions": 5,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 15668,
+     "screens": 17.4,
+     "words": 1868,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 56,
+     "sections": 12,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★",
+      "✓",
+      "☆"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Every spice, resolved to the particle.",
+     "words": 6,
+     "chars": 38,
+     "lines": 3,
+     "size": 74.9,
+     "vw": 5.2,
+     "font": "Space Grotesk",
+     "weight": 600,
+     "tracking": -0.035,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.39,
+     "top": 315,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Every spice, resolved to the particle.",
+     "words": 6,
+     "lines": 3,
+     "size": 74.9,
+     "font": "Space Grotesk"
+    },
+    "headings": [
+     {
+      "text": "Every spice, resolved to the particle.",
+      "words": 6,
+      "chars": 38,
+      "lines": 3,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 315,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Four compounds. Forty thousand repeat orders.",
+      "words": 6,
+      "chars": 45,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 3364,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "All 28 specimens. Sort them. Fight them.",
+      "words": 7,
+      "chars": 40,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 4384,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stir the pigment.",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 100.8,
+      "vw": 7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 6545,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The numbers are on the pouch.",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 7480,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "RESULT",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.005,
+      "leading": 1.5,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 7831,
+      "tag": "th",
+      "kind": "heading"
+     },
+     {
+      "text": "2,000",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.005,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 7908,
+      "tag": "td",
+      "kind": "heading"
+     },
+     {
+      "text": "150",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.005,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 7994,
+      "tag": "td",
+      "kind": "heading"
+     },
+     {
+      "text": "8.4",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.005,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 8080,
+      "tag": "td",
+      "kind": "heading"
+     },
+     {
+      "text": "6.1",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.005,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 8166,
+      "tag": "td",
+      "kind": "heading"
+     },
+     {
+      "text": "0.60",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.005,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 8252,
+      "tag": "td",
+      "kind": "heading"
+     },
+     {
+      "text": "0.80",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.005,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 8338,
+      "tag": "td",
+      "kind": "heading"
+     },
+     {
+      "text": "Heat is a number. Flavour is a shape.",
+      "words": 8,
+      "chars": 37,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 8754,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Scan the batch. Meet the farm.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 9760,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Experiments, pre-assembled.",
+      "words": 2,
+      "chars": 27,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 10954,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Dal Tadka Kit",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 11470,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Gifting Flight",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.25,
+      "top": 11470,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Biryani Protocol",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.25,
+      "top": 11470,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "4.8 average. Peer-reviewed by kitchens.",
+      "words": 5,
+      "chars": 39,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 12028,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0.0",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 12199,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Recipes, written as experiments.",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 13090,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why your turmeric tastes of nothing",
+      "words": 6,
+      "chars": 35,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 13320,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Tadka timing, measured",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 13460,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The cardamom grading table, explained",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 13564,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "One new single-origin lot. Every month. Gone when it's gone.",
+      "words": 10,
+      "chars": 60,
+      "lines": 4,
+      "size": 72,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 13971,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "09",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.003,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 14122,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "00",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.003,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 14122,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "16",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.003,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 14122,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "04",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.003,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 14122,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Get the lab report before the drop.",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 79.2,
+      "vw": 5.5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.5,
+      "top": 14664,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "KESARI",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 316.8,
+      "vw": 22,
+      "font": "Syne",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 15450,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 31,
+     "maxLines": 4,
+     "over2Lines": 2,
+     "statements": 0,
+     "centered": 5,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "JetBrains Mono",
+       "share": 0.68,
+       "mono": true
+      },
+      {
+       "family": "Space Grotesk",
+       "share": 0.32,
+       "mono": false
+      },
+      {
+       "family": "Syne",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      28,
+      30,
+      36,
+      44,
+      72,
+      75,
+      79,
+      96,
+      101,
+      317
+     ],
+     "sizeCount": 22,
+     "notLoaded": [],
+     "body": {
+      "font": "Space Grotesk",
+      "size": 19,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 51,
+     "max": {
+      "size": 316.8,
+      "vw": 22,
+      "font": "Syne",
+      "text": "KESARI"
+     },
+     "monoShare": 0.68,
+     "monoProseShare": 0.68,
+     "monoFamilies": [
+      "JetBrains Mono"
+     ],
+     "monoSamples": [
+      "0000:0000",
+      "FREE SHIPPING ABOVE ₹499",
+      "■",
+      "COD AVAILABLE",
+      "■",
+      "USE FIRST10 FOR 10% OFF"
+     ],
+     "microLabels": 46,
+     "microLabelShare": 0.097,
+     "microSamples": [
+      "ASSAYING PARTICLES",
+      "/ 04",
+      "SPECIMEN 01",
+      "34.08°N 74.79°E",
+      "LOT",
+      "KS-2409-KC9"
+     ],
+     "upperShare": 0.39,
+     "centerShare": 0.13,
+     "smallText": 155
+    },
+    "eyebrows": [
+     {
+      "text": "01 / Bestsellers",
+      "above": "Four compounds. Forty thousand repeat or",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 3326
+     },
+     {
+      "text": "04 / Shop · product index",
+      "above": "All 28 specimens. Sort them. Fight them.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 4346
+     },
+     {
+      "text": "Specimen jar / live dye field",
+      "above": "Stir the pigment.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 6507
+     },
+     {
+      "text": "02 / Compound sheet",
+      "above": "The numbers are on the pouch.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 7442
+     },
+     {
+      "text": "Parameter",
+      "above": "2,000",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 11,
+      "top": 7831
+     },
+     {
+      "text": "Capsaicinoids (SHU)",
+      "above": "150",
+      "upper": false,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 14,
+      "top": 7908
+     },
+     {
+      "text": "Colour value",
+      "above": "8.4",
+      "upper": false,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 14,
+      "top": 7994
+     },
+     {
+      "text": "Moisture",
+      "above": "6.1",
+      "upper": false,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 14,
+      "top": 8080
+     },
+     {
+      "text": "Total ash",
+      "above": "0.60",
+      "upper": false,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 14,
+      "top": 8166
+     },
+     {
+      "text": "Volatile oil",
+      "above": "0.80",
+      "upper": false,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 14,
+      "top": 8252
+     },
+     {
+      "text": "03 / Heat scale & flavour radar",
+      "above": "Heat is a number. Flavour is a shape.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 8716
+     },
+     {
+      "text": "05 / Traceability",
+      "above": "Scan the batch. Meet the farm.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 9722
+     },
+     {
+      "text": "06 / Combos & gifting",
+      "above": "Experiments, pre-assembled.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 10916
+     },
+     {
+      "text": "07 / Field reports",
+      "above": "4.8 average. Peer-reviewed by kitchens.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 11990
+     },
+     {
+      "text": "08 / Lab notes",
+      "above": "Recipes, written as experiments.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 13052
+     },
+     {
+      "text": "09 / Monthly Compound",
+      "above": "One new single-origin lot. Every month. ",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 13933
+     },
+     {
+      "text": "NEXT DROP LOCKS IN",
+      "above": "09",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 9.2,
+      "top": 14080
+     }
+    ],
+    "numbered": [
+     {
+      "text": "[00]",
+      "size": 12,
+      "top": 52
+     },
+     {
+      "text": "/ 04",
+      "size": 11,
+      "top": 106
+     },
+     {
+      "text": "01",
+      "size": 11,
+      "top": 880
+     },
+     {
+      "text": "02",
+      "size": 11,
+      "top": 880
+     },
+     {
+      "text": "03",
+      "size": 11,
+      "top": 880
+     },
+     {
+      "text": "04",
+      "size": 11,
+      "top": 880
+     },
+     {
+      "text": "01 / Bestsellers",
+      "size": 12,
+      "top": 3326
+     },
+     {
+      "text": "04 / Shop · product index",
+      "size": 12,
+      "top": 4346
+     },
+     {
+      "text": "02 / Compound sheet",
+      "size": 12,
+      "top": 7442
+     },
+     {
+      "text": "03 / Heat scale & flavour rada",
+      "size": 12,
+      "top": 8716
+     },
+     {
+      "text": "05 / Traceability",
+      "size": 12,
+      "top": 9722
+     },
+     {
+      "text": "06 / Combos & gifting",
+      "size": 12,
+      "top": 10916
+     }
+    ],
+    "color": {
+     "bodyBg": "#eef0ea",
+     "bodyBgHsl": {
+      "h": 80,
+      "s": 0.17,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0f1113",
+       "top": 88,
+       "hsl": {
+        "h": 210,
+        "s": 0.12,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#eef0ea",
+       "top": 6410,
+       "hsl": {
+        "h": 80,
+        "s": 0.17,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#f6f7f3",
+       "top": 7830,
+       "hsl": {
+        "h": 75,
+        "s": 0.2,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#e6e9e2",
+       "top": 9592,
+       "hsl": {
+        "h": 86,
+        "s": 0.14,
+        "l": 0.9
+       }
+      },
+      {
+       "color": "#c6ff3d",
+       "top": 14554,
+       "hsl": {
+        "h": 78,
+        "s": 1,
+        "l": 0.62
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f1113",
+       "share": 0.32
+      },
+      {
+       "color": "#eef0ea",
+       "share": 0.25
+      },
+      {
+       "color": "#5d6369",
+       "share": 0.25
+      },
+      {
+       "color": "#c6ff3d",
+       "share": 0.06
+      },
+      {
+       "color": "#b3b8b5",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#0f1113",
+      "hsl": {
+       "h": 210,
+       "s": 0.12,
+       "l": 0.07
+      },
+      "fg": "#eef0ea"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 55,
+     "inHero": 16,
+     "radius": 0,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 49,
+     "upper": 48,
+     "heroLabels": [
+      "CART [00]",
+      "SHOP THE INDEX →",
+      "READ A LAB SHEET",
+      "01 CHILLI",
+      "02 TURMERIC"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "div.hero-stick → radial-gradient(120% 90% at 70% 40%, rgb(26, 29, 32) 0%, rgb(15, 17, 19) 62%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 56,
+     "hairlineSamples": [
+      "header.nav.mono 1440px",
+      "div.spec-head 302px",
+      "div 302px",
+      "div 302px",
+      "div 302px"
+     ],
+     "outlinedBoxes": 16,
+     "dashed": 17,
+     "blurred": 0,
+     "roundedBoxes": 16,
+     "boxRadius": 50,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3566
+      },
+      {
+       "count": 12,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 4642
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 11234
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 12362
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.9
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 56,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "jetbrains mono",
+     "space grotesk",
+     "syne"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 15668,
+    "margins": {
+     "left": 88,
+     "right": 89
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 88,
+      "height": 3060,
+      "words": 87,
+      "media": 1,
+      "middle": 291,
+      "heading": {
+       "text": "Every spice,",
+       "size": 75,
+       "tag": "h1"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 48,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#best.sec.best",
+      "tag": "section",
+      "top": 3196,
+      "height": 1020,
+      "words": 100,
+      "media": 4,
+      "middle": 29,
+      "heading": {
+       "text": "Four compounds.",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 103,
+      "textLeft": 88,
+      "textRight": 109,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#shop.sec.index",
+      "tag": "section",
+      "top": 4216,
+      "height": 2195,
+      "words": 293,
+      "media": 12,
+      "middle": 0,
+      "heading": {
+       "text": "All 28 specimens.",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 88,
+      "textLeft": 88,
+      "textRight": 88,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 6410,
+      "height": 901,
+      "words": 70,
+      "media": 1,
+      "middle": 474,
+      "heading": {
+       "text": "Stir the",
+       "size": 101,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 107,
+      "textLeft": 88,
+      "textRight": 107,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#compound.sec.compound",
+      "tag": "section",
+      "top": 7311,
+      "height": 1276,
+      "words": 110,
+      "media": 0,
+      "middle": 93,
+      "heading": {
+       "text": "The numbers are",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 236,
+      "textLeft": 88,
+      "textRight": 236,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#radar.sec.dark",
+      "tag": "section",
+      "top": 8587,
+      "height": 1005,
+      "words": 53,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Heat is a number.",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 113,
+      "textLeft": 88,
+      "textRight": 232,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#trace.sec.trace",
+      "tag": "section",
+      "top": 9592,
+      "height": 1195,
+      "words": 79,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Scan the batch.",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 89,
+      "textLeft": 88,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#kits.sec.kits",
+      "tag": "section",
+      "top": 10787,
+      "height": 1073,
+      "words": 127,
+      "media": 0,
+      "middle": 62,
+      "heading": {
+       "text": "Experiments,",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 109,
+      "textLeft": 88,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.sec.dark",
+      "tag": "section",
+      "top": 11860,
+      "height": 1062,
+      "words": 192,
+      "media": 0,
+      "middle": 6,
+      "heading": {
+       "text": "0.0",
+       "size": 96,
+       "tag": "span"
+      },
+      "left": 88,
+      "right": 111,
+      "textLeft": 88,
+      "textRight": 111,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#notes.sec.notes",
+      "tag": "section",
+      "top": 12922,
+      "height": 871,
+      "words": 85,
+      "media": 0,
+      "middle": 27,
+      "heading": {
+       "text": "Recipes,",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 255,
+      "textLeft": 88,
+      "textRight": 255,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#monthly.monthly",
+      "tag": "section",
+      "top": 13793,
+      "height": 761,
+      "words": 51,
+      "media": 0,
+      "middle": 151,
+      "heading": {
+       "text": "One new single-origin lot.",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 113,
+      "textLeft": 88,
+      "textRight": 113,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#news.news",
+      "tag": "section",
+      "top": 14554,
+      "height": 501,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get the lab report",
+       "size": 79,
+       "tag": "h2"
+      },
+      "left": 318,
+      "right": 488,
+      "textLeft": 318,
+      "textRight": 488,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.foot.mono",
+      "tag": "footer",
+      "top": 15055,
+      "height": 613,
+      "words": 61,
+      "media": 0,
+      "middle": 153,
+      "heading": {
+       "text": "Shop",
+       "size": 11,
+       "tag": "h4"
+      },
+      "left": 88,
+      "right": 88,
+      "textLeft": 88,
+      "textRight": 88,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Every spice, resolved to the particle.",
+      "size": 75,
+      "top": 315,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "NO FILLERS / PRESERVATIVES",
+      "side": "left",
+      "px": 5
+     }
+    ],
+    "edges": [
+     {
+      "x": 88,
+      "n": 25
+     },
+     {
+      "x": 103,
+      "n": 7
+     },
+     {
+      "x": 48,
+      "n": 4
+     },
+     {
+      "x": 419,
+      "n": 4
+     },
+     {
+      "x": 735,
+      "n": 4
+     },
+     {
+      "x": 1050,
+      "n": 4
+     },
+     {
+      "x": 262,
+      "n": 3
+     },
+     {
+      "x": 537,
+      "n": 3
+     },
+     {
+      "x": 685,
+      "n": 3
+     },
+     {
+      "x": 964,
+      "n": 3
+     },
+     {
+      "x": 318,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 62,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    1,
+    0.53,
+    0.42,
+    0.53,
+    0.65,
+    0.72,
+    0.87,
+    1,
+    0.93,
+    0.77
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 4,
+    "transitions": 4,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 17515,
+     "screens": 17.1,
+     "words": 1807,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 56,
+     "sections": 12,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★",
+      "✓",
+      "☆"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Every spice, resolved to the particle.",
+     "words": 6,
+     "chars": 38,
+     "lines": 2,
+     "size": 52,
+     "vw": 6.8,
+     "font": "Space Grotesk",
+     "weight": 600,
+     "tracking": -0.035,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 718,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Every spice, resolved to the particle.",
+     "words": 6,
+     "lines": 2,
+     "size": 52,
+     "font": "Space Grotesk"
+    },
+    "headings": [
+     {
+      "text": "Every spice, resolved to the particle.",
+      "words": 6,
+      "chars": 38,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 718,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Four compounds. Forty thousand repeat orders.",
+      "words": 6,
+      "chars": 45,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 3315,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "All 28 specimens. Sort them. Fight them.",
+      "words": 7,
+      "chars": 40,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 4547,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stir the pigment.",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 64,
+      "vw": 8.3,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 6908,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The numbers are on the pouch.",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 7824,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Heat is a number. Flavour is a shape.",
+      "words": 8,
+      "chars": 37,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 9170,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Scan the batch. Meet the farm.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 10404,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Experiments, pre-assembled.",
+      "words": 2,
+      "chars": 27,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 11967,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Dal Tadka Kit",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 12382,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Gifting Flight",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 12852,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Biryani Protocol",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 13344,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "4.8 average. Peer-reviewed by kitchens.",
+      "words": 5,
+      "chars": 39,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 13756,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0.0",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 53.8,
+      "vw": 7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 13883,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Recipes, written as experiments.",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 15354,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "One new single-origin lot. Every month. Gone when it's gone.",
+      "words": 10,
+      "chars": 60,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 16127,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "09",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 16451,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "00",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 16451,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "15",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 16451,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "52",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 16451,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Get the lab report before the drop.",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 42.2,
+      "vw": 5.5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 16749,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "KESARI",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 169,
+      "vw": 22,
+      "font": "Syne",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 17399,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 21,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 5,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "JetBrains Mono",
+       "share": 0.68,
+       "mono": true
+      },
+      {
+       "family": "Space Grotesk",
+       "share": 0.32,
+       "mono": false
+      },
+      {
+       "family": "Syne",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      20,
+      22,
+      28,
+      31,
+      38,
+      42,
+      52,
+      54,
+      64,
+      169
+     ],
+     "sizeCount": 20,
+     "notLoaded": [],
+     "body": {
+      "font": "Space Grotesk",
+      "size": 18,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": -0.01,
+      "contrast": 16.5
+     },
+     "measureChars": 67,
+     "max": {
+      "size": 169,
+      "vw": 22,
+      "font": "Syne",
+      "text": "KESARI"
+     },
+     "monoShare": 0.68,
+     "monoProseShare": 0.68,
+     "monoFamilies": [
+      "JetBrains Mono"
+     ],
+     "monoSamples": [
+      "0000:0000",
+      "FREE SHIPPING ABOVE ₹499",
+      "■",
+      "COD AVAILABLE",
+      "■",
+      "USE FIRST10 FOR 10% OFF"
+     ],
+     "microLabels": 43,
+     "microLabelShare": 0.091,
+     "microSamples": [
+      "ASSAYING PARTICLES",
+      "/ 04",
+      "SPECIMEN 01",
+      "LOT",
+      "KS-2409-K+R",
+      "FSSAI CERTIFIED"
+     ],
+     "upperShare": 0.39,
+     "centerShare": 0.13,
+     "smallText": 155
+    },
+    "eyebrows": [
+     {
+      "text": "01 / Bestsellers",
+      "above": "Four compounds. Forty thousand repeat or",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 3277
+     },
+     {
+      "text": "04 / Shop · product index",
+      "above": "All 28 specimens. Sort them. Fight them.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 4509
+     },
+     {
+      "text": "Specimen jar / live dye field",
+      "above": "Stir the pigment.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 6870
+     },
+     {
+      "text": "02 / Compound sheet",
+      "above": "The numbers are on the pouch.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 7786
+     },
+     {
+      "text": "03 / Heat scale & flavour radar",
+      "above": "Heat is a number. Flavour is a shape.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 9132
+     },
+     {
+      "text": "05 / Traceability",
+      "above": "Scan the batch. Meet the farm.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 10366
+     },
+     {
+      "text": "06 / Combos & gifting",
+      "above": "Experiments, pre-assembled.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 11929
+     },
+     {
+      "text": "07 / Field reports",
+      "above": "4.8 average. Peer-reviewed by kitchens.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 13718
+     },
+     {
+      "text": "08 / Lab notes",
+      "above": "Recipes, written as experiments.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 15316
+     },
+     {
+      "text": "09 / Monthly Compound",
+      "above": "One new single-origin lot. Every month. ",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 16089
+     },
+     {
+      "text": "NEXT DROP LOCKS IN",
+      "above": "09",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 9.2,
+      "top": 16409
+     }
+    ],
+    "numbered": [
+     {
+      "text": "[00]",
+      "size": 12,
+      "top": 52
+     },
+     {
+      "text": "/ 04",
+      "size": 11,
+      "top": 106
+     },
+     {
+      "text": "01",
+      "size": 11,
+      "top": 1012
+     },
+     {
+      "text": "02",
+      "size": 11,
+      "top": 1012
+     },
+     {
+      "text": "03",
+      "size": 11,
+      "top": 1012
+     },
+     {
+      "text": "04",
+      "size": 11,
+      "top": 1012
+     },
+     {
+      "text": "01 / Bestsellers",
+      "size": 12,
+      "top": 3277
+     },
+     {
+      "text": "04 / Shop · product index",
+      "size": 12,
+      "top": 4509
+     },
+     {
+      "text": "02 / Compound sheet",
+      "size": 12,
+      "top": 7786
+     },
+     {
+      "text": "03 / Heat scale & flavour rada",
+      "size": 12,
+      "top": 9132
+     },
+     {
+      "text": "05 / Traceability",
+      "size": 12,
+      "top": 10366
+     },
+     {
+      "text": "06 / Combos & gifting",
+      "size": 12,
+      "top": 11929
+     }
+    ],
+    "color": {
+     "bodyBg": "#eef0ea",
+     "bodyBgHsl": {
+      "h": 80,
+      "s": 0.17,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0f1113",
+       "top": -441,
+       "hsl": {
+        "h": 210,
+        "s": 0.12,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#eef0ea",
+       "top": 6815,
+       "hsl": {
+        "h": 80,
+        "s": 0.17,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#f6f7f3",
+       "top": 8106,
+       "hsl": {
+        "h": 75,
+        "s": 0.2,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0f1114",
+       "top": 9280,
+       "hsl": {
+        "h": 216,
+        "s": 0.14,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#e6e9e2",
+       "top": 10296,
+       "hsl": {
+        "h": 86,
+        "s": 0.14,
+        "l": 0.9
+       }
+      },
+      {
+       "color": "#c6ff3d",
+       "top": 16688,
+       "hsl": {
+        "h": 78,
+        "s": 1,
+        "l": 0.62
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f1113",
+       "share": 0.33
+      },
+      {
+       "color": "#eef0ea",
+       "share": 0.26
+      },
+      {
+       "color": "#5d6369",
+       "share": 0.25
+      },
+      {
+       "color": "#c6ff3d",
+       "share": 0.06
+      },
+      {
+       "color": "#b3b8b5",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#0f1113",
+      "hsl": {
+       "h": 210,
+       "s": 0.12,
+       "l": 0.07
+      },
+      "fg": "#eef0ea"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 48,
+     "inHero": 12,
+     "radius": 0,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 42,
+     "upper": 41,
+     "heroLabels": [
+      "CART [00]",
+      "SHOP THE INDEX →",
+      "READ A LAB SHEET"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "div.hero-stick → radial-gradient(120% 90% at 70% 40%, rgb(26, 29, 32) 0%, rgb(15, 17, 19) 62%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 61,
+     "hairlineSamples": [
+      "header.nav.mono 768px",
+      "nav 768px",
+      "a 707px",
+      "a 707px",
+      "a 707px"
+     ],
+     "outlinedBoxes": 16,
+     "dashed": 15,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3426
+      },
+      {
+       "count": 12,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 4760
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.91
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 56,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "jetbrains mono",
+     "space grotesk",
+     "syne"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 17515,
+    "margins": {
+     "left": 31,
+     "right": 46
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 88,
+      "height": 3072,
+      "words": 33,
+      "media": 1,
+      "middle": 26,
+      "heading": {
+       "text": "Every spice,",
+       "size": 52,
+       "tag": "h1"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#best.sec.best",
+      "tag": "section",
+      "top": 3208,
+      "height": 1230,
+      "words": 100,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Four compounds.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 46,
+      "textLeft": 31,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#shop.sec.index",
+      "tag": "section",
+      "top": 4438,
+      "height": 2377,
+      "words": 293,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "All 28 specimens.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 46,
+      "textLeft": 31,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 6815,
+      "height": 901,
+      "words": 63,
+      "media": 1,
+      "middle": 58,
+      "heading": {
+       "text": "Stir the",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 50,
+      "textLeft": 31,
+      "textRight": 50,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#compound.sec.compound",
+      "tag": "section",
+      "top": 7716,
+      "height": 1347,
+      "words": 109,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The numbers are",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 45,
+      "textLeft": 31,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#radar.sec.dark",
+      "tag": "section",
+      "top": 9063,
+      "height": 1233,
+      "words": 53,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Heat is a number.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 48,
+      "textLeft": 31,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#trace.sec.trace",
+      "tag": "section",
+      "top": 10296,
+      "height": 1563,
+      "words": 79,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Scan the batch.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 32,
+      "textLeft": 31,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#kits.sec.kits",
+      "tag": "section",
+      "top": 11859,
+      "height": 1790,
+      "words": 127,
+      "media": 0,
+      "middle": 57,
+      "heading": {
+       "text": "Experiments,",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 52,
+      "textLeft": 31,
+      "textRight": 66,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.sec.dark",
+      "tag": "section",
+      "top": 13649,
+      "height": 1598,
+      "words": 192,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "0.0",
+       "size": 54,
+       "tag": "span"
+      },
+      "left": 31,
+      "right": 54,
+      "textLeft": 31,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#notes.sec.notes",
+      "tag": "section",
+      "top": 15247,
+      "height": 766,
+      "words": 85,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Recipes,",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 158,
+      "textLeft": 31,
+      "textRight": 158,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#monthly.monthly",
+      "tag": "section",
+      "top": 16012,
+      "height": 676,
+      "words": 51,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One new single-origin lot.",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 56,
+      "textLeft": 31,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#news.news",
+      "tag": "section",
+      "top": 16688,
+      "height": 332,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get the lab report",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 178,
+      "textLeft": 31,
+      "textRight": 198,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.foot.mono",
+      "tag": "footer",
+      "top": 17020,
+      "height": 495,
+      "words": 61,
+      "media": 0,
+      "middle": 37,
+      "heading": {
+       "text": "Shop",
+       "size": 11,
+       "tag": "h4"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Every spice, resolved to the particle.",
+      "size": 52,
+      "top": 718,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "NO FILLERS / PRESERVATIVES",
+      "side": "left",
+      "px": 9
+     }
+    ],
+    "edges": [
+     {
+      "x": 31,
+      "n": 35
+     },
+     {
+      "x": 46,
+      "n": 15
+     },
+     {
+      "x": 281,
+      "n": 5
+     },
+     {
+      "x": 516,
+      "n": 5
+     },
+     {
+      "x": 303,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 61,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    1,
+    0.56,
+    0.48,
+    0.69,
+    0.62,
+    0.59,
+    0.81,
+    0.9,
+    0.82,
+    1
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 4,
+    "transitions": 4,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 17363,
+     "screens": 20.6,
+     "words": 1742,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 56,
+     "sections": 12,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★",
+      "✓",
+      "☆"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Every spice, resolved to the particle.",
+     "words": 6,
+     "chars": 38,
+     "lines": 3,
+     "size": 41,
+     "vw": 10.5,
+     "font": "Space Grotesk",
+     "weight": 600,
+     "tracking": -0.035,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 520,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Every spice, resolved to the particle.",
+     "words": 6,
+     "lines": 3,
+     "size": 41,
+     "font": "Space Grotesk"
+    },
+    "headings": [
+     {
+      "text": "Every spice, resolved to the particle.",
+      "words": 6,
+      "chars": 38,
+      "lines": 3,
+      "size": 41,
+      "vw": 10.5,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 520,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Four compounds. Forty thousand repeat orders.",
+      "words": 6,
+      "chars": 45,
+      "lines": 3,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2770,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "All 28 specimens. Sort them. Fight them.",
+      "words": 7,
+      "chars": 40,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3837,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stir the pigment.",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 46.8,
+      "vw": 12,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6489,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The numbers are on the pouch.",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7406,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Heat is a number. Flavour is a shape.",
+      "words": 8,
+      "chars": 37,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8807,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Scan the batch. Meet the farm.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9964,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Experiments, pre-assembled.",
+      "words": 2,
+      "chars": 27,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11157,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Dal Tadka Kit",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 11585,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Gifting Flight",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 12079,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Biryani Protocol",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 12595,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "4.8 average. Peer-reviewed by kitchens.",
+      "words": 5,
+      "chars": 39,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 13021,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0.0",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 13142,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Recipes, written as experiments.",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 14767,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why your turmeric tastes of nothing",
+      "words": 6,
+      "chars": 35,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 14921,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Tadka timing, measured",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 15123,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The cardamom grading table, explained",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 15304,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "One new single-origin lot. Every month. Gone when it's gone.",
+      "words": 10,
+      "chars": 60,
+      "lines": 4,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 15618,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "09",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 16024,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "00",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 16024,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "15",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 16024,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "40",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "JetBrains Mono",
+      "weight": 500,
+      "tracking": 0.004,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": true,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 16024,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Get the lab report before the drop.",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Space Grotesk",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 16301,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "KESARI",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 85.8,
+      "vw": 22,
+      "font": "Syne",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 17304,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 24,
+     "maxLines": 4,
+     "over2Lines": 3,
+     "statements": 0,
+     "centered": 5,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "JetBrains Mono",
+       "share": 0.67,
+       "mono": true
+      },
+      {
+       "family": "Space Grotesk",
+       "share": 0.33,
+       "mono": false
+      },
+      {
+       "family": "Syne",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      20,
+      22,
+      28,
+      34,
+      41,
+      47,
+      48,
+      86
+     ],
+     "sizeCount": 18,
+     "notLoaded": [],
+     "body": {
+      "font": "Space Grotesk",
+      "size": 18,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": -0.01,
+      "contrast": 16.5
+     },
+     "measureChars": 51,
+     "max": {
+      "size": 85.8,
+      "vw": 22,
+      "font": "Syne",
+      "text": "KESARI"
+     },
+     "monoShare": 0.67,
+     "monoProseShare": 0.67,
+     "monoFamilies": [
+      "JetBrains Mono"
+     ],
+     "monoSamples": [
+      "FREE SHIPPING ABOVE ₹499",
+      "■",
+      "COD AVAILABLE",
+      "■",
+      "USE FIRST10 FOR 10% OFF",
+      "■"
+     ],
+     "microLabels": 43,
+     "microLabelShare": 0.095,
+     "microSamples": [
+      "ASSAYING PARTICLES",
+      "/ 04",
+      "SPECIMEN 01",
+      "LOT",
+      "KS-2409-K87",
+      "FSSAI CERTIFIED"
+     ],
+     "upperShare": 0.39,
+     "centerShare": 0.14,
+     "smallText": 155
+    },
+    "eyebrows": [
+     {
+      "text": "01 / Bestsellers",
+      "above": "Four compounds. Forty thousand repeat or",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 2732
+     },
+     {
+      "text": "04 / Shop · product index",
+      "above": "All 28 specimens. Sort them. Fight them.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 3799
+     },
+     {
+      "text": "Specimen jar / live dye field",
+      "above": "Stir the pigment.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 6451
+     },
+     {
+      "text": "02 / Compound sheet",
+      "above": "The numbers are on the pouch.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 7368
+     },
+     {
+      "text": "03 / Heat scale & flavour radar",
+      "above": "Heat is a number. Flavour is a shape.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 8769
+     },
+     {
+      "text": "05 / Traceability",
+      "above": "Scan the batch. Meet the farm.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 9926
+     },
+     {
+      "text": "06 / Combos & gifting",
+      "above": "Experiments, pre-assembled.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 11119
+     },
+     {
+      "text": "07 / Field reports",
+      "above": "4.8 average. Peer-reviewed by kitchens.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 12983
+     },
+     {
+      "text": "08 / Lab notes",
+      "above": "Recipes, written as experiments.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 14729
+     },
+     {
+      "text": "09 / Monthly Compound",
+      "above": "One new single-origin lot. Every month. ",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 15580
+     },
+     {
+      "text": "NEXT DROP LOCKS IN",
+      "above": "09",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 9.2,
+      "top": 15981
+     },
+     {
+      "text": "NEXT DROP LOCKS IN",
+      "above": "00",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 9.2,
+      "top": 15981
+     }
+    ],
+    "numbered": [
+     {
+      "text": "[00]",
+      "size": 12,
+      "top": 52
+     },
+     {
+      "text": "/ 04",
+      "size": 11,
+      "top": 106
+     },
+     {
+      "text": "01",
+      "size": 11,
+      "top": 832
+     },
+     {
+      "text": "02",
+      "size": 11,
+      "top": 832
+     },
+     {
+      "text": "03",
+      "size": 11,
+      "top": 832
+     },
+     {
+      "text": "04",
+      "size": 11,
+      "top": 832
+     },
+     {
+      "text": "01 / Bestsellers",
+      "size": 12,
+      "top": 2732
+     },
+     {
+      "text": "04 / Shop · product index",
+      "size": 12,
+      "top": 3799
+     },
+     {
+      "text": "02 / Compound sheet",
+      "size": 12,
+      "top": 7368
+     },
+     {
+      "text": "03 / Heat scale & flavour rada",
+      "size": 12,
+      "top": 8769
+     },
+     {
+      "text": "05 / Traceability",
+      "size": 12,
+      "top": 9926
+     },
+     {
+      "text": "06 / Combos & gifting",
+      "size": 12,
+      "top": 11119
+     }
+    ],
+    "color": {
+     "bodyBg": "#eef0ea",
+     "bodyBgHsl": {
+      "h": 80,
+      "s": 0.17,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0f1113",
+       "top": -441,
+       "hsl": {
+        "h": 210,
+        "s": 0.12,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#eef0ea",
+       "top": 6402,
+       "hsl": {
+        "h": 80,
+        "s": 0.17,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#101113",
+       "top": 6976,
+       "hsl": {
+        "h": 220,
+        "s": 0.09,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#f6f7f3",
+       "top": 7737,
+       "hsl": {
+        "h": 75,
+        "s": 0.2,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0f1114",
+       "top": 8906,
+       "hsl": {
+        "h": 216,
+        "s": 0.14,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#e6e9e2",
+       "top": 9861,
+       "hsl": {
+        "h": 86,
+        "s": 0.14,
+        "l": 0.9
+       }
+      },
+      {
+       "color": "#c6ff3d",
+       "top": 16245,
+       "hsl": {
+        "h": 78,
+        "s": 1,
+        "l": 0.62
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0f1113",
+       "share": 0.33
+      },
+      {
+       "color": "#eef0ea",
+       "share": 0.28
+      },
+      {
+       "color": "#5d6369",
+       "share": 0.24
+      },
+      {
+       "color": "#c6ff3d",
+       "share": 0.07
+      },
+      {
+       "color": "#b3b8b5",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#0f1113",
+      "hsl": {
+       "h": 210,
+       "s": 0.12,
+       "l": 0.07
+      },
+      "fg": "#eef0ea"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 48,
+     "inHero": 12,
+     "radius": 0,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 42,
+     "upper": 41,
+     "heroLabels": [
+      "CART [00]",
+      "SHOP THE INDEX →",
+      "READ A LAB SHEET"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "div.hero-stick → radial-gradient(120% 90% at 70% 40%, rgb(26, 29, 32) 0%, rgb(15, 17, 19) 62%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 58,
+     "hairlineSamples": [
+      "header.nav.mono 390px",
+      "nav 390px",
+      "a 358px",
+      "a 358px",
+      "a 358px"
+     ],
+     "outlinedBoxes": 17,
+     "dashed": 15,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 2976
+      },
+      {
+       "count": 12,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 4109
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.9
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 56,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "jetbrains mono",
+     "space grotesk",
+     "syne"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 17363,
+    "margins": {
+     "left": 16,
+     "right": 27
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 88,
+      "height": 2532,
+      "words": 33,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Every spice,",
+       "size": 41,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#best.sec.best",
+      "tag": "section",
+      "top": 2668,
+      "height": 1066,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Four compounds.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#shop.sec.index",
+      "tag": "section",
+      "top": 3734,
+      "height": 2668,
+      "words": 257,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "All 28 specimens.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 27,
+      "textLeft": 16,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 6402,
+      "height": 901,
+      "words": 63,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Stir the",
+       "size": 47,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#compound.sec.compound",
+      "tag": "section",
+      "top": 7303,
+      "height": 1402,
+      "words": 109,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The numbers are",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#radar.sec.dark",
+      "tag": "section",
+      "top": 8705,
+      "height": 1156,
+      "words": 53,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Heat is a number.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#trace.sec.trace",
+      "tag": "section",
+      "top": 9861,
+      "height": 1194,
+      "words": 78,
+      "media": 2,
+      "middle": 12,
+      "heading": {
+       "text": "Scan the batch.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": -24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#kits.sec.kits",
+      "tag": "section",
+      "top": 11055,
+      "height": 1864,
+      "words": 127,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experiments,",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 13,
+      "right": 32,
+      "textLeft": 16,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.sec.dark",
+      "tag": "section",
+      "top": 12919,
+      "height": 1746,
+      "words": 192,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "0.0",
+       "size": 48,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 39,
+      "textLeft": 16,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#notes.sec.notes",
+      "tag": "section",
+      "top": 14665,
+      "height": 850,
+      "words": 85,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Recipes,",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 23,
+      "textLeft": 16,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#monthly.monthly",
+      "tag": "section",
+      "top": 15516,
+      "height": 729,
+      "words": 51,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One new single-origin lot.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 41,
+      "textLeft": 16,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#news.news",
+      "tag": "section",
+      "top": 16245,
+      "height": 323,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get the lab report",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.foot.mono",
+      "tag": "footer",
+      "top": 16568,
+      "height": 795,
+      "words": 61,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Shop",
+       "size": 11,
+       "tag": "h4"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Every spice, resolved to the particle.",
+      "size": 41,
+      "top": 520,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "NO FILLERS / PRESERVATIVES",
+      "side": "left",
+      "px": 9
+     }
+    ],
+    "edges": [
+     {
+      "x": 16,
+      "n": 36
+     },
+     {
+      "x": 27,
+      "n": 11
+     },
+     {
+      "x": 206,
+      "n": 8
+     },
+     {
+      "x": 39,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 61,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "2 headline(s) wrap past two lines at 1440px: \"Every spice, resolved to the particle.\" → 3 lines (6 words, 74.9px); \"One new single-origin lot. Every month. Gone whe\" → 4 lines (10 words, 72px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "17 eyebrow/kicker label(s) above headings: \"01 / Bestsellers\" above \"Four compounds. Forty thousand repeat or\"; \"04 / Shop · product index\" above \"All 28 specimens. Sort them. Fight them.\"; \"Specimen jar / live dye field\" above \"Stir the pigment.\"; \"02 / Compound sheet\" above \"The numbers are on the pouch.\"; \"Parameter\" above \"2,000\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: JetBrains Mono — e.g. \"0000:0000\", \"FREE SHIPPING ABOVE ₹499\", \"■\", \"COD AVAILABLE\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"[00]\", \"/ 04\", \"01\", \"02\", \"03\", \"04\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "46 tiny uppercase letter-spaced labels (e.g. \"ASSAYING PARTICLES\", \"/ 04\", \"SPECIMEN 01\", \"34.08°N 74.79°E\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ★ ✓ ☆",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): div.hero-stick → radial-gradient(120% 90% at 70% 40%, rgb(26, 29, 32) 0%, rgb(15, 17, 19) 62%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "56 thin rule(s)/divider line(s): header.nav.mono 1440px | div.spec-head 302px | div 302px | div 302px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "16 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "dashed",
+   "width": 1440,
+   "message": "17 dashed/dotted border(s).",
+   "fix": "Remove unless it is a real drop zone.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "2 row(s) of identical cards each topped with a small icon (4, 12 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "22 different font sizes (7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 28, 30, 36, 44, 72, 75, 79, 96, 101, 317).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "155 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (something lies over it).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 1440,
+   "message": "1 text block(s) sit within 16px of the screen edge: \"NO FILLERS / PRESERVATIVES\" (5px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 11 different lines (88px, 103px, 48px, 419px, 735px, 1050px, 262px); the three most used hold only 58% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 1440,
+   "message": "Large text lies under another element at some scroll position: \"Every spice, resolved to the particle.\" (screen 3, 100% hidden); \"Four compounds.\" (screen 4, 100% hidden); \"All 28 specimens.\" (screen 5, 100% hidden); \"Stir the\" (screen 8, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Every spice, resolved to the particle.\" (screen 3, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 3 screens in a row: \"Every spice, resolved to the particle.\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 10 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "3 headline(s) wrap past two lines at 390px: \"Every spice, resolved to the particle.\" → 3 lines (6 words, 41px); \"Four compounds. Forty thousand repeat orders.\" → 3 lines (6 words, 34px); \"One new single-origin lot. Every month. Gone whe\" → 4 lines (10 words, 34px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 390,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/desktop-fold.jpg",
+   "pages": [
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/desktop-page-01.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/desktop-page-02.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/tablet-fold.jpg",
+   "pages": [
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/tablet-page-01.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/mobile-fold.jpg",
+   "pages": [
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/mobile-page-01.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v5/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

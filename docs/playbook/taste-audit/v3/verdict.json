@@ -1,0 +1,257 @@
+{
+ "target": "https://spices-client-03-landings.vercel.app/v3/",
+ "at": "2026-10-24T12:13:04.026Z",
+ "pass": false,
+ "fails": 16,
+ "warns": 9,
+ "declared": [],
+ "open": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "5 headline(s) wrap past two lines at 1440px: \"Three threads from one crocus. Everything else f\" → 3 lines (8 words, 123.8px); \"We do not sell masala. We keep it. In tins, in t\" → 3 lines (26 words, 69.1px, a paragraph set above 36px); \"Heirloom Garam Masala\" → 3 lines (3 words, 92.2px); \"“The Lakadong turmeric changed the colour of my \" → 3 lines (24 words, 51.8px, a paragraph set above 36px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "10 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "9 eyebrow/kicker label(s) above headings: \"Bestsellers\" above \"What goes in the kitchen first\"; \"Manifesto\" above \"We do not sell masala. We keep it. In ti\"; \"Shop the Vault\" above \"Twenty-six reasons to stay in.\"; \"Combos\" above \"Sets, priced\"; \"Where it begins\" above \"Five pins.\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"06\", \"01\", \"02\", \"03\", \"04\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "159 tiny uppercase letter-spaced labels (e.g. \"Free shipping above ₹499\", \"Cash on delivery available\", \"Harvest 2026 has landed: Pampore saffron\", \"Single-origin · Harvest 2026 · Lot 26\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "41 gradient fill(s): div.hero__bg → radial-gradient(60% 50% at 70% 100%, rgba(122, 31, 26, 0.35), rgba(0, 0, 0, 0) 70%), radial-gradient(40% 40% a | div.hero__rays → conic-gradient(from 200deg at 85% -10%, rgba(0, 0, 0, 0) 0deg, rgba(232, 134, 42, 0.12) 10deg, rgba(0, 0, 0, 0 | section#bestsellers.best → linear-gradient(rgb(11, 9, 7), rgb(22, 18, 14))",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "text-shadow",
+   "width": 1440,
+   "message": "4 text-shadow(s).",
+   "fix": "Remove; fix legibility with a scrim or a different crop.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "22 thin rule(s)/divider line(s): div.announce 1440px | div.trust 1440px | dl.notes 520px | div 520px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "8 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (text #efe6d4, text #efe5d4).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-count",
+   "width": 1440,
+   "message": "3 typefaces in use (Cinzel, Manrope, Cormorant Garamond).",
+   "fix": "Two at most.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "27 different font sizes (9, 10, 11, 12, 13, 14, 15, 16, 18, 21, 22, 24, 26, 27, 30, 32, 34, 52, 56, 66, 69, 86, 89, 92, 96, 124, 274).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "88 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (something lies over it).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 1440,
+   "message": "2 stretch(es) of the page hold nothing at all: 640px at 11476px; 492px at 16360px (the screen is 900px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 1440,
+   "message": "Large text lies under another element at some scroll position: \"Three threads\" (screen 1, 100% hidden); \"from one crocus.\" (screen 1, 100% hidden); \"Everything else follows.\" (screen 1, 100% hidden); \"Six thousand threads. One name.\" (screen 2, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "clipped-text",
+   "width": 1440,
+   "message": "Large text is cut off along its top by the box that holds it: \"Kashmiri\" (screen 6); \"Green\" (screen 7)",
+   "fix": "Jurors read a wordmark sliced at the top as broken. Give the box room for the ascenders (line-height and padding), or crop at the bottom or a side edge on purpose.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Three threads\" (screen 1, 100% over a picture); \"from one crocus.\" (screen 1, 100% over a picture); \"Everything else follows.\" (screen 1, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 3 screens in a row: \"Mongra Saffron\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "2 headline(s) wrap past two lines at 768px: \"Three threads from one crocus. Everything else f\" → 3 lines (8 words, 64px); \"We do not sell masala. We keep it. In tins, in t\" → 3 lines (26 words, 36.9px, a paragraph set above 32px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "5 headline(s) wrap past two lines at 390px: \"Three threads from one crocus. Everything else f\" → 4 lines (8 words, 48.8px); \"We do not sell masala. We keep it. In tins, in t\" → 5 lines (26 words, 30px, a paragraph set above 24px); \"“The Lakadong turmeric changed the colour of my \" → 4 lines (24 words, 26px, a paragraph set above 24px); \"“I have cooked with Kashmiri saffron for twenty \" → 4 lines (26 words, 26px, a paragraph set above 24px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 390,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid."
+  }
+ ]
+}

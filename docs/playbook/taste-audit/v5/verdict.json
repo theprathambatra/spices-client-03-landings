@@ -1,0 +1,241 @@
+{
+ "target": "https://spices-client-03-landings.vercel.app/v5/",
+ "at": "2026-10-24T12:14:21.672Z",
+ "pass": false,
+ "fails": 16,
+ "warns": 8,
+ "declared": [],
+ "open": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "2 headline(s) wrap past two lines at 1440px: \"Every spice, resolved to the particle.\" → 3 lines (6 words, 74.9px); \"One new single-origin lot. Every month. Gone whe\" → 4 lines (10 words, 72px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "17 eyebrow/kicker label(s) above headings: \"01 / Bestsellers\" above \"Four compounds. Forty thousand repeat or\"; \"04 / Shop · product index\" above \"All 28 specimens. Sort them. Fight them.\"; \"Specimen jar / live dye field\" above \"Stir the pigment.\"; \"02 / Compound sheet\" above \"The numbers are on the pouch.\"; \"Parameter\" above \"2,000\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: JetBrains Mono — e.g. \"0000:0000\", \"FREE SHIPPING ABOVE ₹499\", \"■\", \"COD AVAILABLE\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"[00]\", \"/ 04\", \"01\", \"02\", \"03\", \"04\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "46 tiny uppercase letter-spaced labels (e.g. \"ASSAYING PARTICLES\", \"/ 04\", \"SPECIMEN 01\", \"34.08°N 74.79°E\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ★ ✓ ☆",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): div.hero-stick → radial-gradient(120% 90% at 70% 40%, rgb(26, 29, 32) 0%, rgb(15, 17, 19) 62%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "56 thin rule(s)/divider line(s): header.nav.mono 1440px | div.spec-head 302px | div 302px | div 302px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "16 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "dashed",
+   "width": 1440,
+   "message": "17 dashed/dotted border(s).",
+   "fix": "Remove unless it is a real drop zone.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "2 row(s) of identical cards each topped with a small icon (4, 12 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "22 different font sizes (7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 28, 30, 36, 44, 72, 75, 79, 96, 101, 317).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "155 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (something lies over it).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 1440,
+   "message": "1 text block(s) sit within 16px of the screen edge: \"NO FILLERS / PRESERVATIVES\" (5px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 11 different lines (88px, 103px, 48px, 419px, 735px, 1050px, 262px); the three most used hold only 58% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 1440,
+   "message": "Large text lies under another element at some scroll position: \"Every spice, resolved to the particle.\" (screen 3, 100% hidden); \"Four compounds.\" (screen 4, 100% hidden); \"All 28 specimens.\" (screen 5, 100% hidden); \"Stir the\" (screen 8, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Every spice, resolved to the particle.\" (screen 3, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 3 screens in a row: \"Every spice, resolved to the particle.\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 10 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "3 headline(s) wrap past two lines at 390px: \"Every spice, resolved to the particle.\" → 3 lines (6 words, 41px); \"Four compounds. Forty thousand repeat orders.\" → 3 lines (6 words, 34px); \"One new single-origin lot. Every month. Gone whe\" → 4 lines (10 words, 34px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 390,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid."
+  }
+ ]
+}

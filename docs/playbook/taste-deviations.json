@@ -1,0 +1,4 @@
+{
+ "_how": "Declared deviations from the taste-skill house rules. Read docs/playbook/TASTE-SKILL.md section 9 before adding one. Each entry: id (kebab-case, referenced by taste-skill-ignore comments), rule (an inspector or lint rule id), scope (variation ids like [\"v3\"], or [\"*\"]), match (case-insensitive regex that every measured instance in the inspector message must match, usually a selector such as \"canvas|\\\\.hero-glow\"), max (optional: most instances allowed), reason (one sentence a designer would accept), approved (who approved it and when). The wrapper accepts a finding only when every instance matches; anything else still fails. Keep this list short: a deviation is a decision, not an escape hatch.",
+ "deviations": []
+}

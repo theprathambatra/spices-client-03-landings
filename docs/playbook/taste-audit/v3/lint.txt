@@ -1,0 +1,56 @@
+TASTESKILL · LINT   24 file(s)
+
+FAIL
+  [emoji] Emoji used as UI.  (1×)
+      site/v3/src/Catalogue.jsx:97  ★
+  [hairline] Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields.  (26×)
+      site/v3/src/styles.css:32  height: 1px
+      site/v3/src/styles.css:66  height: 1px
+      site/v3/src/styles.css:78  border-bottom: 1px
+      site/v3/src/styles.css:79  border-bottom: 1px
+      site/v3/src/styles.css:85  height: 1px
+      site/v3/src/styles.css:97  height: 1px
+      … 20 more
+  [gradient] Gradient fill. Use a flat colour or a real image (a neutral scrim over a photo is the one exception).  (15×)
+      site/v3/src/styles.css:115  radial-gradient(
+      site/v3/src/styles.css:119  conic-gradient(
+      site/v3/src/styles.css:144  linear-gradient(
+      site/v3/src/styles.css:153  radial-gradient(
+      site/v3/src/styles.css:171  linear-gradient(
+      site/v3/src/styles.css:221  linear-gradient(
+      … 9 more
+  [shadow] Shadow. Elements at rest carry none; only real overlays (menu, dialog, sticky bar) may.  (4×)
+      site/v3/src/styles.css:124  text-shadow:
+      site/v3/src/styles.css:323  drop-shadow(
+      site/v3/src/styles.css:343  drop-shadow(
+      site/v3/src/styles.css:396  drop-shadow(
+
+WARN
+  [numbering] Zero-padding in script. Fine for a clock, a date or a price; if it builds 01 / 02 / 03 labels, remove it.  (4×)
+      site/v3/src/Catalogue.jsx:78  padStart(2, '0')
+      site/v3/src/OriginMap.jsx:62  padStart(2, '0')
+      site/v3/src/tin/TinSection.jsx:114  padStart(2, '0')
+      site/v3/src/tin/TinSection.jsx:115  padStart(2, '0')
+  [outlined-box] A 1px outlined box. Prefer a filled surface or no box.  (16×)
+      site/v3/src/styles.css:52  border: 1px solid
+      site/v3/src/styles.css:72  border: 1px solid
+      site/v3/src/styles.css:147  border: 1px solid
+      site/v3/src/styles.css:156  border: 1px solid
+      site/v3/src/styles.css:173  border: 1px solid
+      site/v3/src/styles.css:182  border: 1px solid
+      … 10 more
+  [h-screen] 100vh jumps on mobile. Use 100svh / 100dvh.  (2×)
+      site/v3/src/styles.css:114  height: 100vh
+      site/v3/src/styles.css:267  height: 100vh
+  [transition-all] transition: all. Name the properties (transform, opacity).  (5×)
+      site/v3/src/styles.css:157  transition: all
+      site/v3/src/styles.css:173  transition: all
+      site/v3/src/styles.css:182  transition: all
+      site/v3/src/styles.css:192  transition: all
+      site/v3/src/styles.css:199  transition: all
+  [glass] Backdrop blur. One sticky bar at most; glass cards are a tell.  (2×)
+      site/v3/src/styles.css:237  backdrop-filter:
+      site/v3/src/styles.css:426  backdrop-filter:
+
+RESULT: 46 FAIL, 29 WARN — fix the FAILs before rendering.
+Interface fragments marked data-ui keep their own borders and shadows. Any other line that must keep a flagged pattern for a real reason can carry the comment taste-skill-ignore.

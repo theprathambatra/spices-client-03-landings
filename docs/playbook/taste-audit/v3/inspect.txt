@@ -1,0 +1,82 @@
+TASTESKILL · INSPECT   https://spices-client-03-landings.vercel.app/v3/
+
+MEASURED (first viewport listed)
+  hero headline   "Three threads from one crocus. Everything else follows."  8 words · 3 line(s) · 123.8px (8.6vw) · Cormorant Garamond 300 · tracking -0.02em · leading 0.96
+  @768px          3 line(s) · 64px
+  @390px          4 line(s) · 48.8px
+  typefaces       Cinzel 46%, Manrope 30%, Cormorant Garamond 23%
+  sizes in use    9 / 10 / 11 / 12 / 13 / 14 / 15 / 16 / 18 / 21 / 22 / 24 / 26 / 27 / 30 / 32 / 34 / 52 / 56 / 66 / 69 / 86 / 89 / 92 / 96 / 124 / 274 px   body 16px / 1.65
+  colour          page #0b0907 · sections #0b0907 #16120e · button #c9a24b
+  page            21.1 screens · 959 words · 0 images · hero media 100% canvas
+  headings        40 · longest 3 line(s) · median 1 words
+
+FAIL — fix every one of these
+  [headline-lines] @1440px  5 headline(s) wrap past two lines at 1440px: "Three threads from one crocus. Everything else f" → 3 lines (8 words, 123.8px); "We do not sell masala. We keep it. In tins, in t" → 3 lines (26 words, 69.1px, a paragraph set above 36px); "Heirloom Garam Masala" → 3 lines (3 words, 92.2px); "“The Lakadong turmeric changed the colour of my " → 3 lines (24 words, 51.8px, a paragraph set above 36px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less.
+  [eyebrow] @1440px (+768, 390)  9 eyebrow/kicker label(s) above headings: "Bestsellers" above "What goes in the kitchen first"; "Manifesto" above "We do not sell masala. We keep it. In ti"; "Shop the Vault" above "Twenty-six reasons to stay in."; "Combos" above "Sets, priced"; "Where it begins" above "Five pins."
+      → Delete them. If the label carried real information, fold it into the headline or the supporting sentence.
+  [numbering] @1440px (+768, 390)  Decorative index numbers: "01", "06", "01", "02", "03", "04"
+      → Remove them. If order truly matters, write it into the words ("First, …") or use a real <ol>.
+  [micro-label] @1440px (+768, 390)  159 tiny uppercase letter-spaced labels (e.g. "Free shipping above ₹499", "Cash on delivery available", "Harvest 2026 has landed: Pampore saffron", "Single-origin · Harvest 2026 · Lot 26").
+      → Use sentence-case text at a readable size, or delete the label.
+  [gradient] @1440px (+768, 390)  41 gradient fill(s): div.hero__bg → radial-gradient(60% 50% at 70% 100%, rgba(122, 31, 26, 0.35), rgba(0, 0, 0, 0) 70%), radial-gradient(40% 40% a | div.hero__rays → conic-gradient(from 200deg at 85% -10%, rgba(0, 0, 0, 0) 0deg, rgba(232, 134, 42, 0.12) 10deg, rgba(0, 0, 0, 0 | section#bestsellers.best → linear-gradient(rgb(11, 9, 7), rgb(22, 18, 14))
+      → Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.
+  [text-shadow] @1440px (+768, 390)  4 text-shadow(s).
+      → Remove; fix legibility with a scrim or a different crop.
+  [hairline] @1440px (+768, 390)  22 thin rule(s)/divider line(s): div.announce 1440px | div.trust 1440px | dl.notes 520px | div 520px
+      → Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.
+  [outlined-box] @1440px (+768, 390)  8 boxes drawn with a 1px outline.
+      → Define a surface by its fill (one tone step from the page) or leave the content unboxed.
+  [few-pictures] @1440px  Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.
+      → Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve.
+  [small-text] @1440px (+768, 390)  88 text blocks under 13px.
+      → Nothing meant to be read goes below 13px.
+  [late-title] @1440px (+768, 390)  The title is not readable 1.2s after the page loaded (something lies over it).
+      → Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, "Load sequence in 1.2 seconds"). No preloader, no gate, no waiting for the load event.
+  [blank-gap] @1440px (+768, 390)  2 stretch(es) of the page hold nothing at all: 640px at 11476px; 492px at 16360px (the screen is 900px tall).
+      → Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing.
+  [covered-text] @1440px (+768, 390)  Large text lies under another element at some scroll position: "Three threads" (screen 1, 100% hidden); "from one crocus." (screen 1, 100% hidden); "Everything else follows." (screen 1, 100% hidden); "Six thousand threads. One name." (screen 2, 100% hidden)
+      → Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.
+  [clipped-text] @1440px (+768, 390)  Large text is cut off along its top by the box that holds it: "Kashmiri" (screen 6); "Green" (screen 7)
+      → Jurors read a wordmark sliced at the top as broken. Give the box room for the ascenders (line-height and padding), or crop at the bottom or a side edge on purpose.
+  [headline-lines] @768px  2 headline(s) wrap past two lines at 768px: "Three threads from one crocus. Everything else f" → 3 lines (8 words, 64px); "We do not sell masala. We keep it. In tins, in t" → 3 lines (26 words, 36.9px, a paragraph set above 32px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less.
+  [headline-lines] @390px  5 headline(s) wrap past two lines at 390px: "Three threads from one crocus. Everything else f" → 4 lines (8 words, 48.8px); "We do not sell masala. We keep it. In tins, in t" → 5 lines (26 words, 30px, a paragraph set above 24px); "“The Lakadong turmeric changed the colour of my " → 4 lines (24 words, 26px, a paragraph set above 24px); "“I have cooked with Kashmiri saffron for twenty " → 4 lines (26 words, 26px, a paragraph set above 24px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less.
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px (+768, 390)  10 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+  [card-rows] @1440px (+768, 390)  2 rows of identical boxed cards.
+      → Vary the composition; not every section is a card grid.
+  [palette-cream] @1440px (+768, 390)  Yellow-cream background (text #efe6d4, text #efe5d4).
+      → Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.
+  [font-count] @1440px (+768, 390)  3 typefaces in use (Cinzel, Manrope, Cormorant Garamond).
+      → Two at most.
+  [size-count] @1440px (+768, 390)  27 different font sizes (9, 10, 11, 12, 13, 14, 15, 16, 18, 21, 22, 24, 26, 27, 30, 32, 34, 52, 56, 66, 69, 86, 89, 92, 96, 124, 274).
+      → A page needs about five: display, heading, lead, body, small.
+  [no-footage] @1440px  No video anywhere on the page.
+      → Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject.
+  [pinned-over-picture] @1440px (+768, 390)  Pinned large text slides across pictures while the page scrolls: "Three threads" (screen 1, 100% over a picture); "from one crocus." (screen 1, 100% over a picture); "Everything else follows." (screen 1, 100% over a picture)
+      → Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.
+  [long-pin] @1440px  The same large text stays on screen for 3 screens in a row: "Mongra Saffron"
+      → A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content.
+  [side-scroll] @390px  1 row(s) scroll sideways with content past their edge.
+      → Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  ../docs/playbook/taste-audit/v3/desktop-fold.jpg
+                  ../docs/playbook/taste-audit/v3/desktop-page-01.jpg
+                  ../docs/playbook/taste-audit/v3/desktop-page-02.jpg
+                  ../docs/playbook/taste-audit/v3/desktop-page-03.jpg
+  tablet 768px    ../docs/playbook/taste-audit/v3/tablet-fold.jpg
+                  ../docs/playbook/taste-audit/v3/tablet-page-01.jpg
+                  ../docs/playbook/taste-audit/v3/tablet-page-02.jpg
+  mobile 390px    ../docs/playbook/taste-audit/v3/mobile-fold.jpg
+                  ../docs/playbook/taste-audit/v3/mobile-page-01.jpg
+                  ../docs/playbook/taste-audit/v3/mobile-page-02.jpg
+
+report: ../docs/playbook/taste-audit/v3/report.json
+RESULT: 16 FAIL, 9 WARN — not done.
+
+VERDICT v3: 16 FAIL, 9 WARN after 0 declared deviation(s) — NOT DONE

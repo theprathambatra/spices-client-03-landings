@@ -1,0 +1,5159 @@
+{
+ "url": "https://spices-client-03-landings.vercel.app/v4/",
+ "at": "2026-10-24T12:13:04.467Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.94,
+    0.94,
+    0.97,
+    0.94,
+    0.94,
+    0.94,
+    0.86,
+    0.94,
+    0.64,
+    0.54,
+    0.93,
+    0.77
+   ],
+   "motion": {
+    "elements": 227,
+    "css": 15,
+    "transitions": 0,
+    "scripted": 212,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 13077,
+     "screens": 14.5,
+     "words": 597,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 81,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [
+      "❖",
+      "★",
+      "❀"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Step into the Kesari bazaar",
+     "words": 5,
+     "chars": 27,
+     "lines": 2,
+     "size": 58,
+     "vw": 4,
+     "font": "Rozha One",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.46,
+     "top": 619,
+     "tag": "p",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "",
+     "words": 0,
+     "lines": 2,
+     "size": 128,
+     "font": "Rozha One"
+    },
+    "headings": [
+     {
+      "text": "Your thali (0)",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.11,
+      "top": 23,
+      "mixedFonts": [
+       "Rozha One",
+       "Poppins"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kesari केसरी",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 46,
+      "mixedFonts": [
+       "Rozha One",
+       "Tiro Devanagari Hindi"
+      ],
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Kesari केसरी",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 58,
+      "mixedFonts": [
+       "Rozha One",
+       "Tiro Devanagari Hindi"
+      ],
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Shop",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 151,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "थाली खाली है",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Tiro Devanagari Hindi",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 217,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Categories",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 219,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Gifting",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 287,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Recipes",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 355,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 423,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Step into the Kesari bazaar",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 58,
+      "vw": 4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 619,
+      "tag": "p",
+      "kind": "heading"
+     },
+     {
+      "text": "Shop the Darbar",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 2456,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seven katoris. One lazy susan.",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 4128,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Six regions, six spice kingdoms",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 5359,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Pepper Coast",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.23,
+      "top": 5733,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A hamper for every festival",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 6417,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Shagun Box",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 6850,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "₹2,299",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.07,
+      "top": 7265,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Better together, cheaper together",
+      "words": 4,
+      "chars": 33,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 7507,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Build your own darbar box",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 8274,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "—",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.11,
+      "top": 8628,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Farmers first. Names on the pouch.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 8955,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "340",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 9805,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "28",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.15,
+      "top": 9805,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "0",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.15,
+      "top": 9805,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "100%",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 9805,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Recipes from 28 states",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 10101,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Invitations to the table",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.46,
+      "top": 10712,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.8",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 10972,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "You are cordially invited",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 11831,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kesari",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 92,
+      "vw": 6.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 12177,
+      "mixedFonts": [
+       "Rozha One",
+       "Cormorant Garamond italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Kesari",
+      "words": 1,
+      "chars": 6,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 12579,
+      "mixedFonts": [
+       "Rozha One",
+       "Tiro Devanagari Hindi"
+      ],
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 31,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 11,
+     "centered": 17,
+     "medianWords": 2,
+     "mixedFontHeadings": 5
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.43,
+       "mono": false
+      },
+      {
+       "family": "Mukta",
+       "share": 0.21,
+       "mono": false
+      },
+      {
+       "family": "Rozha One",
+       "share": 0.15,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.1,
+       "mono": false
+      },
+      {
+       "family": "Yeseva One",
+       "share": 0.05,
+       "mono": false
+      },
+      {
+       "family": "Tiro Devanagari Hindi",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 6,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      42,
+      44,
+      56,
+      58,
+      60,
+      64,
+      76,
+      92
+     ],
+     "sizeCount": 25,
+     "notLoaded": [],
+     "body": {
+      "font": "Mukta",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 74,
+     "max": {
+      "size": 92,
+      "vw": 6.4,
+      "font": "Rozha One",
+      "text": "Kesari"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 53,
+     "microLabelShare": 0.092,
+     "microSamples": [
+      "Free shipping above ₹499",
+      "❖",
+      "Cash on delivery available",
+      "❖",
+      "Use FIRST10 for 10% off",
+      "❖"
+     ],
+     "upperShare": 0.2,
+     "centerShare": 0.5,
+     "smallText": 62
+    },
+    "eyebrows": [
+     {
+      "text": "The spice shelf",
+      "above": "Shop the Darbar",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2426
+     },
+     {
+      "text": "The brass thali",
+      "above": "Seven katoris. One lazy susan.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4098
+     },
+     {
+      "text": "Origins",
+      "above": "Six regions, six spice kingdoms",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5329
+     },
+     {
+      "text": "Malabar",
+      "above": "The Pepper Coast",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5703
+     },
+     {
+      "text": "Rasoi Darbar",
+      "above": "A hamper for every festival",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6387
+     },
+     {
+      "text": "Shaadi · शादी",
+      "above": "The Shagun Box",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6820
+     },
+     {
+      "text": "Mongra Saffron",
+      "above": "₹2,299",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 7214
+     },
+     {
+      "text": "Combos",
+      "above": "Better together, cheaper together",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 7477
+     },
+     {
+      "text": "Our story",
+      "above": "Farmers first. Names on the pouch.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 8925
+     },
+     {
+      "text": "Recipes",
+      "above": "Recipes from 28 states",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 10071
+     },
+     {
+      "text": "Kind words",
+      "above": "Invitations to the table",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 10682
+     },
+     {
+      "text": "॥ निमंत्रण ॥",
+      "above": "You are cordially invited",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 11794
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff6e5",
+     "bodyBgHsl": {
+      "h": 39,
+      "s": 1,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1e1b5e",
+       "top": 102,
+       "hsl": {
+        "h": 243,
+        "s": 0.55,
+        "l": 0.24
+       }
+      },
+      {
+       "color": "#fff6e5",
+       "top": 2340,
+       "hsl": {
+        "h": 39,
+        "s": 1,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffefd0",
+       "top": 5273,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#d81b76",
+       "top": 6780,
+       "hsl": {
+        "h": 331,
+        "s": 0.78,
+        "l": 0.48
+       }
+      },
+      {
+       "color": "#0e7a57",
+       "top": 8831,
+       "hsl": {
+        "h": 161,
+        "s": 0.79,
+        "l": 0.27
+       }
+      },
+      {
+       "color": "#120f3e",
+       "top": 12177,
+       "hsl": {
+        "h": 244,
+        "s": 0.61,
+        "l": 0.15
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#fff6e5",
+       "share": 0.25
+      },
+      {
+       "color": "#1e1b5e",
+       "share": 0.22
+      },
+      {
+       "color": "#f7a614",
+       "share": 0.12
+      },
+      {
+       "color": "#241a3a",
+       "share": 0.08
+      },
+      {
+       "color": "#d81b76",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#241a3a"
+     },
+     "lowContrast": [
+      {
+       "text": "केसरी",
+       "ratio": 3.2,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#d81b76",
+       "bg": "#1e1b5e"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 102,
+     "inHero": 5,
+     "radius": "pill",
+     "height": 83,
+     "withShadow": 21,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 27,
+     "heroLabels": [
+      "SHOP BESTSELLERS",
+      "FESTIVE HAMPERS",
+      "FILL IT UP"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 42,
+     "shadowOverlay": 5,
+     "shadowSamples": [
+      "button.pill.on → rgb(216, 27, 118) 0px 3px 0px 0px",
+      "article.pcard → rgb(107, 58, 30) 6px 6px 0px 0px",
+      "button.btn.btn-add → rgb(142, 14, 75) 0px 3px 0px 0px",
+      "article.pcard → rgb(227, 162, 26) 6px 6px 0px 0px"
+     ],
+     "gradients": 14,
+     "scrims": 9,
+     "gradientSamples": [
+      "div.hero-sky → linear-gradient(rgb(27, 20, 80), rgb(107, 31, 120) 55%, rgb(242, 106, 74) 90%, rgb(255, 179, 71))",
+      "section#thali.thali-sec → radial-gradient(at 50% 30%, rgb(44, 26, 115), rgb(30, 27, 94) 60%, rgb(18, 15, 62))",
+      "section#occasions.section.occasions → radial-gradient(circle at 20% 0%, rgba(216, 27, 118, 0.35), rgba(0, 0, 0, 0) 50%), radial-gradient(circle at 9",
+      "div.curtain.curtain-l → repeating-linear-gradient(90deg, rgba(247, 166, 20, 0.2) 0px, rgba(247, 166, 20, 0.2) 3px, rgba(0, 0, 0, 0) 3p"
+     ],
+     "gradientText": 0,
+     "hairlines": 6,
+     "hairlineSamples": [
+      "a 296px",
+      "a 296px",
+      "a 296px",
+      "a 296px",
+      "a 296px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 7,
+     "blurred": 0,
+     "roundedBoxes": 94,
+     "boxRadius": 60,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 6,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2750
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.89
+     },
+     {
+      "type": "svg",
+      "ratio": 0.89
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 102,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "mukta",
+     "poppins",
+     "rozha one",
+     "tiro devanagari hindi",
+     "yeseva one"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 13077,
+    "margins": {
+     "left": 124,
+     "right": 120
+    },
+    "sections": [
+     {
+      "sel": "div.pin-spacer",
+      "tag": "div",
+      "top": 102,
+      "height": 2148,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#shop.section.shop",
+      "tag": "section",
+      "top": 2340,
+      "height": 1679,
+      "words": 256,
+      "media": 10,
+      "middle": 21,
+      "heading": {
+       "text": "Shop the Darbar",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 108,
+      "right": 108,
+      "textLeft": 126,
+      "textRight": 130,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#thali.thali-sec",
+      "tag": "section",
+      "top": 4020,
+      "height": 1253,
+      "words": 49,
+      "media": 1,
+      "middle": 8,
+      "heading": {
+       "text": "Seven katoris. One lazy susan.",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 292,
+      "right": 292,
+      "textLeft": 327,
+      "textRight": 307,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#regions.section.regions",
+      "tag": "section",
+      "top": 5273,
+      "height": 1057,
+      "words": 52,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Six regions, six spice kingdoms",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 168,
+      "right": 168,
+      "textLeft": 468,
+      "textRight": 213,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#occasions.section.occasions",
+      "tag": "section",
+      "top": 6331,
+      "height": 1091,
+      "words": 102,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "A hamper for every festival",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 197,
+      "right": 176,
+      "textLeft": 447,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#bundles.section.bundles",
+      "tag": "section",
+      "top": 7421,
+      "height": 1410,
+      "words": 128,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Better together, cheaper together",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 128,
+      "right": 122,
+      "textLeft": 128,
+      "textRight": 191,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#story.story",
+      "tag": "section",
+      "top": 8831,
+      "height": 1183,
+      "words": 112,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Farmers first. Names on the pouch.",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 195,
+      "right": 193,
+      "textLeft": 204,
+      "textRight": 193,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes.section.recipes",
+      "tag": "section",
+      "top": 10015,
+      "height": 611,
+      "words": 184,
+      "media": 0,
+      "middle": 3822,
+      "heading": {
+       "text": "Recipes from 28 states",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": -2502,
+      "textRight": -3940,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.section.reviews",
+      "tag": "section",
+      "top": 10626,
+      "height": 965,
+      "words": 210,
+      "media": 0,
+      "middle": 603,
+      "heading": {
+       "text": "4.8",
+       "size": 76,
+       "tag": "b"
+      },
+      "left": 92,
+      "right": 0,
+      "textLeft": 92,
+      "textRight": -694,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#newsletter.nimantran",
+      "tag": "section",
+      "top": 11592,
+      "height": 585,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "You are cordially invited",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 399,
+      "right": 399,
+      "textLeft": 399,
+      "textRight": 399,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#footer.foot",
+      "tag": "footer",
+      "top": 12177,
+      "height": 900,
+      "words": 72,
+      "media": 2,
+      "middle": 20,
+      "heading": {
+       "text": "Kesari",
+       "size": 92,
+       "tag": "p"
+      },
+      "left": 148,
+      "right": 148,
+      "textLeft": 148,
+      "textRight": 148,
+      "fullBleed": true,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [
+     {
+      "text": "Haryana",
+      "side": "left",
+      "px": 14
+     },
+     {
+      "text": "Bajra khichdi",
+      "side": "left",
+      "px": 14
+     },
+     {
+      "text": "Golden milk went from medicine to a treat. The col",
+      "side": "right",
+      "px": 16
+     }
+    ],
+    "edges": [
+     {
+      "x": 126,
+      "n": 3
+     },
+     {
+      "x": 438,
+      "n": 3
+     },
+     {
+      "x": 639,
+      "n": 3
+     },
+     {
+      "x": 749,
+      "n": 3
+     },
+     {
+      "x": 1061,
+      "n": 3
+     },
+     {
+      "x": 775,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.94,
+    0.94,
+    0.98,
+    0.94,
+    0.96,
+    0.94,
+    0.94,
+    0.79,
+    0.73,
+    0.68,
+    0.77,
+    0.89
+   ],
+   "motion": {
+    "elements": 227,
+    "css": 15,
+    "transitions": 0,
+    "scripted": 212,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 16580,
+     "screens": 16.2,
+     "words": 535,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 81,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [
+      "❖",
+      "★",
+      "❀"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Step into the Kesari bazaar",
+     "words": 5,
+     "chars": 27,
+     "lines": 1,
+     "size": 38,
+     "vw": 4.9,
+     "font": "Rozha One",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 813,
+     "tag": "p",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "",
+     "words": 0,
+     "lines": 2,
+     "size": 69.1,
+     "font": "Rozha One"
+    },
+    "headings": [
+     {
+      "text": "Your thali (0)",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 23,
+      "mixedFonts": [
+       "Rozha One",
+       "Poppins"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Shop",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 147,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Categories",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 215,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "थाली खाली है",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Tiro Devanagari Hindi",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 217,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Gifting",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 283,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Recipes",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 351,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 419,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Step into the Kesari bazaar",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 38,
+      "vw": 4.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 813,
+      "tag": "p",
+      "kind": "heading"
+     },
+     {
+      "text": "Shop the Darbar",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2829,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seven katoris. One lazy susan.",
+      "words": 5,
+      "chars": 30,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5671,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Six regions, six spice kingdoms",
+      "words": 5,
+      "chars": 31,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 6603,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Pepper Coast",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 7268,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A hamper for every festival",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 7749,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Shagun Box",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 33.8,
+      "vw": 4.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 8301,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "₹2,299",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.14,
+      "top": 8679,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Better together, cheaper together",
+      "words": 4,
+      "chars": 33,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 8913,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Build your own darbar box",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9922,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "1",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 10457,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "—",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 10595,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Farmers first. Names on the pouch.",
+      "words": 6,
+      "chars": 34,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 10922,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "340",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 12841,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "28",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 12841,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "0",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 12938,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "100%",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 12938,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Recipes from 28 states",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 13202,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Invitations to the table",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 13714,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.8",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 76,
+      "vw": 9.9,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.13,
+      "top": 13874,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "You are cordially invited",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.57,
+      "top": 14861,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kesari",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 53.8,
+      "vw": 7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 15680,
+      "mixedFonts": [
+       "Rozha One",
+       "Cormorant Garamond italic"
+      ],
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 29,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 11,
+     "centered": 17,
+     "medianWords": 3,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.45,
+       "mono": false
+      },
+      {
+       "family": "Mukta",
+       "share": 0.22,
+       "mono": false
+      },
+      {
+       "family": "Rozha One",
+       "share": 0.16,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "Yeseva One",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "Tiro Devanagari Hindi",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 6,
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      24,
+      26,
+      28,
+      30,
+      31,
+      32,
+      34,
+      38,
+      42,
+      54,
+      76
+     ],
+     "sizeCount": 23,
+     "notLoaded": [],
+     "body": {
+      "font": "Mukta",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 85,
+     "max": {
+      "size": 76,
+      "vw": 9.9,
+      "font": "Rozha One",
+      "text": "4.8"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 53,
+     "microLabelShare": 0.096,
+     "microSamples": [
+      "Free shipping above ₹499",
+      "❖",
+      "Cash on delivery available",
+      "❖",
+      "Use FIRST10 for 10% off",
+      "❖"
+     ],
+     "upperShare": 0.2,
+     "centerShare": 0.52,
+     "smallText": 62
+    },
+    "eyebrows": [
+     {
+      "text": "The spice shelf",
+      "above": "Shop the Darbar",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2799
+     },
+     {
+      "text": "The brass thali",
+      "above": "Seven katoris. One lazy susan.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5641
+     },
+     {
+      "text": "Origins",
+      "above": "Six regions, six spice kingdoms",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6573
+     },
+     {
+      "text": "Malabar",
+      "above": "The Pepper Coast",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 7238
+     },
+     {
+      "text": "Rasoi Darbar",
+      "above": "A hamper for every festival",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 7719
+     },
+     {
+      "text": "Shaadi · शादी",
+      "above": "The Shagun Box",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 8271
+     },
+     {
+      "text": "Mongra Saffron",
+      "above": "₹2,299",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 9.5,
+      "top": 8637
+     },
+     {
+      "text": "Combos",
+      "above": "Better together, cheaper together",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 8883
+     },
+     {
+      "text": "Our story",
+      "above": "Farmers first. Names on the pouch.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 10892
+     },
+     {
+      "text": "Recipes",
+      "above": "Recipes from 28 states",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 13172
+     },
+     {
+      "text": "Kind words",
+      "above": "Invitations to the table",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 13684
+     },
+     {
+      "text": "॥ निमंत्रण ॥",
+      "above": "You are cordially invited",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 14824
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff6e5",
+     "bodyBgHsl": {
+      "h": 39,
+      "s": 1,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1e1b5e",
+       "top": 0,
+       "hsl": {
+        "h": 243,
+        "s": 0.55,
+        "l": 0.24
+       }
+      },
+      {
+       "color": "#fff6e5",
+       "top": 2713,
+       "hsl": {
+        "h": 39,
+        "s": 1,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffefd0",
+       "top": 6517,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#d81b76",
+       "top": 8013,
+       "hsl": {
+        "h": 331,
+        "s": 0.78,
+        "l": 0.48
+       }
+      },
+      {
+       "color": "#120f3e",
+       "top": 8017,
+       "hsl": {
+        "h": 244,
+        "s": 0.61,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#0e7a57",
+       "top": 10798,
+       "hsl": {
+        "h": 161,
+        "s": 0.79,
+        "l": 0.27
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#fff6e5",
+       "share": 0.26
+      },
+      {
+       "color": "#1e1b5e",
+       "share": 0.22
+      },
+      {
+       "color": "#f7a614",
+       "share": 0.13
+      },
+      {
+       "color": "#241a3a",
+       "share": 0.08
+      },
+      {
+       "color": "#d81b76",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#241a3a"
+     },
+     "lowContrast": [
+      {
+       "text": "केसरी",
+       "ratio": 3.2,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#d81b76",
+       "bg": "#1e1b5e"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 102,
+     "inHero": 5,
+     "radius": "pill",
+     "height": 83,
+     "withShadow": 21,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 27,
+     "heroLabels": [
+      "SHOP BESTSELLERS",
+      "FESTIVE HAMPERS",
+      "FILL IT UP"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 42,
+     "shadowOverlay": 5,
+     "shadowSamples": [
+      "button.pill.on → rgb(216, 27, 118) 0px 3px 0px 0px",
+      "article.pcard → rgb(107, 58, 30) 6px 6px 0px 0px",
+      "button.btn.btn-add → rgb(142, 14, 75) 0px 3px 0px 0px",
+      "article.pcard → rgb(227, 162, 26) 6px 6px 0px 0px"
+     ],
+     "gradients": 14,
+     "scrims": 9,
+     "gradientSamples": [
+      "div.hero-sky → linear-gradient(rgb(27, 20, 80), rgb(107, 31, 120) 55%, rgb(242, 106, 74) 90%, rgb(255, 179, 71))",
+      "section#thali.thali-sec → radial-gradient(at 50% 30%, rgb(44, 26, 115), rgb(30, 27, 94) 60%, rgb(18, 15, 62))",
+      "section#occasions.section.occasions → radial-gradient(circle at 20% 0%, rgba(216, 27, 118, 0.35), rgba(0, 0, 0, 0) 50%), radial-gradient(circle at 9",
+      "div.curtain.curtain-l → repeating-linear-gradient(90deg, rgba(247, 166, 20, 0.2) 0px, rgba(247, 166, 20, 0.2) 3px, rgba(0, 0, 0, 0) 3p"
+     ],
+     "gradientText": 0,
+     "hairlines": 6,
+     "hairlineSamples": [
+      "a 296px",
+      "a 296px",
+      "a 296px",
+      "a 296px",
+      "a 296px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 7,
+     "blurred": 0,
+     "roundedBoxes": 102,
+     "boxRadius": 60,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 6,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 3203
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.91
+     },
+     {
+      "type": "svg",
+      "ratio": 0.91
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 90,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "mukta",
+     "poppins",
+     "rozha one",
+     "tiro devanagari hindi",
+     "yeseva one"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 16580,
+    "margins": {
+     "left": 31,
+     "right": 37
+    },
+    "sections": [
+     {
+      "sel": "div.pin-spacer",
+      "tag": "div",
+      "top": 90,
+      "height": 2470,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.trust",
+      "tag": "section",
+      "top": 2560,
+      "height": 153,
+      "words": 37,
+      "media": 0,
+      "middle": 107,
+      "heading": null,
+      "left": 71,
+      "right": 54,
+      "textLeft": 71,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "header.sechead.center",
+      "tag": "header",
+      "top": 2799,
+      "height": 182,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Shop the Darbar",
+       "size": 41,
+       "tag": "h2"
+      },
+      "left": 69,
+      "right": 69,
+      "textLeft": 69,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.shop-bar",
+      "tag": "div",
+      "top": 3017,
+      "height": 158,
+      "words": 15,
+      "media": 0,
+      "middle": 8,
+      "heading": null,
+      "left": 31,
+      "right": 96,
+      "textLeft": 31,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pgrid",
+      "tag": "div",
+      "top": 3203,
+      "height": 2210,
+      "words": 154,
+      "media": 8,
+      "middle": 40,
+      "heading": {
+       "text": "Heirloom Garam Masala",
+       "size": 18,
+       "tag": "h3"
+      },
+      "left": 45,
+      "right": 43,
+      "textLeft": 45,
+      "textRight": 154,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#thali.thali-sec",
+      "tag": "section",
+      "top": 5563,
+      "height": 954,
+      "words": 49,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Seven katoris. One lazy susan.",
+       "size": 41,
+       "tag": "h2"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 78,
+      "textRight": 58,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#regions.section.regions",
+      "tag": "section",
+      "top": 6517,
+      "height": 1146,
+      "words": 52,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Six regions, six spice kingdoms",
+       "size": 41,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 62,
+      "textRight": 80,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#occasions.section.occasions",
+      "tag": "section",
+      "top": 7663,
+      "height": 1164,
+      "words": 102,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "A hamper for every festival",
+       "size": 41,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 30,
+      "textLeft": 24,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "header.sechead.center",
+      "tag": "header",
+      "top": 8883,
+      "height": 154,
+      "words": 16,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Better together, cheaper together",
+       "size": 41,
+       "tag": "h2"
+      },
+      "left": 62,
+      "right": 62,
+      "textLeft": 62,
+      "textRight": 62,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bgrid",
+      "tag": "div",
+      "top": 9073,
+      "height": 713,
+      "words": 62,
+      "media": 0,
+      "middle": 45,
+      "heading": {
+       "text": "The Chai Wallah Trio",
+       "size": 24,
+       "tag": "h3"
+      },
+      "left": 42,
+      "right": 42,
+      "textLeft": 51,
+      "textRight": 76,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.builder",
+      "tag": "div",
+      "top": 9858,
+      "height": 869,
+      "words": 50,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Build your own darbar box",
+       "size": 31,
+       "tag": "h3"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 41,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#story.story",
+      "tag": "section",
+      "top": 10798,
+      "height": 2318,
+      "words": 112,
+      "media": 5,
+      "middle": 0,
+      "heading": {
+       "text": "Farmers first. Names on the pouch.",
+       "size": 41,
+       "tag": "h2"
+      },
+      "left": 37,
+      "right": 37,
+      "textLeft": 37,
+      "textRight": 37,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes.section.recipes",
+      "tag": "section",
+      "top": 13116,
+      "height": 512,
+      "words": 184,
+      "media": 0,
+      "middle": 4529,
+      "heading": {
+       "text": "Recipes from 28 states",
+       "size": 41,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": -2533,
+      "textRight": -4647,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.section.reviews",
+      "tag": "section",
+      "top": 13628,
+      "height": 1008,
+      "words": 210,
+      "media": 0,
+      "middle": 1257,
+      "heading": {
+       "text": "4.8",
+       "size": 76,
+       "tag": "b"
+      },
+      "left": 75,
+      "right": 0,
+      "textLeft": 75,
+      "textRight": -1349,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#newsletter.nimantran",
+      "tag": "section",
+      "top": 14636,
+      "height": 1044,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "You are cordially invited",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 135,
+      "right": 135,
+      "textLeft": 135,
+      "textRight": 135,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#footer.foot",
+      "tag": "footer",
+      "top": 15680,
+      "height": 900,
+      "words": 56,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Kesari",
+       "size": 54,
+       "tag": "p"
+      },
+      "left": 31,
+      "right": 234,
+      "textLeft": 31,
+      "textRight": 234,
+      "fullBleed": true,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [
+     {
+      "text": "Gujarat",
+      "side": "left",
+      "px": 3
+     },
+     {
+      "text": "Undhiyu",
+      "side": "left",
+      "px": 3
+     }
+    ],
+    "edges": [
+     {
+      "x": 45,
+      "n": 6
+     },
+     {
+      "x": 405,
+      "n": 6
+     },
+     {
+      "x": 24,
+      "n": 3
+     },
+     {
+      "x": 62,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 18,
+    "stage": true,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.93,
+    0.93,
+    0.98,
+    0.99,
+    0.93,
+    0.93,
+    0.96,
+    0.93,
+    0.81,
+    0.96,
+    0.81,
+    0.8
+   ],
+   "motion": {
+    "elements": 227,
+    "css": 15,
+    "transitions": 0,
+    "scripted": 212,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 16771,
+     "screens": 19.9,
+     "words": 535,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 81,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 2,
+     "brokenImages": [],
+     "emoji": [
+      "❖",
+      "★",
+      "❀"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Step into the Kesari bazaar",
+     "words": 5,
+     "chars": 27,
+     "lines": 2,
+     "size": 38,
+     "vw": 9.7,
+     "font": "Rozha One",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.7,
+     "top": 549,
+     "tag": "p",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "",
+     "words": 0,
+     "lines": 2,
+     "size": 50,
+     "font": "Rozha One"
+    },
+    "headings": [
+     {
+      "text": "×",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Mukta",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.1,
+      "top": 18,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Your thali (0)",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 23,
+      "mixedFonts": [
+       "Rozha One",
+       "Poppins"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kesari केसरी",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 42,
+      "mixedFonts": [
+       "Rozha One",
+       "Tiro Devanagari Hindi"
+      ],
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "×",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Mukta",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 43,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Kesari केसरी",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 58,
+      "mixedFonts": [
+       "Rozha One",
+       "Tiro Devanagari Hindi"
+      ],
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "❀",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Mukta",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.89,
+      "top": 127,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Shop",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.75,
+      "top": 147,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Categories",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.75,
+      "top": 215,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "थाली खाली है",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Tiro Devanagari Hindi",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 217,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Gifting",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.75,
+      "top": 283,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Recipes",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.75,
+      "top": 351,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.75,
+      "top": 419,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Step into the Kesari bazaar",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 38,
+      "vw": 9.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.7,
+      "top": 549,
+      "tag": "p",
+      "kind": "heading"
+     },
+     {
+      "text": "Shop the Darbar",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2512,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seven katoris. One lazy susan.",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4978,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Six regions, six spice kingdoms",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6103,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Pepper Coast",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 6823,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A hamper for every festival",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7423,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Shagun Box",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8104,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "For the wedding that needs a gift as grand as its guest list.",
+      "words": 13,
+      "chars": 61,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Cormorant Garamond",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8150,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "₹2,299",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 8483,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Better together, cheaper together",
+      "words": 4,
+      "chars": 33,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8787,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Chai Wallah Trio",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 9154,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Curry Starter Kit",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 9518,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Biryani Night Box",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 9881,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Chaat Club",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 10245,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Build your own darbar box",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10543,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "1",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 11529,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "—",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 11667,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Farmers first. Names on the pouch.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11995,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Abdul Rashid",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12690,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Recipes from 28 states",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12857,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Phibalin Dkhar",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 13263,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Thomas Mathew",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 13835,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Invitations to the table",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 13885,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "340",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 13995,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "28",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 13995,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "4.8",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 76,
+      "vw": 19.5,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.26,
+      "top": 14064,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "0",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 14088,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "100%",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Rozha One",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 14088,
+      "tag": "b",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 43,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 15,
+     "centered": 22,
+     "medianWords": 2,
+     "mixedFontHeadings": 5
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.45,
+       "mono": false
+      },
+      {
+       "family": "Mukta",
+       "share": 0.22,
+       "mono": false
+      },
+      {
+       "family": "Rozha One",
+       "share": 0.16,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "Yeseva One",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "Tiro Devanagari Hindi",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 6,
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      76
+     ],
+     "sizeCount": 21,
+     "notLoaded": [],
+     "body": {
+      "font": "Mukta",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 76,
+      "vw": 19.5,
+      "font": "Rozha One",
+      "text": "4.8"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 53,
+     "microLabelShare": 0.096,
+     "microSamples": [
+      "Free shipping above ₹499",
+      "❖",
+      "Cash on delivery available",
+      "❖",
+      "Use FIRST10 for 10% off",
+      "❖"
+     ],
+     "upperShare": 0.2,
+     "centerShare": 0.52,
+     "smallText": 62
+    },
+    "eyebrows": [
+     {
+      "text": "The spice shelf",
+      "above": "Shop the Darbar",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2482
+     },
+     {
+      "text": "The brass thali",
+      "above": "Seven katoris. One lazy susan.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4948
+     },
+     {
+      "text": "Origins",
+      "above": "Six regions, six spice kingdoms",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6073
+     },
+     {
+      "text": "Malabar",
+      "above": "The Pepper Coast",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6793
+     },
+     {
+      "text": "Rasoi Darbar",
+      "above": "A hamper for every festival",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 7393
+     },
+     {
+      "text": "Shaadi · शादी",
+      "above": "The Shagun Box",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 8074
+     },
+     {
+      "text": "Mongra Saffron",
+      "above": "₹2,299",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 9.5,
+      "top": 8428
+     },
+     {
+      "text": "Combos",
+      "above": "Better together, cheaper together",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 8757
+     },
+     {
+      "text": "Our story",
+      "above": "Farmers first. Names on the pouch.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 11965
+     },
+     {
+      "text": "Recipes",
+      "above": "Recipes from 28 states",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 12827
+     },
+     {
+      "text": "Kind words",
+      "above": "Invitations to the table",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 13855
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff6e5",
+     "bodyBgHsl": {
+      "h": 39,
+      "s": 1,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1e1b5e",
+       "top": 0,
+       "hsl": {
+        "h": 243,
+        "s": 0.55,
+        "l": 0.24
+       }
+      },
+      {
+       "color": "#12103e",
+       "top": 480,
+       "hsl": {
+        "h": 243,
+        "s": 0.59,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#fff6e5",
+       "top": 2396,
+       "hsl": {
+        "h": 39,
+        "s": 1,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffefd0",
+       "top": 6017,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#d81b76",
+       "top": 7816,
+       "hsl": {
+        "h": 331,
+        "s": 0.78,
+        "l": 0.48
+       }
+      },
+      {
+       "color": "#120f3e",
+       "top": 7820,
+       "hsl": {
+        "h": 244,
+        "s": 0.61,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 8974,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0e7a57",
+       "top": 11871,
+       "hsl": {
+        "h": 161,
+        "s": 0.79,
+        "l": 0.27
+       }
+      },
+      {
+       "color": "#fffaf0",
+       "top": 14388,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#fff6e5",
+       "share": 0.26
+      },
+      {
+       "color": "#1e1b5e",
+       "share": 0.22
+      },
+      {
+       "color": "#f7a614",
+       "share": 0.13
+      },
+      {
+       "color": "#241a3a",
+       "share": 0.08
+      },
+      {
+       "color": "#d81b76",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#241a3a"
+     },
+     "lowContrast": [
+      {
+       "text": "केसरी",
+       "ratio": 3.2,
+       "need": 4.5,
+       "size": 11,
+       "fg": "#d81b76",
+       "bg": "#1e1b5e"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 102,
+     "inHero": 5,
+     "radius": "pill",
+     "height": 83,
+     "withShadow": 21,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 27,
+     "heroLabels": [
+      "SHOP BESTSELLERS",
+      "FESTIVE HAMPERS",
+      "FILL IT UP"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 42,
+     "shadowOverlay": 5,
+     "shadowSamples": [
+      "button.pill.on → rgb(216, 27, 118) 0px 3px 0px 0px",
+      "article.pcard → rgb(107, 58, 30) 6px 6px 0px 0px",
+      "button.btn.btn-add → rgb(142, 14, 75) 0px 3px 0px 0px",
+      "article.pcard → rgb(227, 162, 26) 6px 6px 0px 0px"
+     ],
+     "gradients": 14,
+     "scrims": 9,
+     "gradientSamples": [
+      "div.hero-sky → linear-gradient(rgb(27, 20, 80), rgb(107, 31, 120) 55%, rgb(242, 106, 74) 90%, rgb(255, 179, 71))",
+      "section#thali.thali-sec → radial-gradient(at 50% 30%, rgb(44, 26, 115), rgb(30, 27, 94) 60%, rgb(18, 15, 62))",
+      "section#occasions.section.occasions → radial-gradient(circle at 20% 0%, rgba(216, 27, 118, 0.35), rgba(0, 0, 0, 0) 50%), radial-gradient(circle at 9",
+      "div.curtain.curtain-l → repeating-linear-gradient(90deg, rgba(247, 166, 20, 0.2) 0px, rgba(247, 166, 20, 0.2) 3px, rgba(0, 0, 0, 0) 3p"
+     ],
+     "gradientText": 0,
+     "hairlines": 6,
+     "hairlineSamples": [
+      "a 291px",
+      "a 291px",
+      "a 291px",
+      "a 291px",
+      "a 291px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 7,
+     "blurred": 0,
+     "roundedBoxes": 94,
+     "boxRadius": 60,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 6,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2858
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.89
+     },
+     {
+      "type": "svg",
+      "ratio": 0.89
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 90,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "mukta",
+     "poppins",
+     "rozha one",
+     "tiro devanagari hindi",
+     "yeseva one"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 16771,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "div.pin-spacer",
+      "tag": "div",
+      "top": 90,
+      "height": 2020,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.trust",
+      "tag": "section",
+      "top": 2110,
+      "height": 286,
+      "words": 37,
+      "media": 0,
+      "middle": 60,
+      "heading": null,
+      "left": 51,
+      "right": 34,
+      "textLeft": 51,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "header.sechead.center",
+      "tag": "header",
+      "top": 2482,
+      "height": 201,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Shop the Darbar",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 37,
+      "right": 37,
+      "textLeft": 37,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pgrid",
+      "tag": "div",
+      "top": 2858,
+      "height": 1862,
+      "words": 154,
+      "media": 0,
+      "middle": 40,
+      "heading": {
+       "text": "Heirloom Garam Masala",
+       "size": 18,
+       "tag": "h3"
+      },
+      "left": 30,
+      "right": 28,
+      "textLeft": 30,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#thali.thali-sec",
+      "tag": "section",
+      "top": 4870,
+      "height": 1147,
+      "words": 49,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Seven katoris. One lazy susan.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#regions.section.regions",
+      "tag": "section",
+      "top": 6017,
+      "height": 1319,
+      "words": 52,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Six regions, six spice kingdoms",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "header.sechead.light",
+      "tag": "header",
+      "top": 7393,
+      "height": 209,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A hamper for every festival",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.otabs",
+      "tag": "div",
+      "top": 7638,
+      "height": 150,
+      "words": 10,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 67,
+      "right": 51,
+      "textLeft": 67,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.opanel",
+      "tag": "div",
+      "top": 7816,
+      "height": 813,
+      "words": 69,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The Shagun Box",
+       "size": 32,
+       "tag": "h3"
+      },
+      "left": 24,
+      "right": 26,
+      "textLeft": 24,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "header.sechead.center",
+      "tag": "header",
+      "top": 8757,
+      "height": 181,
+      "words": 16,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Better together, cheaper together",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bgrid",
+      "tag": "div",
+      "top": 8974,
+      "height": 1432,
+      "words": 62,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The Chai Wallah Trio",
+       "size": 24,
+       "tag": "h3"
+      },
+      "left": 27,
+      "right": 27,
+      "textLeft": 36,
+      "textRight": 77,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.builder",
+      "tag": "div",
+      "top": 10479,
+      "height": 1320,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Build your own darbar box",
+       "size": 28,
+       "tag": "h3"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 21,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#story.story",
+      "tag": "section",
+      "top": 11871,
+      "height": 900,
+      "words": 44,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Farmers first. Names on the pouch.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 19,
+      "right": 19,
+      "textLeft": 19,
+      "textRight": 19,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes.section.recipes",
+      "tag": "section",
+      "top": 12771,
+      "height": 1028,
+      "words": 184,
+      "media": 0,
+      "middle": 4905,
+      "heading": {
+       "text": "Recipes from 28 states",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": -2532,
+      "textRight": -5023,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.section.reviews",
+      "tag": "section",
+      "top": 13799,
+      "height": 1028,
+      "words": 210,
+      "media": 0,
+      "middle": 1510,
+      "heading": {
+       "text": "4.8",
+       "size": 76,
+       "tag": "b"
+      },
+      "left": 17,
+      "right": 0,
+      "textLeft": 17,
+      "textRight": -1601,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#newsletter.nimantran",
+      "tag": "section",
+      "top": 14827,
+      "height": 1044,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "You are cordially invited",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#footer.foot",
+      "tag": "footer",
+      "top": 15871,
+      "height": 900,
+      "words": 53,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Kesari",
+       "size": 34,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 55,
+      "textLeft": 16,
+      "textRight": 55,
+      "fullBleed": true,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [],
+    "edgeText": [
+     {
+      "text": "Gujarat",
+      "side": "left",
+      "px": 2
+     },
+     {
+      "text": "Undhiyu",
+      "side": "left",
+      "px": 2
+     }
+    ],
+    "edges": [
+     {
+      "x": 24,
+      "n": 7
+     },
+     {
+      "x": 36,
+      "n": 4
+     },
+     {
+      "x": 216,
+      "n": 4
+     },
+     {
+      "x": 47,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "5 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "12 eyebrow/kicker label(s) above headings: \"The spice shelf\" above \"Shop the Darbar\"; \"The brass thali\" above \"Seven katoris. One lazy susan.\"; \"Origins\" above \"Six regions, six spice kingdoms\"; \"Malabar\" above \"The Pepper Coast\"; \"Rasoi Darbar\" above \"A hamper for every festival\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "53 tiny uppercase letter-spaced labels (e.g. \"Free shipping above ₹499\", \"❖\", \"Cash on delivery available\", \"❖\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ❖ ★ ❀",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "14 gradient fill(s): div.hero-sky → linear-gradient(rgb(27, 20, 80), rgb(107, 31, 120) 55%, rgb(242, 106, 74) 90%, rgb(255, 179, 71)) | section#thali.thali-sec → radial-gradient(at 50% 30%, rgb(44, 26, 115), rgb(30, 27, 94) 60%, rgb(18, 15, 62)) | section#occasions.section.occasions → radial-gradient(circle at 20% 0%, rgba(216, 27, 118, 0.35), rgba(0, 0, 0, 0) 50%), radial-gradient(circle at 9",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "42 box-shadow(s) on elements at rest: button.pill.on → rgb(216, 27, 118) 0px 3px 0px 0px | article.pcard → rgb(107, 58, 30) 6px 6px 0px 0px | button.btn.btn-add → rgb(142, 14, 75) 0px 3px 0px 0px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "text-shadow",
+   "width": 1440,
+   "message": "6 text-shadow(s).",
+   "fix": "Remove; fix legibility with a scrim or a different crop.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "6 thin rule(s)/divider line(s): a 296px | a 296px | a 296px | a 296px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "dashed",
+   "width": 1440,
+   "message": "7 dashed/dotted border(s).",
+   "fix": "Remove unless it is a real drop zone.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (8 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fff6e5, section #fff6e5, section #ffefd0).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"केसरी\" 3.2:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "font-count",
+   "width": 1440,
+   "message": "6 typefaces in use (Poppins, Mukta, Rozha One, Cormorant Garamond, Yeseva One, Tiro Devanagari Hindi).",
+   "fix": "Two at most: one display, one text. Often one is enough.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "25 different font sizes (11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 24, 26, 28, 30, 32, 34, 42, 44, 56, 58, 60, 64, 76, 92).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "62 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (it is hidden).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 1440,
+   "message": "1 section(s) have content at both edges and 3822px of nothing between: \"Recipes from 28 states\"",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "no-title",
+   "width": 1440,
+   "message": "The page has no visible h1.",
+   "fix": "Give the first screen a clear title in an h1 that says what this is (a name with what it does, the product with what it is for, the event with its date and place).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 1440,
+   "message": "2 text block(s) sit within 16px of the screen edge: \"Haryana\" (14px from the left); \"Bajra khichdi\" (14px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 1440,
+   "message": "Large text lies under another element at some scroll position: \"Kesari केसरी\" (screen 12, 100% hidden); \"Step into the Kesari bazaar\" (screen 3, 100% hidden); \"Spices fit for a darbar.\" (screen 3, 100% hidden); \"Shop the Darbar\" (screen 3, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Step into the Kesari bazaar\" (screen 2, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 12 screens in a row: \"Step into the Kesari bazaar\"; \"थाली खाली है\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "FAIL",
+   "id": "reduced-hidden",
+   "width": 1440,
+   "message": "With reduced motion requested, 6 text block(s) on the first screen stay invisible: \"Single-origin Indian spices · ground fre\", \"Step into the\", \"Kesari\", \"bazaar\"",
+   "fix": "Put every hidden starting state inside @media (prefers-reduced-motion: no-preference); the reduced page is the finished page (references/motion.md §8)."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/desktop-fold.jpg",
+   "pages": [
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/desktop-page-01.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/desktop-page-02.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/tablet-fold.jpg",
+   "pages": [
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/tablet-page-01.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/mobile-fold.jpg",
+   "pages": [
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/mobile-page-01.jpg",
+    "/Users/shaurya_frenzy/Documents/Spices Client-03/docs/playbook/taste-audit/v4/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

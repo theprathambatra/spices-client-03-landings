@@ -1,0 +1,102 @@
+/* Source: kit theme contract — token names follow shadcn/ui; keyframes copied from the Magic UI registry (repos/magicui/apps/www/registry/registry-ui.ts: marquee, shimmer-button) | License: MIT
+ *
+ * Import ONCE per page, right after Tailwind:   @import "tailwindcss";  @import "../../kit/kit.css";
+ * Then override the :root tokens in the page stylesheet to brand the kit. Any component added later with
+ * `npx shadcn add ...` that uses bg-background / text-muted-foreground / animate-marquee works unchanged.
+ */
+@source "./";
+
+/* dark: utilities follow a .dark class (shadcn convention), never the OS setting, so a light page never flips. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+}
+
+/* Neutral spice defaults (cream / cardamom-brown / chilli / turmeric). Each variation overrides these. */
+:root {
+  --background: #fbf6ee;
+  --foreground: #1f140c;
+  --card: #fffdf8;
+  --card-foreground: #1f140c;
+  --muted: #f1e7d8;
+  --muted-foreground: #7a6552;
+  --border: #e6d8c3;
+  --primary: #b3261e;
+  --primary-foreground: #fff8ee;
+  --accent: #e3a21a;
+  --accent-foreground: #1f140c;
+  --ring: #e3a21a;
+}
+.dark {
+  --background: #0e0a07;
+  --foreground: #f5ebdd;
+  --card: #17110c;
+  --card-foreground: #f5ebdd;
+  --muted: #241a12;
+  --muted-foreground: #b39a80;
+  --border: #33261b;
+  --primary: #e3a21a;
+  --primary-foreground: #1f140c;
+  --accent: #c8461e;
+  --accent-foreground: #fff8ee;
+  --ring: #e3a21a;
+}
+
+/* Components also read the tokens as plain CSS vars in inline styles (e.g. MagicCard uses var(--color-background)).
+   `@theme inline` does not emit them, so declare them here — on :root AND .dark so a .dark subtree re-resolves. */
+:root,
+.dark {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+@keyframes shimmer-slide {
+  to { transform: translate(calc(100cqw - 100%), 0); }
+}
+@keyframes spin-around {
+  0% { transform: translateZ(0) rotate(0); }
+  15%, 35% { transform: translateZ(0) rotate(90deg); }
+  65%, 85% { transform: translateZ(0) rotate(270deg); }
+  100% { transform: translateZ(0) rotate(360deg); }
+}
+
+/* Reduced motion: stop CSS-driven loops (JS components check matchMedia / useReducedMotion themselves). */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-vertical,
+  .animate-shimmer-slide,
+  .animate-spin-around {
+    animation-play-state: paused !important;
+  }
+}

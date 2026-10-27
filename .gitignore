@@ -1,0 +1,21 @@
+# Third-party clones and installed skills (2.3 GB, not ours to redistribute)
+repos/
+.claude/
+
+# Scraped reference material from other brands' sites
+docs/research/raw/
+docs/research/screens/
+
+node_modules/
+dist/
+.vercel
+.DS_Store
+*.log
+
+# Agent workflow scratch (see docs/playbook/)
+.unlazy/
+.unlazy-hook-state.json
+.superpowers/
+.worktrees/
+scrollcraft/lab/
+scrollcraft/builds/*/out/

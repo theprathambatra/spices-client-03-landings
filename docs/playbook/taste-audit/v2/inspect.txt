@@ -1,0 +1,80 @@
+TASTESKILL · INSPECT   https://spices-client-03-landings.vercel.app/v2/
+
+MEASURED (first viewport listed)
+  hero headline   "OPEN THE dabba."  3 words · 2 line(s) · 121px (8.4vw) · Anton 400 · tracking 0.004em · leading 0.92
+  @768px          2 line(s) · 76px
+  @390px          2 line(s) · 58.5px
+  typefaces       DM Sans 79%, Instrument Serif 16%, Anton 6%
+  sizes in use    11 / 12 / 13 / 14 / 15 / 16 / 17 / 18 / 19 / 20 / 21 / 22 / 23 / 24 / 26 / 29 / 30 / 31 / 34 / 68 / 72 / 78 / 121 / 173 px   body 18px / 1.6
+  colour          page #f3e8d6 · sections #2a1710 #dce4cc #241109 #f3e8d6 #8e1c14 #fbf4e8 · button #c62a1f
+  page            14.5 screens · 600 words · 0 images · hero media 38% canvas
+  headings        49 · longest 2 line(s) · median 2 words
+
+FAIL — fix every one of these
+  [eyebrow] @1440px (+768, 390)  13 eyebrow/kicker label(s) above headings: "The pantry · 30 jars & sets" above "THE MASALA dabba, SORTED."; "Jar of the month · Kesar" above "GOLD,"; "Combos & bundles" above "BETTER"; "+1" (pill) above "Tadka Starter Kit"; "Save ₹347" (pill) above "Biryani Night Box"
+      → Delete them. If the label carried real information, fold it into the headline or the supporting sentence.
+  [numbering] @1440px (+768, 390)  Decorative index numbers: "01", "02", "03"
+      → Remove them. If order truly matters, write it into the words ("First, …") or use a real <ol>.
+  [micro-label] @1440px (+768, 390)  28 tiny uppercase letter-spaced labels (e.g. "Free shipping above ₹499", "Cash on delivery available", "No preservatives. Ever.", "Stone-ground in Indore · 100% fresh").
+      → Use sentence-case text at a readable size, or delete the label.
+  [emoji] @1440px (+768, 390)  Emoji in the page: ★
+      → Remove. Use words or real imagery.
+  [gradient] @1440px (+768, 390)  3 gradient fill(s): div.arch-stripes → repeating-linear-gradient(90deg, rgb(240, 180, 41) 0px, rgb(240, 180, 41) 46px, rgb(232, 166, 36) 46px, rgb(23 | div.aisle-veil → linear-gradient(rgba(36, 17, 9, 0.85), rgba(36, 17, 9, 0) 38%, rgba(36, 17, 9, 0) 70%, rgba(36, 17, 9, 0.7)) | div.awning.rev-aw → repeating-linear-gradient(90deg, rgb(198, 42, 31) 0px, rgb(198, 42, 31) 28px, rgb(242, 178, 48) 28px, rgb(242,
+      → Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.
+  [shadow] @1440px (+768, 390)  2 box-shadow(s) on elements at rest: div.stamp.stamp-sm → rgba(0, 0, 0, 0.6) 0px 10px 30px -10px, rgba(251, 244, 232, 0.18) 0px 0px 0px 3p | div.aisle-card → rgba(0, 0, 0, 0.7) 0px 24px 50px -20px
+      → Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).
+  [hairline] @1440px (+768, 390)  4 thin rule(s)/divider line(s): nav.nav.wrap 1272px | div.facts 602px | section.trust 1440px | div.wrap.legal 1272px
+      → Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.
+  [outlined-box] @1440px (+768, 390)  15 boxes drawn with a 1px outline.
+      → Define a surface by its fill (one tone step from the page) or leave the content unboxed.
+  [icon-cards] @1440px (+768, 390)  1 row(s) of identical cards each topped with a small icon (8 cards).
+      → Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.
+  [few-pictures] @1440px  Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.
+      → Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve.
+  [small-text] @1440px (+768, 390)  37 text blocks under 13px.
+      → Nothing meant to be read goes below 13px.
+  [covered-text] @1440px (+768, 390)  Large text lies under another element at some scroll position: "OPEN THE" (screen 2, 100% hidden); "HALDI" (screen 2, 100% hidden); "JEERA" (screen 3, 100% hidden); "MIRCH" (screen 3, 100% hidden)
+      → Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.
+  [edge-text] @390px  2 text block(s) sit within 12px of the screen edge: "Free shipping above" (11px from the left); "Cash on delivery available" (11px from the right)
+      → Keep text inside the page margin (16–20px). Only display type deliberately bled past the edge may touch it.
+
+WARN — fix, or be able to defend
+  [mixed-font-headline] @1440px (+768, 390)  10 headline(s) switch typeface or to italic mid-line (the "one italic serif word" move).
+      → Set the whole headline in one face. Emphasis comes from the words.
+  [palette-cream] @1440px (+768, 390)  Yellow-cream background (page background #f3e8d6, section #f3e8d6, section #fbf4e8).
+      → Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.
+  [contrast] @1440px (+768)  Low-contrast text: "Combos & bundles" 4.3:1 needs 4.5:1
+      → Darken or lighten the text colour.
+  [font-count] @1440px (+768, 390)  3 typefaces in use (DM Sans, Instrument Serif, Anton).
+      → Two at most.
+  [size-count] @1440px (+768, 390)  24 different font sizes (11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 29, 30, 31, 34, 68, 72, 78, 121, 173).
+      → A page needs about five: display, heading, lead, body, small.
+  [no-footage] @1440px  No video anywhere on the page.
+      → Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject.
+  [name-only-title] @1440px (+768, 390)  The h1 is a bare name ("OPEN THE dabba.") and nothing else on the first screen says what this is.
+      → Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.
+  [ragged-edges] @1440px  Left-aligned text starts at 12 different lines (108px, 127px, 438px, 549px, 749px, 902px, 963px); the three most used hold only 42% of it.
+      → Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.
+  [pinned-over-picture] @1440px (+768, 390)  Pinned large text slides across pictures while the page scrolls: "WALK THE aisle." (screen 10, 100% over a picture)
+      → Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.
+  [long-pin] @1440px  The same large text stays on screen for 3 screens in a row: "WALK THE aisle."
+      → A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content.
+  [side-scroll] @390px  1 row(s) scroll sideways with content past their edge.
+      → Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  ../docs/playbook/taste-audit/v2/desktop-fold.jpg
+                  ../docs/playbook/taste-audit/v2/desktop-page-01.jpg
+                  ../docs/playbook/taste-audit/v2/desktop-page-02.jpg
+                  ../docs/playbook/taste-audit/v2/desktop-page-03.jpg
+  tablet 768px    ../docs/playbook/taste-audit/v2/tablet-fold.jpg
+                  ../docs/playbook/taste-audit/v2/tablet-page-01.jpg
+                  ../docs/playbook/taste-audit/v2/tablet-page-02.jpg
+  mobile 390px    ../docs/playbook/taste-audit/v2/mobile-fold.jpg
+                  ../docs/playbook/taste-audit/v2/mobile-page-01.jpg
+                  ../docs/playbook/taste-audit/v2/mobile-page-02.jpg
+
+report: ../docs/playbook/taste-audit/v2/report.json
+RESULT: 13 FAIL, 11 WARN — not done.
+
+VERDICT v2: 13 FAIL, 11 WARN after 0 declared deviation(s) — NOT DONE

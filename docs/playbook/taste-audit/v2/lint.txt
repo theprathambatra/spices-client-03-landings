@@ -1,0 +1,73 @@
+TASTESKILL · LINT   25 file(s)
+
+FAIL
+  [eyebrow] Eyebrow / kicker label above a heading.  (13×)
+      site/v2/src/components/Aisle.jsx:62  className="eyebrow
+      site/v2/src/components/Header.jsx:119  className="eyebrow
+      site/v2/src/components/Hero.jsx:61  className="eyebrow
+      site/v2/src/components/Pantry.jsx:57  className="eyebrow
+      site/v2/src/components/Sections.jsx:46  className="eyebrow
+      site/v2/src/components/Sections.jsx:69  className="eyebrow
+      … 7 more
+  [emoji] Emoji used as UI.  (11×)
+      site/v2/src/components/Bits.jsx:6  ★
+      site/v2/src/components/CartDrawer.jsx:17  ✕
+      site/v2/src/components/CartDrawer.jsx:79  ✕
+      site/v2/src/components/CartDrawer.jsx:82  ✓
+      site/v2/src/components/Header.jsx:52  ✕
+      site/v2/src/components/Header.jsx:77  ✕
+      … 5 more
+  [numbering] Decorative index numbering (01 / 02 / 03).  (3×)
+      site/v2/src/components/Sections.jsx:94  '01'
+      site/v2/src/components/Sections.jsx:95  '02'
+      site/v2/src/components/Sections.jsx:96  '03'
+  [shadow] Shadow. Elements at rest carry none; only real overlays (menu, dialog, sticky bar) may.  (10×)
+      site/v2/src/styles.css:39  box-shadow:
+      site/v2/src/styles.css:88  box-shadow:
+      site/v2/src/styles.css:96  box-shadow:
+      site/v2/src/styles.css:102  box-shadow:
+      site/v2/src/styles.css:143  box-shadow:
+      site/v2/src/styles.css:171  drop-shadow(
+      … 4 more
+  [hairline] Thin rule / divider line. Separate with space, tone or scale; lines belong to real tables and form fields.  (9×)
+      site/v2/src/styles.css:63  border-bottom: 1px
+      site/v2/src/styles.css:85  border-top: 1px
+      site/v2/src/styles.css:119  border-bottom: 1px
+      site/v2/src/styles.css:248  border-top: 1px
+      site/v2/src/styles.css:257  border-bottom: 1px
+      site/v2/src/styles.css:262  border-top: 1px
+      … 3 more
+  [gradient] Gradient fill. Use a flat colour or a real image (a neutral scrim over a photo is the one exception).  (6×)
+      site/v2/src/styles.css:65  linear-gradient(
+      site/v2/src/styles.css:92  linear-gradient(
+      site/v2/src/styles.css:93  radial-gradient(
+      site/v2/src/styles.css:109  linear-gradient(
+      site/v2/src/styles.css:156  linear-gradient(
+      site/v2/src/styles.css:190  linear-gradient(
+  [gradient-text] Gradient / clipped text. Use solid colour.  (1×)
+      site/v2/src/styles.css:156  background-clip: text
+
+WARN
+  [default-font] A default typeface. Use the faces named by the drawn direction.  (1×)
+      site/v2/index.html:11  family=Instrument+Serif
+  [numbering] Zero-padding in script. Fine for a clock, a date or a price; if it builds 01 / 02 / 03 labels, remove it.  (1×)
+      site/v2/src/components/Aisle.jsx:67  padStart(2, '0')
+  [outlined-box] A 1px outlined box. Prefer a filled surface or no box.  (6×)
+      site/v2/src/styles.css:87  border: 1px solid
+      site/v2/src/styles.css:142  border: 1px solid
+      site/v2/src/styles.css:178  border: 1px solid
+      site/v2/src/styles.css:205  border: 1px solid
+      site/v2/src/styles.css:247  border: 1px solid
+      site/v2/src/styles.css:267  border: 1px solid
+  [transition-all] transition: all. Name the properties (transform, opacity).  (6×)
+      site/v2/src/styles.css:87  transition: all
+      site/v2/src/styles.css:134  transition: all
+      site/v2/src/styles.css:150  transition: all
+      site/v2/src/styles.css:160  transition: all
+      site/v2/src/styles.css:198  transition: all
+      site/v2/src/styles.css:267  transition: all
+  [em-dash] Em-dash habit. Use a full stop or a comma; keep at most one or two on a page.  (1×)
+      (all files):0  16 em dashes
+
+RESULT: 53 FAIL, 15 WARN — fix the FAILs before rendering.
+Interface fragments marked data-ui keep their own borders and shadows. Any other line that must keep a flagged pattern for a real reason can carry the comment taste-skill-ignore.

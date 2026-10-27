@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": false,
+  "tailwind": { "config": "", "css": "kit/kit.css", "baseColor": "neutral", "cssVariables": true, "prefix": "" },
+  "aliases": { "components": "@kit/registry", "ui": "@kit/registry", "utils": "@kit/lib/utils", "lib": "@kit/lib", "hooks": "@kit/hooks" },
+  "iconLibrary": "lucide",
+  "registries": {
+    "@react-bits": "https://reactbits.dev/r/{name}.json",
+    "@magicui": "https://magicui.design/r/{name}",
+    "@aceternity": "https://ui.aceternity.com/registry/{name}.json",
+    "@motion-primitives": "https://motion-primitives.com/c/{name}.json",
+    "@cult-ui": "https://cult-ui.com/r/{name}.json",
+    "@smoothui": "https://smoothui.dev/r/{name}.json",
+    "@componentry": "https://componentry.dev/r/{name}.json",
+    "@unlumen": "https://ui.unlumen.com/r/{name}.json"
+  }
+}

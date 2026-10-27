@@ -1,0 +1,46 @@
+TASTESKILL · LINT   15 file(s)
+
+FAIL
+  [eyebrow] Eyebrow / kicker label above a heading.  (13×)
+      site/v1/src/Sections.jsx:41  className="kicker
+      site/v1/src/Sections.jsx:54  className="kicker
+      site/v1/src/Sections.jsx:101  className="kicker
+      site/v1/src/Sections.jsx:140  className="kicker
+      site/v1/src/Sections.jsx:172  className="kicker
+      site/v1/src/Sections.jsx:202  className="kicker
+      … 7 more
+  [numbering] Decorative index numbering (01 / 02 / 03).  (8×)
+      site/v1/src/Sections.jsx:289  >01<
+      site/v1/src/Sections.jsx:290  >02<
+      site/v1/src/Sections.jsx:291  >03<
+      site/v1/src/brand.js:85  '01'
+      site/v1/src/brand.js:86  '02'
+      site/v1/src/brand.js:87  '03'
+      … 2 more
+  [shadow] Shadow. Elements at rest carry none; only real overlays (menu, dialog, sticky bar) may.  (50×)
+      site/v1/src/styles.css:27  box-shadow:
+      site/v1/src/styles.css:28  box-shadow:
+      site/v1/src/styles.css:29  box-shadow:
+      site/v1/src/styles.css:31  box-shadow:
+      site/v1/src/styles.css:32  box-shadow:
+      site/v1/src/styles.css:33  box-shadow:
+      … 44 more
+  [gradient] Gradient fill. Use a flat colour or a real image (a neutral scrim over a photo is the one exception).  (17×)
+      site/v1/src/styles.css:72  conic-gradient(
+      site/v1/src/styles.css:74  radial-gradient(
+      site/v1/src/styles.css:75  linear-gradient(
+      site/v1/src/styles.css:134  conic-gradient(
+      site/v1/src/styles.css:163  radial-gradient(
+      site/v1/src/styles.css:173  linear-gradient(
+      … 11 more
+
+WARN
+  [transition-all] transition: all. Name the properties (transform, opacity).  (5×)
+      site/v1/src/styles.css:60  transition: all
+      site/v1/src/styles.css:127  transition: all
+      site/v1/src/styles.css:155  transition: all
+      site/v1/src/styles.css:363  transition: all
+      site/v1/src/styles.css:393  transition: all
+
+RESULT: 88 FAIL, 5 WARN — fix the FAILs before rendering.
+Interface fragments marked data-ui keep their own borders and shadows. Any other line that must keep a flagged pattern for a real reason can carry the comment taste-skill-ignore.
