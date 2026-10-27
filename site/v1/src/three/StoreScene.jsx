@@ -73,7 +73,7 @@ function ProductPack({ product, size, position, onPick, selected }) {
   const map = useMemo(() => packTexture(product, packSize), [product.id, packSize])
   useEffect(() => () => map.dispose(), [map])
   return (
-    <group position={position} onClick={(e) => { e.stopPropagation(); onPick(product.id) }}
+    <group position={position} onClick={(e) => { e.stopPropagation(); onPick(product.id, packSize) }}
       onPointerOver={(e) => { e.stopPropagation(); document.body.style.cursor = 'pointer' }}
       onPointerOut={() => { document.body.style.cursor = '' }}>
       <mesh position={[0, 0, 0]}><boxGeometry args={[.88, 1.13, .19]} /><meshStandardMaterial color={selected ? '#FFC21A' : INK} roughness={.7} /></mesh>

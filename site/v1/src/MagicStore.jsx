@@ -88,11 +88,11 @@ export default function MagicStore({ open, onClose, motionPaused }) {
     setShelf(id); setJump({ key: id, n: Date.now() }); setSelectedId(null); setCatalog(false); setCashier(false)
   }
   const browse = (id = shelf) => { setShelf(id); setCatalog(true); setSelectedId(null); setCashier(false) }
-  const pick = (id) => {
+  const pick = (id, preferredSize) => {
     const p = byId[id]
     if (!p) return
     setShelf(shelves.find((s) => s.items.some((item) => item.id === id))?.id || 'seeds')
-    setSelectedId(id); setSize(sizes(p)[0]); setQuantity(1); setCashier(false); setCatalog(false)
+    setSelectedId(id); setSize(sizes(p).includes(preferredSize) ? preferredSize : sizes(p)[0]); setQuantity(1); setCashier(false); setCatalog(false)
   }
   const meetCashier = () => {
     if (selected) setCashierSays(`Great choice! I can add ${selected.name} (${size}g) to your dabba.`)
