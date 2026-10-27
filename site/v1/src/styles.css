@@ -722,3 +722,57 @@ main, section, footer, header { max-width: 100vw; }
   .bubbles .marquee-track:first-child { flex-wrap: wrap; justify-content: center; gap: 16px; }
   .bubbles .marquee-track[aria-hidden='true'] { display: none; }
 }
+
+/* Closing panel and footer: a quieter finish with working paths back into the shop. */
+.signoff { padding-top: clamp(58px, 6vw, 88px); background: linear-gradient(180deg, var(--cream) 0%, #FFE0AE 100%); }
+.signoff-content { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+.signoff-kicker { display: inline-block; padding: 6px 14px; border: 2px solid var(--ink); border-radius: 99px; background: var(--pink); font-family: var(--f-hand); font-size: 23px; line-height: 1; transform: rotate(-3deg); }
+.signoff h2 { margin: 20px auto 0; font-size: clamp(64px, 8.5vw, 128px); line-height: .88; letter-spacing: -.025em; -webkit-text-stroke: .045em var(--ink); text-shadow: .04em .05em 0 var(--ink); }
+.signoff h2 > span { display: block; }
+.signoff h2 .h { font-size: .72em; vertical-align: .08em; animation: none; }
+.signoff-content p { max-width: 540px; margin: 25px auto 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.4; font-weight: 700; }
+.signoff-content .btn { margin-top: 23px; min-height: 50px; }
+.signoff .sky { width: min(calc(100% - 32px), 1080px); margin: 28px auto 0; }
+.signoff .sky svg { display: block; width: 100%; min-width: 0; }
+
+footer.foot { padding-block: clamp(42px, 5vw, 70px) 26px; }
+.foot-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 25px; border-bottom: 1px solid rgba(255,243,220,.33); }
+.foot-eyebrow { font-family: var(--f-hand); font-size: 22px; color: var(--yellow); }
+.foot .fbig { margin-top: 6px; font-size: clamp(58px, 7vw, 104px); letter-spacing: -.025em; }
+.foot-top-link { display: inline-flex; align-items: center; gap: 18px; min-height: 46px; padding: 9px 16px; border: 2px solid var(--cream); border-radius: 99px; font-weight: 800 !important; opacity: 1 !important; white-space: nowrap; }
+.foot-top-link span { font-size: 21px; line-height: .8; }
+.foot-top-link:hover { background: var(--yellow); color: var(--ink) !important; border-color: var(--yellow); }
+.foot-grid { grid-template-columns: minmax(200px, 1.25fr) minmax(125px, .7fr) minmax(125px, .7fr) minmax(225px, 1.05fr); gap: clamp(24px, 4vw, 64px); align-items: start; padding-top: 32px; }
+.foot-intro p { max-width: 300px; font-size: 18px; line-height: 1.5; font-weight: 650; }
+.foot-intro span { display: block; margin-top: 20px; color: var(--yellow); font-family: var(--f-hand); font-size: 25px; line-height: 1.15; }
+.foot h3 { margin-bottom: 18px; color: var(--yellow); font-family: var(--f-display); font-size: 22px; font-weight: 400; text-transform: uppercase; }
+.foot ul { gap: 13px; }
+.foot li a { display: inline-block; padding-block: 3px; font-size: 16px; }
+.foot-feature { padding: 21px 24px 23px; border: 2px solid var(--cream); border-radius: 22px; background: var(--yellow); color: var(--ink); }
+.foot-feature h3 { max-width: 240px; margin: 8px 0; color: var(--ink); font-size: 26px; line-height: 1.03; }
+.foot-feature p { font-size: 15px; line-height: 1.35; font-weight: 650; }
+.foot-feature a { display: inline-flex; align-items: center; gap: 7px; margin-top: 17px; border-bottom: 2px solid currentColor; padding-bottom: 2px; color: var(--ink); font-weight: 800; opacity: 1; }
+.foot-feature a:hover { color: var(--ink); }
+.foot-bot { margin-top: clamp(38px, 5vw, 62px); padding-top: 20px; border-top: 1px solid rgba(255,243,220,.33); opacity: .75; }
+@media (max-width: 900px) {
+  .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .foot-intro, .foot-feature { grid-column: 1 / -1; }
+  .foot-feature { max-width: 420px; }
+}
+@media (max-width: 520px) {
+  .signoff { padding-top: 50px; }
+  .signoff-kicker { font-size: 19px; }
+  .signoff h2 { margin-top: 18px; font-size: clamp(42px, 10.8vw, 60px); }
+  .signoff-content p { max-width: 310px; margin-top: 20px; font-size: 16px; }
+  .signoff-content .btn { margin-top: 20px; }
+  .signoff .sky { width: 100%; margin-top: 26px; }
+  .foot-top { align-items: center; }
+  .foot .fbig { font-size: clamp(48px, 13vw, 68px); }
+  .foot-eyebrow { font-size: 18px; }
+  .foot-top-link { gap: 8px; padding-inline: 11px; font-size: 13px; }
+  .foot-grid { gap: 30px 18px; }
+  .foot-intro p { font-size: 16px; }
+  .foot h3 { font-size: 18px; }
+  .foot li a { font-size: 15px; }
+  .foot-feature { max-width: none; }
+}

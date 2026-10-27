@@ -334,7 +334,12 @@ function Skyline() {
 export function Signoff() {
   return (
     <section className="signoff" aria-label="Sign-off">
-      <h2><span style={{ display: 'block' }}>{BRAND} about</span><span style={{ display: 'block' }}>you <span className="h">&hearts;</span></span></h2>
+      <div className="wrap signoff-content">
+        <span className="signoff-kicker">one last pinch</span>
+        <h2><span>{BRAND}</span><span>about you <span className="h" aria-hidden="true">&hearts;</span></span></h2>
+        <p>Good food brings us together. Find a little more flavour for your next meal.</p>
+        <a className="btn btn-yellow" href="#shop">Shop the spices <Arrow size={20} /></a>
+      </div>
       <div className="sky sky-wrap"><Skyline /></div>
     </section>
   )
@@ -345,18 +350,25 @@ export function Footer() {
   return (
     <footer className="foot" id="about">
       <div className="wrap">
-        <div className="foot-grid">
-          <div>
-            <div className="fbig">{BRAND}<em>.</em></div>
-            <p style={{ marginTop: 12, maxWidth: 320, opacity: .85 }}>{brand.tagline} FSSAI Lic. 10020051000000. Packed in India with unreasonable pride.</p>
-            <p style={{ marginTop: 14 }}><a href="#">WhatsApp: +91 98765 43210</a><br /><a href="#">hello@kesarispices.in</a></p>
-            <div className="pay" aria-label="Payment methods">{['UPI', 'VISA', 'Mastercard', 'RuPay', 'Netbanking', 'COD'].map((p) => <span key={p}>{p}</span>)}</div>
-          </div>
-          <div><h4>Shop</h4><ul><li><a href="#shop">Best sellers</a></li><li><a href="#browse">Categories</a></li><li><a href="#gifting">Combos & gifting</a></li><li><a href="#heat">Pick your heat</a></li><li><a href="#recipes">Recipes</a></li></ul></div>
-          <div><h4>Help</h4><ul><li><a href="#">Shipping info</a></li><li><a href="#">Returns & refunds</a></li><li><a href="#">FAQ</a></li><li><a href="#">Track your order</a></li><li><a href="#">Contact us</a></li></ul></div>
-          <div><h4>Follow</h4><ul><li><a href="#">Instagram {brand.instagram}</a></li><li><a href="#">YouTube</a></li><li><a href="#">WhatsApp channel</a></li><li><a href="#club">Masala Club</a></li></ul></div>
+        <div className="foot-top">
+          <div><span className="foot-eyebrow">Keep the good food coming</span><div className="fbig">{BRAND}<em>.</em></div></div>
+          <a className="foot-top-link" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
         </div>
-        <div className="foot-bot"><span>&copy; 2026 {BRAND} Spices. All rights reserved.</span><span><a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Refund policy</a></span></div>
+        <div className="foot-grid">
+          <div className="foot-intro">
+            <p>{brand.tagline}</p>
+            <span>For every pinch that makes dinner yours.</span>
+          </div>
+          <nav aria-label="Footer shop"><h3>Shop</h3><ul><li><a href="#shop">Best sellers</a></li><li><a href="#browse">All categories</a></li><li><a href="#gifting">Combos & gifting</a></li></ul></nav>
+          <nav aria-label="Footer explore"><h3>Explore</h3><ul><li><a href="#heat">Find your heat</a></li><li><a href="#farm">Meet the farms</a></li><li><a href="#club">Masala Club</a></li></ul></nav>
+          <div className="foot-feature">
+            <span aria-hidden="true"><SpiceGlyph k="bowl" size={42} /></span>
+            <h3>Cook up something good</h3>
+            <p>Choose a recipe, then build your spice list.</p>
+            <a href="#recipes">Explore recipes <Arrow size={18} /></a>
+          </div>
+        </div>
+        <div className="foot-bot"><span>&copy; 2026 {BRAND} Spices. All rights reserved.</span><span>Made for more delicious days.</span></div>
       </div>
     </footer>
   )
