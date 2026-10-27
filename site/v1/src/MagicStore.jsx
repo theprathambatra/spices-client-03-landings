@@ -94,7 +94,10 @@ export default function MagicStore({ open, onClose, motionPaused }) {
     setShelf(shelves.find((s) => s.items.some((item) => item.id === id))?.id || 'seeds')
     setSelectedId(id); setSize(sizes(p)[0]); setQuantity(1); setCashier(false); setCatalog(false)
   }
-  const meetCashier = () => { setCashier(true); setCatalog(false); setJump({ key: 'cashier', n: Date.now() }) }
+  const meetCashier = () => {
+    if (selected) setCashierSays(`Great choice! I can add ${selected.name} (${size}g) to your dabba.`)
+    setCashier(true); setCatalog(false); setJump({ key: 'cashier', n: Date.now() })
+  }
   const addAtCashier = () => {
     if (!selected) return
     st.add(selected.id, size, quantity, { open: false, silent: true })
@@ -136,13 +139,13 @@ export default function MagicStore({ open, onClose, motionPaused }) {
       {canWalk && !ready && <div className="magic-loading">Opening the store…</div>}
       <div className="magic-top-hud">
         <div className="magic-shelf-nav" aria-label="Store sections">
-          {shelves.map((s) => <button key={s.id} className={shelf === s.id ? 'on' : ''} onClick={() => visit(s.id)}>{s.short}</button>)}
+          {shelves.map((s) => <button key={s.id} className={shelf === s.id ? 'on' : ''} onClick={() => canWalk ? visit(s.id) : browse(s.id)}>{s.short}</button>)}
           <button className="magic-cashier-chip" onClick={meetCashier}>Cashier</button>
         </div>
         <button className="magic-browse" onClick={() => browse()}>Browse every shelf <span>{allItems.length}</span></button>
       </div>
       {canWalk && <><MovementPad controls={controls} /><div className="magic-instructions">WASD / arrows to walk · drag to look · tap a pouch or the cashier</div></>}
-      {!selected && !catalog && !cashier && <div className="magic-welcome"><Sparkle size={18} /><span>Take a walk. Every pouch on the shelves opens.</span></div>}
+      {!selected && !catalog && !cashier && <div className="magic-welcome"><Sparkle size={18} /><span>{canWalk ? 'Take a walk. Every pouch on the shelves opens.' : 'Choose a zone to browse every pouch.'}</span></div>}
     </div>
 
     {catalog && <aside className="magic-panel magic-catalog" aria-label="Browse store shelves">
@@ -170,7 +173,7 @@ export default function MagicStore({ open, onClose, motionPaused }) {
       <div className="magic-cashier-face" aria-hidden="true"><span>☺</span><b>KESARI</b></div>
       <p className="magic-speech" role="status">“{cashierSays}”</p>
       {selected ? <div className="magic-counter-item"><b>{selected.name}</b><span>{size}g · {rupee(priceFor(selected, size).price)}</span><div className="magic-counter-qty" aria-label="Quantity"><button onClick={() => setQuantity((q) => Math.max(1, q - 1))} aria-label="Decrease quantity">−</button><strong>{quantity}</strong><button onClick={() => setQuantity((q) => Math.min(9, q + 1))} aria-label="Increase quantity">+</button></div><button className="magic-primary" onClick={addAtCashier}>Cashier, add to dabba <Arrow size={18} /></button></div> : <button className="magic-primary" onClick={() => browse()}>Choose a product <Arrow size={18} /></button>}
-      <div className="magic-counter-total"><span>In your dabba</span><strong>{st.count} items · {rupee(st.subtotal)}</strong></div>
+      <div className="magic-counter-total"><span>In your dabba</span><strong>{st.count} {st.count === 1 ? 'item' : 'items'} · {rupee(st.subtotal)}</strong></div>
       <button className="magic-secondary" onClick={() => st.open('cart', true)}>Open cart <CartIcon size={17} /></button>
       <p className="magic-demo-note">The store and checkout are demos. Nothing is charged.</p>
     </aside>}
