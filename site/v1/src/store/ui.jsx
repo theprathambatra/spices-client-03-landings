@@ -7,7 +7,6 @@ import { useStore, useModal } from './cart.jsx'
 export const HeartIcon = ({ on, size = 22 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-9.6-10.1C1.3 7.4 3.4 4.5 6.5 4.5c2 0 3.6 1.1 4.5 2.7h2c.9-1.6 2.5-2.7 4.5-2.7 3.100 0 5.200 2.900 4.100 6.400C20 15.800 12 21 12 21z" fill={on ? '#E03A2F' : 'none'} stroke="#1A1208" strokeWidth="2.2" strokeLinejoin="round" /></svg>
 )
-const Flames = ({ n }) => n > 0 ? <span className="pheat" aria-label={`Heat ${n} of 4`}>{Array.from({ length: n }).map((_, i) => <SpiceGlyph key={i} k="flame" size={18} />)}</span> : null
 export const Stars = ({ v, size = 14 }) => <span className="stars" role="img" aria-label={`${v} out of 5`}>{[1, 2, 3, 4, 5].map((n) => <Star key={n} size={size} empty={v < n - 0.4} />)}</span>
 
 export function Stepper({ qty, onDec, onInc, label }) {
@@ -24,7 +23,7 @@ export const ProductCard = memo(function ProductCard({ p, i = 0 }) {
   const st = useStore()
   const sizes = sizesOf(p)
   const [sz, setSz] = useState(grams(p))
-  const { price, mrp, off } = priceFor(p, sz)
+  const { price, mrp } = priceFor(p, sz)
   const qty = st.qtyOf(p.id, sz)
   const wished = st.s.wish.includes(p.id)
   return (
@@ -38,16 +37,14 @@ export const ProductCard = memo(function ProductCard({ p, i = 0 }) {
         {!p.badge && p.isNew && <span className="pbadge new">New</span>}
         {p.low && <span className="plow">Only few left</span>}
         <button className="heart" onClick={() => st.toggleWish(p.id)} aria-pressed={wished} aria-label={wished ? 'Remove from wishlist' : 'Add to wishlist'}><HeartIcon on={wished} /></button>
-        <Flames n={p.heat} />
       </div>
       <div className="pbody">
         <h3><button onClick={() => st.open('quick', p.id)}>{p.name}</button></h3>
-        <div className="hi">{p.hindi} &middot; {p.origin}</div>
-        <div className="rate"><Stars v={p.rating} size={13} /><span>{p.rating} ({p.reviews.toLocaleString('en-IN')})</span></div>
-        <div className="sizes" role="radiogroup" aria-label="Pack size">
+        <div className="hi">{p.origin}</div>
+        <div className="sizes" role="radiogroup" aria-label={`${p.name} pack size`}>
           {sizes.map((g) => <button key={g} role="radio" aria-checked={g === sz} className={`sz ${g === sz ? 'on' : ''}`} onClick={() => setSz(g)}>{sizeLabel(g)}</button>)}
         </div>
-        <div className="price"><b>{rupee(price)}</b><s>{rupee(mrp)}</s><span className="off">{off}% off</span></div>
+        <div className="price"><b>{rupee(price)}</b><s>{rupee(mrp)}</s></div>
         {qty === 0
           ? <button className="add" onClick={() => st.add(p.id, sz)}><CartIcon size={18} /> Add to cart</button>
           : <Stepper qty={qty} label={`${p.name} quantity`} onDec={() => st.inc(`${p.id}@${sz}`, -1)} onInc={() => st.inc(`${p.id}@${sz}`, 1)} />}
@@ -65,6 +62,7 @@ export function Shop() {
   const { cat, purpose, query } = st.ui
   const [sort, setSort] = useState('pop')
   const [all, setAll] = useState(false)
+  const [visibleCount, setVisibleCount] = useState(12)
   const list = useMemo(() => {
     let l = products.filter((p) => cat === 'all' ? true : cat === 'fire' ? p.heat >= 3 : cat === 'wish' ? st.s.wish.includes(p.id) : p.cat === cat)
     if (query) { const t = query.toLowerCase(); l = l.filter((p) => [p.name, p.hindi, p.origin, p.notes, p.cat, ...(p.purposes || [])].join(' ').toLowerCase().includes(t)) }
@@ -72,18 +70,20 @@ export function Shop() {
     const cmp = { pop: (a, b) => b.reviews - a.reviews, lo: (a, b) => a.price - b.price, hi: (a, b) => b.price - a.price, new: (a, b) => (b.isNew - a.isNew) || (b.order - a.order) }[sort]
     return [...l].sort(cmp)
   }, [cat, purpose, query, sort, st.s.wish])
-  const title = query ? `Results: ${query}` : cat === 'all' ? 'Our best sellers' : cat === 'wish' ? 'Your wishlist' : cat === 'fire' ? 'Fire zone' : (PILLS.find(([id]) => id === cat)?.[1] || 'Spices')
-  const shown = all || list.length <= 12 ? list : list.slice(0, 12)
+  const catalogOpen = all || cat !== 'all' || !!purpose || !!query
+  const title = !catalogOpen ? 'Our best sellers' : query ? `Results: ${query}` : cat === 'all' ? 'Shop all spices' : cat === 'wish' ? 'Your wishlist' : cat === 'fire' ? 'Fire zone' : (PILLS.find(([id]) => id === cat)?.[1] || 'Spices')
+  const shown = catalogOpen ? list.slice(0, visibleCount) : list.slice(0, 4)
   return (
     <section className="section shop" id="shop" aria-labelledby="shop-t" style={{ paddingTop: 'clamp(44px,6vw,80px)' }}>
       <div className="wrap">
         <div className="sec-head" style={{ marginBottom: 28 }}>
           <Reveal as="span" kind="slap" rot={-4} className="kicker">fresh ground, loudly</Reveal>
-          <h2 className="title" id="shop-t">{title}</h2>
+          <h2 className="title" id="shop-t" tabIndex="-1">{title}</h2>
+          {!catalogOpen && <p>Four kitchen favourites. Choose a pack, or explore the full shelf.</p>}
         </div>
-        <div className="shop-top">
+        {catalogOpen && <div className="shop-top">
           <div className="pills" role="group" aria-label="Filter by category">
-            {PILLS.map(([id, l]) => <button key={id} className="pill" aria-pressed={cat === id} onClick={() => { st.open('cat', id); st.open('query', ''); setAll(false) }}>{l}</button>)}
+            {PILLS.map(([id, l]) => <button key={id} className="pill" aria-pressed={cat === id} onClick={() => { st.open('cat', id); st.open('query', ''); setAll(true); setVisibleCount(12) }}>{l}</button>)}
             <a className="pill" href="#gifting">Combos</a>
             {st.s.wish.length > 0 && <button className="pill" aria-pressed={cat === 'wish'} onClick={() => st.open('cat', 'wish')}>Wishlist ({st.s.wish.length})</button>}
           </div>
@@ -93,11 +93,13 @@ export function Shop() {
               <select value={sort} onChange={(e) => setSort(e.target.value)}>{SORTS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select>
             </label>
           </div>
-        </div>
+        </div>}
         {list.length === 0 ? <p className="empty">Nothing here yet. Poke the heart on a pouch to save it!</p> : (
           <div className="grid">{shown.map((p, i) => <ProductCard key={p.id} p={p} i={i} />)}</div>
         )}
-        {!all && list.length > 12 && <div className="more"><button className="btn btn-yellow" onClick={() => setAll(true)}>Show all {list.length} spices</button></div>}
+        {!catalogOpen && <div className="more"><button className="btn btn-yellow" onClick={() => { setAll(true); setVisibleCount(12); requestAnimationFrame(() => document.getElementById('shop-t')?.focus()) }}>Browse all {list.length} spices <Arrow /></button></div>}
+        {catalogOpen && list.length > visibleCount && <div className="more"><button className="btn btn-yellow" onClick={() => setVisibleCount((n) => n + 12)}>Show more spices</button></div>}
+        {catalogOpen && <div className="shop-back"><button onClick={() => { st.open('cat', 'all'); st.open('purpose', null); st.open('query', ''); setAll(false); setVisibleCount(12) }}>Back to best sellers</button></div>}
       </div>
     </section>
   )
@@ -132,6 +134,12 @@ export function QuickView() {
           <div className="rate"><Stars v={p.rating} /><span>{p.rating} &middot; {p.reviews.toLocaleString('en-IN')} reviews &middot; <b className="ver">Verified buyers</b></span></div>
           <p className="qv-desc">{desc(p)}</p>
           <div className="notes">{p.notes.split(',').map((n) => <span key={n} className="chip">{n.trim()}</span>)}</div>
+          <dl className="qv-facts">
+            <div><dt>Net quantity</dt><dd>{sizeLabel(g)}</dd></div>
+            <div><dt>Listed origin</dt><dd>{p.origin}</dd></div>
+            <div><dt>Storage</dt><dd>Keep sealed in a cool, dry place.</dd></div>
+          </dl>
+          <p className="qv-pending">Ingredient, allergen, and batch details still need verified product data.</p>
           <div className="qv-heat">Heat <span>{[0, 1, 2, 3].map((n) => <SpiceGlyph key={n} k="flame" size={22} className={n < p.heat ? '' : 'dim'} />)}</span> <small>{['Zero fire', 'Gentle', 'Medium', 'Hot', 'Very hot'][p.heat]}</small></div>
           <div className="sizes lg" role="radiogroup" aria-label="Pack size">{sizes.map((s) => <button key={s} role="radio" aria-checked={s === g} className={`sz ${s === g ? 'on' : ''}`} onClick={() => setSz(s)}>{sizeLabel(s)}</button>)}</div>
           <div className="price lg"><b>{rupee(price * q)}</b><s>{rupee(mrp * q)}</s><span className="off">{off}% off</span></div>

@@ -1,3 +1,4 @@
+import { useId } from 'react'
 import { BRAND, inkOn } from './brand.js'
 
 const INK = '#1A1208'
@@ -70,11 +71,12 @@ export function DoodleArrow({ className = '', color = '#FFF3DC' }) {
 
 // 2D flat pouch for cards (SVG)
 export function PouchSVG({ sku, className = '' }) {
+  const instanceId = useId()
   const ink = inkOn(sku.color)
   const words = sku.name.toUpperCase().split(' ')
   const lines = words.length > 2 ? [words.slice(0, Math.ceil(words.length / 2)).join(' '), words.slice(Math.ceil(words.length / 2)).join(' ')] : words
   const fs = Math.max(...lines.map((l) => l.length)) > 9 ? 17 : 21
-  const id = 'r' + sku.id
+  const id = 'r' + instanceId.replace(/:/g, '') + sku.id
   return (
     <svg className={className} viewBox="0 0 200 270" aria-hidden="true">
       <ellipse cx="100" cy="258" rx="74" ry="9" fill="#1A1208" opacity=".22" />

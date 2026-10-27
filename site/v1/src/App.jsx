@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ReactLenis, useLenis } from 'lenis/react'
 import { BRAND, FREE_SHIP } from './brand.js'
-import { Sparkle, CartIcon } from './Icons.jsx'
-import { Marquee, reducedMotion } from './util.jsx'
+import { CartIcon } from './Icons.jsx'
+import { reducedMotion } from './util.jsx'
 import { StoreProvider, useStore, useModal } from './store/cart.jsx'
 import { Shop, QuickView, SearchOverlay, CartDrawer, Checkout, Toast, HeartIcon } from './store/ui.jsx'
 import Hero from './Hero.jsx'
@@ -13,11 +13,12 @@ const LINKS = [['Shop', '#shop'], ['Categories', '#browse'], ['Gifting', '#gifti
 
 const SearchIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="M15.5 15.5L21 21" /></svg>
 const UserIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21c1-5 5-7 8-7s7 2 8 7" /></svg>
+const MotionIcon = ({ paused }) => <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">{paused ? <path d="M7 4v16l13-8z" /> : <><rect x="5" y="4" width="5" height="16" rx="1" /><rect x="14" y="4" width="5" height="16" rx="1" /></>}</svg>
 
-function Header() {
+function Header({ paused, setPaused }) {
   const st = useStore()
   const cc = useRef()
-  useEffect(() => { if (st.bump && cc.current && !reducedMotion()) gsap.fromTo(cc.current, { scale: 1.9, rotate: -20 }, { scale: 1, rotate: 0, duration: 0.7, ease: 'back.out(3)' }) }, [st.bump])
+  useEffect(() => { if (st.bump && cc.current && !reducedMotion() && !paused) gsap.fromTo(cc.current, { scale: 1.9, rotate: -20 }, { scale: 1, rotate: 0, duration: 0.7, ease: 'back.out(3)' }) }, [st.bump, paused])
   const menu = st.ui.menu
   const navRef = useRef()
   const burger = useRef()
@@ -32,21 +33,14 @@ function Header() {
   }
   return (
     <>
-      <div className="announce">
-        <Marquee dur={40}>
-          {[0, 1, 2].map((i) => (
-            <span className="marquee-item" key={i}>
-              <span>Free shipping above &#8377;{FREE_SHIP}</span><Sparkle size={14} /><span>Cash on delivery available</span><Sparkle size={14} /><span>Ground this week, not last year</span><Sparkle size={14} /><span>Code FIRST10 for 10% off</span><Sparkle size={14} />
-            </span>
-          ))}
-        </Marquee>
-      </div>
+      <div className="announce"><div className="wrap announce-in"><span>Free shipping above &#8377;{FREE_SHIP}</span><span>Code FIRST10 for 10% off</span></div></div>
       <header className="nav" onKeyDown={trap}>
         <div className="wrap nav-in">
           <a className="logo" href="#top" aria-label={`${BRAND} home`}><span>{BRAND.toUpperCase()}<b>SPICES</b></span></a>
           <nav className="nav-links" aria-label="Main">{LINKS.map(([l, h]) => <a key={l} href={h}>{l}</a>)}</nav>
           <span className="nav-sp" />
           <button className="icon-btn" onClick={() => st.open('search', true)} aria-label="Search"><SearchIcon /></button>
+          <button className="icon-btn motion-btn" onClick={() => setPaused(!paused)} aria-label={paused ? 'Play animations' : 'Pause animations'} aria-pressed={paused} title={paused ? 'Play animations' : 'Pause animations'}><MotionIcon paused={paused} /></button>
           <button className="icon-btn hide-s" onClick={() => st.say('Sign-in is a demo here. Welcome anyway!')} aria-label="Account"><UserIcon /></button>
           <button className="icon-btn hide-s" onClick={() => { st.open('cat', st.s.wish.length ? 'wish' : 'all'); document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' }); if (!st.s.wish.length) st.say('Tap the heart on any pouch to save it') }} aria-label={`Wishlist, ${st.s.wish.length} saved`}>
             <HeartIcon on={st.s.wish.length > 0} />{st.s.wish.length > 0 && <i className="dot">{st.s.wish.length}</i>}
@@ -70,27 +64,25 @@ function LenisGate() {
   return null
 }
 
-const CLAIMS = ['Hand-ground. Zero fillers.', 'Fresh batch every week', 'Single-origin, farm named', 'Lab tested, FSSAI certified', 'Made loud, never bland']
-
 export default function App() {
   const reduced = reducedMotion()
+  const [paused, setPaused] = useState(reduced)
+  useEffect(() => {
+    document.documentElement.classList.toggle('motion-paused', paused)
+    return () => document.documentElement.classList.remove('motion-paused')
+  }, [paused])
   return (
     <StoreProvider>
-      <ReactLenis root options={{ lerp: 0.12, smoothWheel: !reduced, anchors: true }} />
+      <ReactLenis root options={{ lerp: 0.12, smoothWheel: !reduced && !paused, anchors: true }} />
       <LenisGate />
       <div id="top" />
-      <Header />
+      <Header paused={paused} setPaused={setPaused} />
       <main>
-        <Hero />
-        <div className="claims">
-          <Marquee dur={38}>
-            {[0, 1].map((k) => <span className="marquee-item" key={k}>{CLAIMS.map((c) => <span key={c} style={{ display: 'inline-flex', alignItems: 'center', gap: 26 }}>{c}<Sparkle size={26} color="#FFC21A" /></span>)}</span>)}
-          </Marquee>
-        </div>
+        <Hero motionPaused={paused} />
         <Trust />
         <Shop />
         <Browse />
-        <Heat />
+        <Heat motionPaused={paused} />
         <Farm />
         <Recipes />
         <Gifting />

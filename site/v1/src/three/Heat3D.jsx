@@ -86,9 +86,9 @@ function Scene({ heat, mobile }) {
   )
 }
 
-export default function Heat3D({ heat, active, mobile }) {
+export default function Heat3D({ heat, active, mobile, onReady }) {
   return (
-    <Canvas className="heat-canvas" flat dpr={[1, mobile ? 1.25 : 1.5]} frameloop={active ? 'always' : 'never'} camera={{ position: [0, 0, 8], fov: 38 }} gl={{ alpha: true, antialias: false, stencil: false }} aria-hidden="true">
+    <Canvas className="heat-canvas" flat dpr={[1, mobile ? 1.25 : 1.5]} frameloop={active ? 'always' : 'never'} camera={{ position: [0, 0, 8], fov: 38 }} gl={{ alpha: true, antialias: false, stencil: false }} onCreated={onReady} aria-hidden="true">
       <Scene heat={heat} mobile={mobile} />
     </Canvas>
   )

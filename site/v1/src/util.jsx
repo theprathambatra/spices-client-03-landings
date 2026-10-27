@@ -22,12 +22,22 @@ export function Reveal({ as: Tag = 'div', kind = 'rise', rot, i = 0, className =
 }
 
 export const reducedMotion = () => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+export const supportsWebGL = () => {
+  if (typeof document === 'undefined') return false
+  try {
+    const canvas = document.createElement('canvas')
+    const context = canvas.getContext('webgl2')
+    if (!context) return false
+    context.getExtension('WEBGL_lose_context')?.loseContext()
+    return true
+  } catch { return false }
+}
 
-export function Marquee({ children, className = '', rev = false, dur }) {
+export function Marquee({ children, className = '', rev = false, dur, accessible = false }) {
   return (
-    <div className={`marquee ${rev ? 'rev' : ''} ${className}`} style={dur ? { '--dur': dur + 's' } : undefined} aria-hidden="true">
+    <div className={`marquee ${rev ? 'rev' : ''} ${className}`} style={dur ? { '--dur': dur + 's' } : undefined} aria-hidden={accessible ? undefined : true}>
       <div className="marquee-track">{children}</div>
-      <div className="marquee-track">{children}</div>
+      <div className="marquee-track" aria-hidden="true">{children}</div>
     </div>
   )
 }
@@ -37,6 +47,6 @@ import { Component } from 'react'
 export class Boundary extends Component {
   state = { bad: false }
   static getDerivedStateFromError() { return { bad: true } }
-  componentDidCatch(e) { console.warn('3D disabled:', e?.message) }
+  componentDidCatch(e) { console.warn('3D disabled:', e?.message); this.props.onError?.() }
   render() { return this.state.bad ? (this.props.fallback ?? null) : this.props.children }
 }

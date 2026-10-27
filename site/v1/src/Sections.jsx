@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { BRAND, CATEGORIES, PURPOSES, BUNDLES, REVIEWS, ORIGINS, products, bySlug, rupee, grams, priceFor, FREE_SHIP, brand } from './brand.js'
 import { SpiceGlyph, Sparkle, Star, Arrow, PouchSVG } from './Icons.jsx'
-import { Reveal, Marquee, useInView, reducedMotion, Boundary } from './util.jsx'
+import { Reveal, Marquee, useInView, reducedMotion, supportsWebGL, Boundary } from './util.jsx'
 import { useStore } from './store/cart.jsx'
 import { Stars } from './store/ui.jsx'
 
@@ -12,8 +12,9 @@ const goShop = () => document.getElementById('shop')?.scrollIntoView({ behavior:
 
 /* ---------------------------------------------------------- trust strip */
 const TRUST = [
-  ['FSSAI certified', 'Lic. 10020051000000', 'bowl'], ['Lab tested', 'Every single batch', 'turmeric'], ['No fillers', 'No colour, no preservatives', 'chilli'],
-  ['Cash on delivery', 'Pay at your doorstep', 'gift'], ['7-day returns', 'Easy, no questions', 'cardamom'], ['Secure payments', 'UPI, cards, netbanking', 'salt'],
+  ['FSSAI certified', 'Lic. 10020051000000', 'bowl'],
+  ['No fillers', 'No colour, no preservatives', 'chilli'],
+  ['Cash on delivery', 'Pay at your doorstep', 'gift'],
 ]
 export function Trust() {
   return (
@@ -73,9 +74,12 @@ const LEVELS = [
   { n: 'Hot', q: 'Ordering a lassi', s: '15,000 - 50,000 SHU', c: '#FF7A1A', glow: '#FF7A1A66', h: 3, tag: 'Guntur dreams' },
   { n: 'Inferno', q: 'Calling mummy', s: '80,000+ SHU', c: '#E0201A', glow: '#E0201A77', h: 4, tag: 'Fire brigade' },
 ]
-export function Heat() {
+export function Heat({ motionPaused = false }) {
   const st = useStore()
   const [val, setVal] = useState(18)
+  const [can3d] = useState(supportsWebGL)
+  const [failed3d, setFailed3d] = useState(false)
+  const [canvasReady, setCanvasReady] = useState(false)
   const heat = useRef(0.18)
   const [stageRef, seen] = useInView({ rootMargin: '200px' })
   const [active, setActive] = useState(false)
@@ -93,6 +97,7 @@ export function Heat() {
     return l.sort((a, b) => b.reviews - a.reviews).slice(0, 3)
   }, [lv.h])
   const onChange = (e) => { const v = +e.target.value; setVal(v); heat.current = v / 100 }
+  const showFallback = !can3d || reducedMotion() || motionPaused || failed3d || !canvasReady
   return (
     <section className="section heat" id="heat" style={{ '--hc': lv.c, '--glow': lv.glow }} aria-labelledby="heat-t">
       <div className="wrap">
@@ -108,9 +113,13 @@ export function Heat() {
               <span className="chip scov" style={{ background: lv.c, color: '#1A1208' }}>{lv.s}</span>
             </div>
           </div>
-          <div className="heat-stage" ref={stageRef}>
+          <div className={`heat-stage ${showFallback ? 'with-fallback' : ''}`} ref={stageRef}>
             <span className="corner">{lv.tag}</span>
-            {seen && <Boundary><Suspense fallback={null}><Heat3D heat={heat} active={active} mobile={mobile} /></Suspense></Boundary>}
+            <div className="heat-fallback" aria-hidden="true">
+              <svg viewBox="0 0 100 100"><path d="M30 24c10-6 26-4 34 6 8 10 6 30-6 46-8 10-24 18-36 16 14-8 22-18 22-34 0-10-8-14-14-34z" fill="var(--hc)" stroke="var(--ink)" strokeWidth="4" strokeLinejoin="round" /><path d="M30 24c-2-8 2-12 6-14 2 6 6 8 12 10-2 6-10 8-18 4z" fill="#2FA36B" stroke="var(--ink)" strokeWidth="4" /><path d="M52 34c4 6 4 16 0 24" fill="none" stroke="var(--cream)" strokeWidth="4" strokeLinecap="round" /></svg>
+              <strong>{lv.n}</strong><span>Slide to find your spice match</span>
+            </div>
+            {seen && can3d && !reducedMotion() && !failed3d && <Boundary onError={() => setFailed3d(true)}><Suspense fallback={null}><Heat3D heat={heat} active={active && !motionPaused} mobile={mobile} onReady={() => setCanvasReady(true)} /></Suspense></Boundary>}
           </div>
         </div>
         <div className="heat-picks">
@@ -159,12 +168,28 @@ export function Farm() {
 
 /* ---------------------------------------------------------- recipes */
 const RECIPES = [
-  { t: 'Dal tadka in 15', time: '15 min', ids: ['lakadong-haldi', 'jeera-whole', 'hing', 'dhaniya'], c: '#FFC21A', g: 'bowl', d: 'Bloom the jeera in ghee, add hing, pour over dal. Instant happiness.' },
-  { t: 'Kadak masala chai', time: '8 min', ids: ['kadak-chai', 'green-elaichi', 'dalchini'], c: '#2BA8E0', g: 'chai', d: 'Crush the pods, boil hard, add milk, argue about sugar.' },
-  { t: 'Dum biryani night', time: '90 min', ids: ['biryani-masala', 'tellicherry', 'laung', 'mongra-saffron'], c: '#6B2D8B', g: 'saffron', d: 'Layer, seal with dough, wait. The patience is a spice too.' },
+  { t: 'Dal tadka in 15', time: '15 min', ids: ['lakadong-haldi', 'jeera-whole', 'hing', 'dhaniya'], c: '#FFC21A', g: 'bowl', d: 'A quick tadka for cooked dal.', pantry: '2 cups cooked dal, ghee, garlic, salt', steps: ['Warm the cooked dal with ½ tsp turmeric, salt, and enough water to loosen it.', 'Heat 1 tbsp ghee. Let 1 tsp jeera crackle, then add a pinch of hing and chopped garlic.', 'Stir in ½ tsp dhaniya, pour over the dal, and simmer for 2 minutes.'] },
+  { t: 'Kadak masala chai', time: '8 min', ids: ['kadak-chai', 'green-elaichi', 'dalchini'], c: '#2BA8E0', g: 'chai', d: 'A bold pot of chai for two.', pantry: '2 cups water, 1 cup milk, 2 tsp tea leaves, sugar to taste', steps: ['Crush 2 cardamom pods. Simmer them with a small cinnamon piece and ¼ tsp chai masala in the water.', 'Add tea leaves and boil for 2 minutes. Pour in milk and sweeten to taste.', 'Simmer for 2 more minutes, then strain into cups.'] },
+  { t: 'Dum biryani night', time: '90 min', ids: ['biryani-masala', 'tellicherry', 'laung', 'mongra-saffron'], c: '#6B2D8B', g: 'saffron', d: 'Layer, seal, and let the spices do their work.', pantry: '1 cup basmati rice, vegetables or protein, yogurt, onion, milk, salt', steps: ['Soak the rice for 20 minutes. Parboil it with cloves and salt, then drain.', 'Cook onion and your vegetables or protein with yogurt, biryani masala, and a little pepper until nearly done.', 'Layer the rice and filling. Add saffron soaked in warm milk, cover tightly, cook on low for 20–25 minutes, and rest for 10.'] },
 ]
-export function Recipes() {
+function RecipeCard({ r, i }) {
   const st = useStore()
+  const items = useMemo(() => r.ids.map((id) => bySlug[id]), [r])
+  const [selected, setSelected] = useState(r.ids)
+  const chosen = items.filter((p) => selected.includes(p.id))
+  const total = chosen.reduce((a, p) => a + p.price, 0)
+  const toggle = (id) => setSelected((ids) => ids.includes(id) ? ids.filter((v) => v !== id) : [...ids, id])
+  return (
+    <Reveal as="article" className="recipe" i={i} style={{ '--c': r.c }}>
+      <div className="r-art"><SpiceGlyph k={r.g} size={130} /><span className="chip">{r.time}</span></div>
+      <h3>{r.t}</h3><p>{r.d}</p>
+      <details className="recipe-method"><summary>View cooking method</summary><div><p><strong>From your kitchen:</strong> {r.pantry}</p><ol>{r.steps.map((step) => <li key={step}>{step}</li>)}</ol></div></details>
+      <fieldset className="recipe-select"><legend>Choose the spices you need</legend><div>{items.map((p) => <label key={p.id}><input type="checkbox" checked={selected.includes(p.id)} onChange={() => toggle(p.id)} />{p.name}</label>)}</div></fieldset>
+      <button className="btn btn-sm btn-yellow" disabled={!chosen.length} onClick={() => { chosen.forEach((p) => st.add(p.id, grams(p), 1, { open: false, silent: true })); st.say(`Added ${chosen.length} spices`); st.open('cart', true) }}>Add {chosen.length} selected &middot; {rupee(total)}</button>
+    </Reveal>
+  )
+}
+export function Recipes() {
   return (
     <section className="section" id="recipes" aria-labelledby="rec-t">
       <div className="wrap">
@@ -173,18 +198,7 @@ export function Recipes() {
           <h2 className="title" id="rec-t">Recipes, with a shopping list</h2>
         </div>
         <div className="recipes">
-          {RECIPES.map((r, i) => {
-            const items = r.ids.map((id) => bySlug[id])
-            const total = items.reduce((a, p) => a + p.price, 0)
-            return (
-              <Reveal key={r.t} className="recipe" i={i} style={{ '--c': r.c }}>
-                <div className="r-art"><SpiceGlyph k={r.g} size={130} /><span className="chip">{r.time}</span></div>
-                <h3>{r.t}</h3><p>{r.d}</p>
-                <ul>{items.map((p) => <li key={p.id}>{p.name}</li>)}</ul>
-                <button className="btn btn-sm btn-yellow" onClick={() => { items.forEach((p) => st.add(p.id, grams(p), 1, { open: false, silent: true })); st.say(`Added ${items.length} spices`); st.open('cart', true) }}>Add all {items.length} &middot; {rupee(total)}</button>
-              </Reveal>
-            )
-          })}
+          {RECIPES.map((r, i) => <RecipeCard key={r.t} r={r} i={i} />)}
         </div>
       </div>
     </section>
@@ -209,7 +223,7 @@ export function Gifting() {
             const sum = items.reduce((a, p) => a + p.price, 0)
             return (
               <Reveal key={b.id} className="bun" i={i} style={{ '--c': b.color }}>
-                <Reveal as="span" kind="slap" rot={7} className="tag">{b.tag}</Reveal>
+                <Reveal as="span" kind="slap" rot={7} className="tag">{b.id === 'tadka-kit' ? `Save ${rupee(Math.max(sum, b.mrp) - b.price)}` : b.tag}</Reveal>
                 <div className="stack" aria-hidden="true">
                   {items.slice(0, 3).map((p, k) => <PouchSVG key={p.id} sku={p} className="" />).map((el, k) => <div key={k} style={{ position: 'absolute', bottom: -8, left: `${8 + k * 28}%`, width: '34%', transform: `rotate(${(k - 1) * 8}deg)`, zIndex: k === 1 ? 2 : 1 }}>{el}</div>)}
                 </div>
@@ -244,8 +258,8 @@ export function Reviews() {
           <ul className="dist">{DIST.map(([n, p]) => <li key={n}><span>{n}</span><Star size={14} /><i><u style={{ width: p + '%' }} /></i><em>{p}%</em></li>)}</ul>
         </div>
       </div>
-      <Marquee className="bubbles" dur={80}>
-        {[...REVIEWS, ...REVIEWS].map((r, i) => (
+      <Marquee className="bubbles" dur={80} accessible>
+        {REVIEWS.map((r, i) => (
           <article className="bubble" key={i}>
             <Stars v={5} size={16} />
             <h3>{r.t}</h3>
