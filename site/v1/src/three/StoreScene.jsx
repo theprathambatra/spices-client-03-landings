@@ -16,6 +16,9 @@ const spiceRacks = [
   products.filter((p) => p.cat === 'whole'),
   products.filter((p) => !['ground', 'whole'].includes(p.cat)),
 ]
+const displayById = Object.fromEntries([...products, ...magicProducts].map((p) => [p.id, p]))
+const frontEdit = ['magic-almond', 'magic-trail-mix', 'magic-makhana', 'magic-mix-berries', 'magic-pistachio'].map((id) => displayById[id])
+const backEdit = ['kashmiri-chilli', 'lakadong-haldi', 'garam-masala', 'green-elaichi', 'magic-cashew'].map((id) => displayById[id])
 const packArtCache = new Map()
 
 const random = (seed) => () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296)
@@ -89,6 +92,23 @@ function posterTexture(title, subtitle, color) {
   return t
 }
 
+function exteriorTexture() {
+  const c = document.createElement('canvas'); c.width = 1024; c.height = 512
+  const g = c.getContext('2d')
+  const sky = g.createLinearGradient(0, 0, 0, 512)
+  sky.addColorStop(0, '#A9D5DF'); sky.addColorStop(.58, '#DBE6D5'); sky.addColorStop(1, '#E6C89C')
+  g.fillStyle = sky; g.fillRect(0, 0, 1024, 512)
+  g.fillStyle = 'rgba(255,244,204,.75)'; g.beginPath(); g.arc(788, 92, 58, 0, Math.PI * 2); g.fill()
+  g.fillStyle = '#9DB9A7'; g.beginPath(); g.moveTo(0, 355)
+  for (let x = 0; x <= 1024; x += 25) g.lineTo(x, 332 + Math.sin(x * .013) * 28 + Math.sin(x * .032) * 13)
+  g.lineTo(1024, 512); g.lineTo(0, 512); g.fill()
+  g.fillStyle = '#789E87'; g.beginPath(); g.moveTo(0, 427)
+  for (let x = 0; x <= 1024; x += 20) g.lineTo(x, 414 + Math.sin(x * .022) * 19)
+  g.lineTo(1024, 512); g.lineTo(0, 512); g.fill()
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4
+  return t
+}
+
 function labelTexture(title, subtitle, background = '#FFC21A') {
   const c = document.createElement('canvas')
   c.width = 1024; c.height = 256
@@ -152,11 +172,11 @@ function packTexture(product, size) {
   return t
 }
 
-function Sign({ title, subtitle, width = 5.2, color = '#FFC21A', position = [0, 0, 0] }) {
+function Sign({ title, subtitle, width = 5.2, color = '#FFC21A', position = [0, 0, 0], rotation = [0, 0, 0] }) {
   const map = useMemo(() => labelTexture(title, subtitle, color), [title, subtitle, color])
   useEffect(() => () => map.dispose(), [map])
   const h = width * .25
-  return <group position={position}>
+  return <group position={position} rotation={rotation}>
     <RoundedBox args={[width + .14, h + .14, .13]} radius={.045} smoothness={3} castShadow>
       <meshStandardMaterial color={WALNUT} roughness={.55} />
     </RoundedBox>
@@ -296,7 +316,7 @@ function BackDisplay({ onPick, selectedId, maps }) {
 function Cashier({ onOpen, paused, maps }) {
   const arm = useRef()
   useFrame((s) => { if (arm.current) arm.current.rotation.z = paused ? -.2 : -.2 + Math.sin(s.clock.elapsedTime * 1.8) * .13 })
-  return <group position={[3.7, 0, -11.2]} onClick={(e) => { e.stopPropagation(); onOpen() }}
+  return <group position={[0, 0, -11.2]} onClick={(e) => { e.stopPropagation(); onOpen() }}
     onPointerOver={(e) => { e.stopPropagation(); document.body.style.cursor = 'pointer' }}
     onPointerOut={() => { document.body.style.cursor = '' }}>
     {[-.25, .25].map((x) => <mesh key={x} position={[x, .55, -.38]} castShadow><cylinderGeometry args={[.14, .17, 1.08, 12]} /><meshStandardMaterial color="#394747" roughness={.9} /></mesh>)}
@@ -349,8 +369,105 @@ function Cashier({ onOpen, paused, maps }) {
   </group>
 }
 
-function Room({ onPick, onCashier, selectedId, paused }) {
-  const maps = useMemo(() => ({ floor: surfaceTexture('floor'), plaster: surfaceTexture('plaster'), wood: surfaceTexture('wood'), stone: surfaceTexture('stone') }), [])
+function GlassBay({ width, height, position, rotation = [0, 0, 0], divisions = 2 }) {
+  return <group position={position} rotation={rotation}>
+    <mesh><boxGeometry args={[width - .1, height - .1, .035]} />
+      <meshPhysicalMaterial color="#B7D7D6" transparent opacity={.24} roughness={.13} metalness={.08} side={THREE.DoubleSide} depthWrite={false} />
+    </mesh>
+    {Array.from({ length: divisions + 1 }, (_, i) => <mesh key={i} position={[-width / 2 + i * width / divisions, 0, 0]} castShadow>
+      <boxGeometry args={[.085, height, .095]} /><meshStandardMaterial color="#514532" metalness={.22} roughness={.43} />
+    </mesh>)}
+    {[-height / 2, 0, height / 2].map((y) => <mesh key={y} position={[0, y, 0]} castShadow>
+      <boxGeometry args={[width, .085, .095]} /><meshStandardMaterial color="#514532" metalness={.22} roughness={.43} />
+    </mesh>)}
+    {Array.from({ length: divisions }, (_, i) => <mesh key={`glint${i}`} position={[-width / 2 + (i + .38) * width / divisions, .24, .022]} rotation={[0, 0, -.13]}>
+      <planeGeometry args={[.026, height * .67]} /><meshBasicMaterial color="#FFF9E9" transparent opacity={.19} depthWrite={false} side={THREE.DoubleSide} />
+    </mesh>)}
+  </group>
+}
+
+function OutdoorView({ side, map }) {
+  return <group>
+    <mesh position={[0, 3.5, side * 25]} rotation={[0, side > 0 ? Math.PI : 0, 0]}>
+      <planeGeometry args={[36, 12]} /><meshBasicMaterial map={map} side={THREE.DoubleSide} />
+    </mesh>
+    <mesh position={[0, -.07, side * 20]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
+      <planeGeometry args={[29, 12]} /><meshStandardMaterial color="#D7C4A3" roughness={.94} />
+    </mesh>
+    {[-8, -4.8, 5.1, 8].map((x, i) => <group key={x} position={[x, 0, side * (18.5 + i % 2)]}>
+      <mesh position={[0, 1.2, 0]} castShadow><cylinderGeometry args={[.1, .16, 2.4, 8]} /><meshStandardMaterial color="#6E5B42" roughness={.95} /></mesh>
+      <mesh position={[0, 2.6, 0]} scale={[.82, 1.32, .82]} castShadow><sphereGeometry args={[1, 12, 9]} /><meshStandardMaterial color={i % 2 ? '#658C65' : '#7A9D6D'} roughness={.96} /></mesh>
+    </group>)}
+    <mesh position={[0, .38, side * 18]}><boxGeometry args={[26, .76, .38]} /><meshStandardMaterial color="#BBA98C" roughness={.89} /></mesh>
+  </group>
+}
+
+function SideOutdoorView({ side, map }) {
+  return <group>
+    <mesh position={[side * 22, 3.5, 5]} rotation={[0, side < 0 ? Math.PI / 2 : -Math.PI / 2, 0]}>
+      <planeGeometry args={[27, 12]} /><meshBasicMaterial map={map} side={THREE.DoubleSide} />
+    </mesh>
+    <mesh position={[side * 15, -.07, 9]} rotation={[-Math.PI / 2, 0, 0]}>
+      <planeGeometry args={[11, 14]} /><meshStandardMaterial color="#D6C7A8" roughness={.95} />
+    </mesh>
+    {[10.5, 13.2].map((z) => <group key={z} position={[side * 12.6, 0, z]}>
+      <mesh position={[0, .27, 0]}><boxGeometry args={[.75, .55, .75]} /><meshStandardMaterial color="#B97150" roughness={.9} /></mesh>
+      <mesh position={[0, 1.35, 0]} castShadow><cylinderGeometry args={[.055, .085, 1.8, 7]} /><meshStandardMaterial color="#536A4C" roughness={.95} /></mesh>
+      <mesh position={[0, 2.25, 0]} scale={[.65, 1.05, .65]} castShadow><sphereGeometry args={[1, 12, 9]} /><meshStandardMaterial color="#6D956D" roughness={.94} /></mesh>
+    </group>)}
+  </group>
+}
+
+function EntranceDoor({ onExit }) {
+  return <group position={[0, 0, 14.08]} onClick={(e) => { e.stopPropagation(); onExit() }}
+    onPointerOver={(e) => { e.stopPropagation(); document.body.style.cursor = 'pointer' }}
+    onPointerOut={() => { document.body.style.cursor = '' }}>
+    {[-1.24, 1.24].map((x) => <mesh key={x} position={[x, 2.25, 0]} castShadow>
+      <boxGeometry args={[.14, 4.5, .19]} /><meshStandardMaterial color={WALNUT} roughness={.58} />
+    </mesh>)}
+    <mesh position={[0, 4.49, 0]} castShadow><boxGeometry args={[2.62, .16, .19]} /><meshStandardMaterial color={WALNUT} roughness={.58} /></mesh>
+    <mesh position={[0, .055, 0]}><boxGeometry args={[2.62, .11, .36]} /><meshStandardMaterial color={BRASS} metalness={.36} roughness={.33} /></mesh>
+    <group position={[-1.17, 0, 0]} rotation={[0, .3, 0]}>
+      <mesh position={[1.1, 2.22, 0]}><boxGeometry args={[2.15, 4.34, .04]} />
+        <meshPhysicalMaterial color="#BBDDDC" transparent opacity={.29} roughness={.09} metalness={.08} side={THREE.DoubleSide} depthWrite={false} />
+      </mesh>
+      {[.05, 2.15].map((x) => <mesh key={x} position={[x, 2.22, 0]} castShadow>
+        <boxGeometry args={[.11, 4.35, .15]} /><meshStandardMaterial color={WALNUT} roughness={.55} />
+      </mesh>)}
+      {[.08, 2.2, 4.34].map((y) => <mesh key={y} position={[1.1, y, 0]} castShadow>
+        <boxGeometry args={[2.2, .105, .15]} /><meshStandardMaterial color={WALNUT} roughness={.55} />
+      </mesh>)}
+      <mesh position={[1.1, 1.02, 0]}><boxGeometry args={[2.04, .4, .07]} /><meshStandardMaterial color="#D4B484" roughness={.74} /></mesh>
+      <mesh position={[1.9, 2.2, -.16]} castShadow><boxGeometry args={[.07, .55, .12]} /><meshStandardMaterial color={BRASS} metalness={.46} roughness={.31} /></mesh>
+    </group>
+    <Sign title="BACK TO THE SITE" subtitle="TAP THE DOOR" width={2.8} color="#FFC21A" position={[0, 5.02, -.07]} rotation={[0, Math.PI, 0]} />
+  </group>
+}
+
+function DisplayIsland({ z, title, subtitle, accent, items, maps, onPick, selectedId }) {
+  return <group position={[0, 0, z]}>
+    <RoundedBox args={[3.75, .49, 1.95]} radius={.065} smoothness={3} position={[0, .6, 0]} castShadow receiveShadow>
+      <meshStandardMaterial map={maps.wood} roughness={.63} />
+    </RoundedBox>
+    {[-1.55, 1.55].map((x) => <mesh key={x} position={[x, .2, 0]} castShadow>
+      <boxGeometry args={[.15, .55, 1.62]} /><meshStandardMaterial color={WALNUT} roughness={.6} />
+    </mesh>)}
+    <RoundedBox args={[3.9, .12, 2.04]} radius={.04} smoothness={3} position={[0, .9, 0]} castShadow receiveShadow>
+      <meshStandardMaterial map={maps.stone} roughness={.48} />
+    </RoundedBox>
+    <mesh position={[0, .824, 1.005]}><boxGeometry args={[3.72, .025, .025]} /><meshStandardMaterial color={BRASS} metalness={.39} roughness={.34} /></mesh>
+    <RoundedBox args={[3.38, .24, .63]} radius={.025} smoothness={3} position={[0, 1.08, -.39]} castShadow receiveShadow>
+      <meshStandardMaterial color={accent} roughness={.74} />
+    </RoundedBox>
+    <mesh position={[0, 1.05, -.06]}><boxGeometry args={[3.3, .025, .025]} /><meshStandardMaterial color={BRASS} metalness={.4} roughness={.32} /></mesh>
+    {items.slice(0, 3).map((p, i) => <ProductPack key={`back${p.id}`} product={p} size={p.sizes?.[0]} position={[(i - 1) * 1.13, 1.79, -.38]} onPick={onPick} selected={selectedId === p.id} />)}
+    {items.slice(3, 5).map((p, i) => <ProductPack key={`front${p.id}`} product={p} size={p.sizes?.[0]} position={[(i ? .63 : -.63), 1.51, .49]} onPick={onPick} selected={selectedId === p.id} />)}
+    <Sign title={title} subtitle={subtitle} width={2.72} color={accent} position={[0, .57, 1.02]} />
+  </group>
+}
+
+function Room({ onPick, onCashier, onExit, selectedId, paused }) {
+  const maps = useMemo(() => ({ floor: surfaceTexture('floor'), plaster: surfaceTexture('plaster'), wood: surfaceTexture('wood'), stone: surfaceTexture('stone'), outside: exteriorTexture() }), [])
   useEffect(() => () => Object.values(maps).forEach((map) => map.dispose()), [maps])
   return <>
     <color attach="background" args={['#F6E9D5']} />
@@ -363,6 +480,8 @@ function Room({ onPick, onCashier, selectedId, paused }) {
     {[9, 2, -5, -11].map((z) => <pointLight key={z} position={[0, 5.38, z]} intensity={24} distance={9} decay={2} color="#FFE3AE" />)}
     {[[-7.1, 8], [-7.1, 2], [-7.1, -4], [-7.1, -10], [7.1, 7], [7.1, 0], [7.1, -7]].map(([x, z]) =>
       <pointLight key={`${x}-${z}`} position={[x, 4.65, z]} intensity={12} distance={6.5} decay={2} color="#FFF0D2" />)}
+    <OutdoorView side={-1} map={maps.outside} /><OutdoorView side={1} map={maps.outside} />
+    <SideOutdoorView side={-1} map={maps.outside} /><SideOutdoorView side={1} map={maps.outside} />
 
     <mesh position={[0, -.035, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
       <planeGeometry args={[21, 29]} /><meshStandardMaterial map={maps.floor} bumpMap={maps.floor} bumpScale={.015} roughness={.91} />
@@ -373,7 +492,10 @@ function Room({ onPick, onCashier, selectedId, paused }) {
     {[-1.16, 1.16].map((x) => <mesh key={x} position={[x, .016, 4.1]}><boxGeometry args={[.035, .006, 11.8]} /><meshStandardMaterial color="#E4B77A" roughness={.9} /></mesh>)}
 
     {[-1, 1].map((s) => <group key={s}>
-      <mesh position={[s * 10.25, 2.95, 0]} receiveShadow><boxGeometry args={[.3, 6, 29]} /><meshStandardMaterial map={maps.plaster} bumpMap={maps.plaster} bumpScale={.012} roughness={.98} /></mesh>
+      <mesh position={[s * 10.25, 2.95, -2.2]} receiveShadow><boxGeometry args={[.3, 6, 24.4]} /><meshStandardMaterial map={maps.plaster} bumpMap={maps.plaster} bumpScale={.012} roughness={.98} /></mesh>
+      <mesh position={[s * 10.25, .84, 12.2]}><boxGeometry args={[.3, 1.68, 4.2]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+      <mesh position={[s * 10.25, 5.63, 12.2]}><boxGeometry args={[.3, .75, 4.2]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+      <GlassBay width={4.14} height={3.53} position={[s * 10.11, 3.49, 12.2]} rotation={[0, -s * Math.PI / 2, 0]} divisions={2} />
       <mesh position={[s * 10.04, .84, 0]} receiveShadow><boxGeometry args={[.09, 1.68, 28.8]} /><meshStandardMaterial color={s < 0 ? '#D7B298' : '#C4D6BF'} roughness={.83} /></mesh>
       <mesh position={[s * 9.97, 1.71, 0]}><boxGeometry args={[.11, .095, 28.85]} /><meshStandardMaterial map={maps.wood} roughness={.58} /></mesh>
       <mesh position={[s * 9.97, .14, 0]}><boxGeometry args={[.13, .28, 28.85]} /><meshStandardMaterial map={maps.wood} roughness={.58} /></mesh>
@@ -382,12 +504,23 @@ function Room({ onPick, onCashier, selectedId, paused }) {
       </mesh>)}
       <mesh position={[s * 10.04, 5.5, 0]}><boxGeometry args={[.14, .18, 28.9]} /><meshStandardMaterial map={maps.wood} roughness={.65} /></mesh>
     </group>)}
-    {[-1, 1].map((s) => <group key={s}>
-      <mesh position={[0, 2.95, s * 14.3]} receiveShadow><boxGeometry args={[20.8, 6, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
-      <mesh position={[0, .84, s * 14.08]}><boxGeometry args={[20.35, 1.68, .08]} /><meshStandardMaterial color="#E1C5AA" roughness={.86} /></mesh>
-      <mesh position={[0, 1.71, s * 14.02]}><boxGeometry args={[20.5, .095, .1]} /><meshStandardMaterial map={maps.wood} roughness={.62} /></mesh>
-      <mesh position={[0, .14, s * 14.02]}><boxGeometry args={[20.5, .28, .12]} /><meshStandardMaterial map={maps.wood} roughness={.62} /></mesh>
-    </group>)}
+    <mesh position={[-6.15, 2.95, -14.3]} receiveShadow><boxGeometry args={[8.5, 6, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+    <mesh position={[8.75, 2.95, -14.3]} receiveShadow><boxGeometry args={[3.3, 6, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+    <mesh position={[0, .85, -14.3]}><boxGeometry args={[3.9, 1.7, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+    <mesh position={[0, 5.3, -14.3]}><boxGeometry args={[3.9, 1.4, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+    <mesh position={[4.53, .85, -14.3]}><boxGeometry args={[5.05, 1.7, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+    <mesh position={[4.53, 5.3, -14.3]}><boxGeometry args={[5.05, 1.4, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+    <mesh position={[0, .84, -14.08]}><boxGeometry args={[20.35, 1.68, .08]} /><meshStandardMaterial color="#E1C5AA" roughness={.86} /></mesh>
+    <mesh position={[0, 1.71, -14.02]}><boxGeometry args={[20.5, .095, .1]} /><meshStandardMaterial map={maps.wood} roughness={.62} /></mesh>
+    <mesh position={[0, .14, -14.02]}><boxGeometry args={[20.5, .28, .12]} /><meshStandardMaterial map={maps.wood} roughness={.62} /></mesh>
+    <GlassBay width={3.86} height={2.91} position={[0, 3.18, -14.04]} divisions={2} />
+    <GlassBay width={5.01} height={2.91} position={[4.53, 3.18, -14.04]} divisions={3} />
+
+    <mesh position={[0, 5.68, 14.3]}><boxGeometry args={[20.8, .63, .3]} /><meshStandardMaterial map={maps.plaster} roughness={.98} /></mesh>
+    <mesh position={[0, .075, 14.3]}><boxGeometry args={[20.8, .15, .3]} /><meshStandardMaterial map={maps.stone} roughness={.7} /></mesh>
+    <GlassBay width={8.88} height={5.28} position={[-5.72, 2.76, 14.1]} divisions={3} />
+    <GlassBay width={8.88} height={5.28} position={[5.72, 2.76, 14.1]} divisions={3} />
+    <EntranceDoor onExit={onExit} />
 
     <mesh position={[0, 5.88, 0]} receiveShadow><boxGeometry args={[21, .18, 29]} /><meshStandardMaterial color="#F4E7D1" roughness={.98} /></mesh>
     {[-7.55, -3.75, 3.75, 7.55].map((x) => <mesh key={x} position={[x, 5.7, 0]} castShadow><boxGeometry args={[.15, .23, 28.6]} /><meshStandardMaterial map={maps.wood} roughness={.67} /></mesh>)}
@@ -403,19 +536,20 @@ function Room({ onPick, onCashier, selectedId, paused }) {
     {[7, 0, -7].map((z, i) => <Rack key={`spice${z}`} items={spiceRacks[i]} side="right" z={z} title={['Powdered', 'Whole', 'Seasoning & herbs'][i]} subtitle={`${spiceRacks[i].length} spices · tap a pouch`} color={['#FFC21A', '#9BE8E0', '#F7BFD0'][i]} onPick={onPick} selectedId={selectedId} maps={maps} columns={4} />)}
     <BackDisplay onPick={onPick} selectedId={selectedId} maps={maps} />
     <Cashier onOpen={onCashier} paused={paused} maps={maps} />
-    <TableSet x={-2.45} z={1.7} maps={maps} /><TableSet x={2.45} z={-1.5} maps={maps} />
+    <DisplayIsland z={5.3} title="PANTRY FAVOURITES" subtitle="A LITTLE OF EVERYTHING" accent="#E8C479" items={frontEdit} maps={maps} onPick={onPick} selectedId={selectedId} />
+    <DisplayIsland z={-3.45} title="THE TADKA EDIT" subtitle="THE GOOD STUFF, UP FRONT" accent="#F2A68E" items={backEdit} maps={maps} onPick={onPick} selectedId={selectedId} />
+    <TableSet x={-5.1} z={1.15} maps={maps} /><TableSet x={5.1} z={-1.35} maps={maps} />
     <Plant x={-7.4} z={11} /><Plant x={7.4} z={11} /><Plant x={-7.1} z={-11} size={.9} /><Plant x={7.15} z={-11.3} size={.8} />
     <WallFrame x={-8} color="#B95F3F" title="GOOD FOOD" subtitle="GOOD COMPANY" />
     <WallFrame x={8} color="#CC9C3D" title="MORE MASALA" subtitle="MORE MEMORIES" />
-    <Sign title="KESARI" subtitle="TURN UP THE MASALA" width={5} color="#FFC21A" position={[.9, 5.08, -14.07]} />
-    <Sign title="TAKE A WALK" subtitle="PICK A POUCH · ASK THE CASHIER" width={5.1} color="#F7BFD0" position={[0, 4.65, 14.08]} />
+    <Sign title="KESARI" subtitle="TURN UP THE MASALA" width={4.6} color="#FFC21A" position={[0, 5.08, -14.07]} />
   </>
 }
 
 const PRESETS = {
   entrance: [0, 11.4, 0], seeds: [-4.3, 6.5, Math.PI / 2],
   powdered: [4.4, 6.5, -Math.PI / 2], whole: [4.4, -.2, -Math.PI / 2],
-  seasoning: [4.4, -6.7, -Math.PI / 2], makhana: [-4.4, -7.8, 0], cashier: [3.6, -6, 0],
+  seasoning: [4.4, -6.7, -Math.PI / 2], makhana: [-4.4, -7.8, 0], cashier: [0, -6.3, 0],
 }
 
 function CameraWalk({ controls, look, jump }) {
@@ -439,20 +573,22 @@ function CameraWalk({ controls, look, jump }) {
     const a = look.current.yaw
     const nx = camera.position.x + (-Math.sin(a) * forward + Math.cos(a) * sideways) * step
     const nz = camera.position.z + (-Math.cos(a) * forward - Math.sin(a) * sideways) * step
-    const valid = (x, z) => Math.abs(x) < 7.75 && z > -9.2 && z < 12.25 &&
-      Math.hypot(x + 2.45, z - 1.7) > 1.65 && Math.hypot(x - 2.45, z + 1.5) > 1.65 &&
-      !(x > 1.7 && x < 5.7 && z < -7.4)
+    const valid = (x, z) => Math.abs(x) < 7.75 && z > -9.2 && z < 13.45 &&
+      Math.hypot(x + 5.1, z - 1.15) > 1.65 && Math.hypot(x - 5.1, z + 1.35) > 1.65 &&
+      !(Math.abs(x) < 2.14 && Math.abs(z - 5.3) < 1.42) &&
+      !(Math.abs(x) < 2.14 && Math.abs(z + 3.45) < 1.42) &&
+      !(Math.abs(x) < 2.15 && z < -7.7)
     if (valid(nx, camera.position.z)) camera.position.x = nx
     if (valid(camera.position.x, nz)) camera.position.z = nz
   })
   return null
 }
 
-export default function StoreScene({ controls, look, jump, onPick, onCashier, selectedId, paused, onReady }) {
+export default function StoreScene({ controls, look, jump, onPick, onCashier, onExit, selectedId, paused, onReady }) {
   return <Canvas shadows={{ type: THREE.PCFSoftShadowMap }} dpr={[1, 1.5]} camera={{ position: [0, EYE_HEIGHT, 11.4], fov: 66, near: .05, far: 70 }}
     gl={{ antialias: true, alpha: false, powerPreference: 'high-performance', toneMapping: THREE.ACESFilmicToneMapping }}
     onCreated={({ gl }) => { gl.toneMappingExposure = 1.32; onReady?.() }}>
     <CameraWalk controls={controls} look={look} jump={jump} />
-    <Room onPick={onPick} onCashier={onCashier} selectedId={selectedId} paused={paused} />
+    <Room onPick={onPick} onCashier={onCashier} onExit={onExit} selectedId={selectedId} paused={paused} />
   </Canvas>
 }

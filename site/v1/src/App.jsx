@@ -79,6 +79,11 @@ export default function App() {
     window.history.replaceState(null, '', previousHash.current)
     setMagicOpen(false)
   }
+  const exitMagicToSite = () => {
+    window.history.replaceState(null, '', '#top')
+    setMagicOpen(false)
+    window.requestAnimationFrame(() => window.scrollTo(0, 0))
+  }
   useEffect(() => {
     const sync = () => setMagicOpen(window.location.hash === '#magic-store')
     window.addEventListener('popstate', sync); window.addEventListener('hashchange', sync)
@@ -114,7 +119,7 @@ export default function App() {
         <Signoff />
       </main>
       <Footer />
-      <MagicStore open={magicOpen} onClose={closeMagic} motionPaused={paused} />
+      <MagicStore open={magicOpen} onClose={closeMagic} onExitToSite={exitMagicToSite} motionPaused={paused} />
       <SearchOverlay />
       <QuickView />
       <CartDrawer />

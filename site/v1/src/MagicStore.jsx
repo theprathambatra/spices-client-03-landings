@@ -18,7 +18,7 @@ const allItems = shelves.flatMap((s) => s.items)
 const byId = Object.fromEntries(allItems.map((p) => [p.id, p]))
 const sizes = (p) => p.sizes || sizesOf(p)
 
-function FloorPlan({ onShelf, onCashier }) {
+function FloorPlan({ onShelf, onCashier, onExit }) {
   return <div className="magic-floorplan">
     <div className="magic-map-grid">
       <button className="magic-map-zone seeds" onClick={() => onShelf('seeds')}>
@@ -32,6 +32,7 @@ function FloorPlan({ onShelf, onCashier }) {
       <button className="magic-map-zone cashier" onClick={onCashier}><strong>Meet the cashier</strong><small>Add your finds to the dabba</small></button>
     </div>
     <p>The 3D walkaround is unavailable on this device. Every shelf and the cashier are still open here.</p>
+    <button className="magic-map-exit" onClick={onExit}>Through the door to the main site ↗</button>
   </div>
 }
 
@@ -46,7 +47,7 @@ function MovementPad({ controls }) {
   </div>
 }
 
-export default function MagicStore({ open, onClose, motionPaused }) {
+export default function MagicStore({ open, onClose, onExitToSite, motionPaused }) {
   const st = useStore()
   const [webgl] = useState(supportsWebGL)
   const [failed, setFailed] = useState(false)
@@ -134,8 +135,8 @@ export default function MagicStore({ open, onClose, motionPaused }) {
 
     <div className="magic-stage" onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={stopDrag} onPointerCancel={stopDrag} onPointerLeave={stopDrag}>
       {canWalk ? <Boundary onError={() => setFailed(true)}><Suspense fallback={<div className="magic-loading">Opening the store…</div>}>
-        <StoreScene controls={controls} look={look} jump={jump} onPick={pick} onCashier={meetCashier} selectedId={selectedId} paused={motionPaused} onReady={() => setReady(true)} />
-      </Suspense></Boundary> : <FloorPlan onShelf={browse} onCashier={meetCashier} />}
+        <StoreScene controls={controls} look={look} jump={jump} onPick={pick} onCashier={meetCashier} onExit={onExitToSite} selectedId={selectedId} paused={motionPaused} onReady={() => setReady(true)} />
+      </Suspense></Boundary> : <FloorPlan onShelf={browse} onCashier={meetCashier} onExit={onExitToSite} />}
       {canWalk && !ready && <div className="magic-loading">Opening the store…</div>}
       <div className="magic-top-hud">
         <div className="magic-shelf-nav" aria-label="Store sections">
