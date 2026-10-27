@@ -1,3 +1,5 @@
+import { magicProducts } from './magicProducts.js'
+
 // One constant to rename the brand everywhere.
 export const BRAND = 'Kesari'
 export const brand = {
@@ -110,11 +112,15 @@ export function sizesOf(p) {
   return list
 }
 export function priceFor(p, g) {
+  if (p.magicPrices) {
+    const price = p.magicPrices[g]
+    return { price, mrp: price, off: 0 }
+  }
   const f = Math.pow(g / grams(p), 0.88)
   const price = Math.round(p.price * f)
   const mrp = Math.round(p.mrp * f)
   return { price, mrp, off: Math.round((1 - price / mrp) * 100) }
 }
-export const bySlug = Object.fromEntries(products.map((p) => [p.id, p]))
+export const bySlug = Object.fromEntries([...products, ...magicProducts].map((p) => [p.id, p]))
 export const desc = (p) => `${p.notes}. Sourced from ${p.origin}, small-batch ${p.cat === 'whole' ? 'cleaned and sorted' : 'stone-ground'} and sealed in a zip pouch within days. No fillers, no colour, no preservatives, ever.`
 export const COUPONS = { FIRST10: { pct: 10, label: '10% off your first order' }, POKE10: { pct: 10, label: '10% off, because you poked the pouches' }, MASALA50: { flat: 50, label: 'Flat Rs 50 off', min: 799 } }
